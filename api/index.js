@@ -20,5 +20,20 @@ app.get('/en', (req, res) => {
     res.sendFile(filePath);
 });
 
+app.get('/es', (req, res) => {
+    const filePath = path.join(__dirname, '../index.html');
+    res.sendFile(filePath);
+});
+
+app.get('/ar', (req, res) => {
+    const filePath = path.join(__dirname, '../index.html');
+    res.sendFile(filePath);
+});
+
+app.get('/ch', (req, res) => {
+    const filePath = path.join(__dirname, '../index.html');
+    res.sendFile(filePath);
+});
+
 // Exportar la aplicación
 module.exports = app;
