@@ -4,10 +4,8 @@
   "description": "Portafolio como desarrollador de software",
   "main": "index.js",
   "scripts": {
-    "test": "(echo \"Error: no test specified, use --help\" && exit 1)",
-    "watch:css": "npx tailwindcss -i ./styles/style.css -o ./styles/output.css --watch",
-    "start": "node index.js",
-    "watch": "concurrently \"npm run watch:css\" \"npm run start\""
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
     },
   "repository": {
     "type": "git",
