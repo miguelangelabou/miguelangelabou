@@ -6,6 +6,7 @@ const app = express();
 // Servir archivos estáticos desde la carpeta public
 app.use('/styles', express.static(path.join(__dirname, '../public/styles')));
 app.use('/scripts', express.static(path.join(__dirname, '../public/scripts')));
+app.use('/scripts', express.static(path.join(__dirname, '../public/assets')));
 
 // Ruta para servir el archivo HTML
 app.get('/', (req, res) => {
