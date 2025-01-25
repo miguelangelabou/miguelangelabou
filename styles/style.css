@@ -150,7 +150,7 @@ body {
 }
 
 .animation-carousel-track {
-  animation: scroll 30s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
 .carousel-image {
@@ -159,8 +159,8 @@ body {
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(5%); }
+  100% { transform: translateX(-70%); }
 }
 
 
