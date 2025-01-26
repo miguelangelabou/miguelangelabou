@@ -23,7 +23,7 @@ const translations = {
       title: "Proyectos",
       project1: {
         name: "¿QueTantoSabes?",
-        description: "\"¿QueTantoSabes?\" es un juego interactivo de preguntas y respuestas sobre Venezuela, desarrollado con HTML5, CSS3, JavaScript, Node.js, Fastify, MySQL."
+        description: "\"¿QueTantoSabes?\" es un juego interactivo de preguntas y respuestas sobre Venezuela, desarrollado con HTML5, CSS3, JavaScript, PHP, JWT, MySQL."
       },
       project2: {
         name: "Proyecto 2",
@@ -57,10 +57,10 @@ const translations = {
       title: "Educación",
       englishTitle: "Formación en idiomas",
       englishDate: "2023 - Actualmente",
-      english: "Actualmente, estoy cursando un programa de inglés avanzado y tengo un interés particular en aprender árabe. Para reforzar mis habilidades lingüísticas, utilizo la aplicación Duolingo de manera regular, lo que me permite mantenerme familiarizado con el idioma día a día. Además, he logrado mantener una racha activa en la aplicación, lo que refleja mi compromiso con el aprendizaje continuo.",
+      english: "Actualmente, estoy cursando un programa de inglés avanzado (nivel B2) y tengo un interés particular en aprender árabe. Utilizo la aplicación Duolingo regularmente, manteniendo una racha activa que refleja mi compromiso con el aprendizaje continuo. Creo que mis habilidades en inglés y mi interés en el árabe me permitirán comunicarme eficazmente en entornos multiculturales.",
       universityTitle: "Carrera Universitaria",
       universityDate: "2023 - Actualmente",
-      university: "Me encuentro cursando el tercer semestre de la carrera de Ingeniería de Sistemas en el Instituto Universitario Politécnico Santiago Mariño, donde estoy adquiriendo conocimientos fundamentales en tecnología y desarrollo de software.",
+      university: "Me encuentro cursando la carrera de Ingeniería de Sistemas en el Instituto Universitario Politécnico Santiago Mariño, donde estoy adquiriendo conocimientos fundamentales en tecnología y desarrollo de software.",
       professionalDevelopmentTitle: "Desarrollo Profesional",
       professionalDevelopmentDate: "2020 - Actualmente",
       professionalDevelopment: "Estoy en constante aprendizaje de nuevas habilidades y tecnologías a través de cursos en línea en plataformas como Udemy. Me encanta aprender cada día más sobre programación e informática, y gran parte de lo que sé lo he aprendido de manera autodidacta. Esto me ayuda a estar al día con las últimas tendencias y a aplicar mis conocimientos en proyectos personales y en la universidad."
@@ -93,7 +93,7 @@ const translations = {
       title: "Projects",
       project1: {
         name: "¿QueTantoSabes?",
-        description: "\"¿QueTantoSabes?\" is an interactive question and answer game about Venezuela, developed with HTML5, CSS3, JavaScript, Node.js, Fastify, MySQL."
+        description: "\"¿QueTantoSabes?\" is an interactive question and answer game about Venezuela, developed with HTML5, CSS3, JavaScript, PHP, JWT, MySQL."
       },
       project2: {
         name: "Project 2",
@@ -127,10 +127,10 @@ const translations = {
       title: "Education",
       englishTitle: "Language Training",
       englishDate: "2023 - Present",
-      english: "Currently, I am enrolled in an advanced English program and have a particular interest in learning Arabic. To reinforce my language skills, I regularly use the Duolingo app, which allows me to stay familiar with the language day by day. Additionally, I have managed to maintain an active streak on the app, reflecting my commitment to continuous learning.",
+      english: "I am currently enrolled in an advanced English program (B2 level) and have a particular interest in learning Arabic. I regularly use the Duolingo app, maintaining an active streak that reflects my commitment to continuous learning. I believe that my English skills and my interest in Arabic will enable me to communicate effectively in multicultural environments.",
       universityTitle: "University Degree",
       universityDate: "2023 - Present",
-      university: "I am currently in the third semester of the Systems Engineering program at the Santiago Mariño Polytechnic University Institute, where I am acquiring fundamental knowledge in technology and software development.",
+      university: "I am currently pursuing a degree in Systems Engineering at the Instituto Universitario Politécnico Santiago Mariño, where I am acquiring fundamental knowledge in technology and software development.",
       professionalDevelopmentTitle: "Professional Development",
       professionalDevelopmentDate: "2020 - Present",
       professionalDevelopment: "I am constantly learning new skills and technologies through online courses on platforms like Udemy. I love learning more about programming and computer science every day, and much of what I know I have learned independently. This helps me stay up to date with the latest trends and apply my knowledge in personal projects and at university."
@@ -163,7 +163,7 @@ const translations = {
       title: "项目",
       project1: {
         name: "¿QueTantoSabes?",
-        description: "\"¿QueTantoSabes?\" 是一个关于委内瑞拉的互动问答游戏，使用 HTML5、CSS3、JavaScript、Node.js、Fastify 和 MySQL 开发。"
+        description: "\"¿QueTantoSabes?\" 这是一个关于委内瑞拉的互动问答游戏，使用HTML5、CSS3、JavaScript、PHP、JWT和MySQL开发。"
       },
       project2: {
         name: "项目 2",
@@ -197,10 +197,10 @@ const translations = {
       title: "教育",
       englishTitle: "语言培训",
       englishDate: "2023 - 现在",
-      english: "目前，我正在参加一个高级英语课程，并对学习阿拉伯语特别感兴趣。为了增强我的语言技能，我定期使用 Duolingo 应用程序，这让我能够每天保持对语言的熟悉。此外，我已经成功保持了该应用程序的活跃记录，反映了我对持续学习的承诺。",
+      english: "我目前正在参加高级英语课程（B2级），并对学习阿拉伯语特别感兴趣。我定期使用Duolingo应用程序，保持活跃的学习记录，这反映了我对持续学习的承诺。我相信我的英语能力和对阿拉伯语的兴趣将使我能够在多元文化环境中有效沟通。",
       universityTitle: "大学学位",
       universityDate: "2023 - 现在",
-      university: "我目前在圣地亚哥·马里诺理工大学的系统工程专业学习第三学期，在那里我获得了技术和软件开发的基本知识。",
+      university: "我目前在圣地亚哥·马里尼大学理工学院攻读系统工程学位，在那里我正在获得技术和软件开发的基础知识。",
       professionalDevelopmentTitle: "职业发展",
       professionalDevelopmentDate: "2020 - 现在",
       professionalDevelopment: "我通过 Udemy 等平台的在线课程不断学习新技能和技术。我喜欢每天学习更多关于编程和计算机科学的知识，我所知道的很多都是自学的。这帮助我跟上最新的趋势，并将我的知识应用于个人项目和大学学习。"
@@ -233,7 +233,7 @@ const translations = {
       title: "مشاريع",
       project1: {
         name: "¿QueTantoSabes?",
-        description: "\"¿QueTantoSabes?\" هو لعبة تفاعلية من الأسئلة والأجوبة حول فنزويلا، تم تطويرها باستخدام HTML5 وCSS3 وJavaScript وNode.js وFastify وMySQL."
+        description: "\"¿QueTantoSabes?\"هذه لعبة تفاعلية للأسئلة والأجوبة حول فنزويلا، تم تطويرها باستخدام HTML5 وCSS3 وJavaScript وPHP وJWT وMySQL."
       },
       project2: {
         name: "المشروع 2",
@@ -267,10 +267,10 @@ const translations = {
       title: "التعليم",
       englishTitle: "تدريب اللغات",
       englishDate: "2023 - حتى الآن",
-      english: "حاليًا، أدرس برنامجًا متقدمًا في اللغة الإنجليزية ولدي اهتمام خاص بتعلم اللغة العربية. لتعزيز مهاراتي اللغوية، أستخدم تطبيق Duolingo بانتظام، مما يسمح لي بالبقاء على دراية باللغة يوميًا. بالإضافة إلى ذلك، تمكنت من الحفاظ على سلسلة نشطة في التطبيق، مما يعكس التزامي بالتعلم المستمر.",
+      english: "أنا حاليًا أدرس برنامجًا متقدمًا في اللغة الإنجليزية (مستوى B2) ولدي اهتمام خاص بتعلم اللغة العربية. أستخدم تطبيق Duolingo بانتظام، وأحافظ على سلسلة نشطة تعكس التزامي بالتعلم المستمر. أعتقد أن مهاراتي في اللغة الإنجليزية واهتمامي باللغة العربية سيمكناني من التواصل بفعالية في بيئات متعددة الثقافات.",
       universityTitle: "درجة جامعية",
       universityDate: "2023 - حتى الآن",
-      university: "أنا حاليًا في الفصل الدراسي الثالث من برنامج هندسة النظم في المعهد الجامعي البوليتكني سانتياغو ماريño، حيث أكتسب المعرفة الأساسية في التكنولوجيا وتطوير البرمجيات.",
+      university: "أنا حاليًا أدرس درجة في هندسة النظم في المعهد الجامعي البوليتكنيكي سانتياغو ماريño، حيث أكتسب المعرفة الأساسية في التكنولوجيا وتطوير البرمجيات.",
       professionalDevelopmentTitle: "التطوير المهني",
       professionalDevelopmentDate: "2020 - حتى الآن",
       professionalDevelopment: "أنا في حالة تعلم مستمر لمهارات وتقنيات جديدة من خلال الدورات التدريبية عبر الإنترنت على منصات مثل Udemy. أحب أن أتعلم المزيد كل يوم عن البرمجة وتكنولوجيا المعلومات، وقد تعلمت الكثير مما أعرفه بشكل ذاتي. يساعدني ذلك على مواكبة أحدث الاتجاهات وتطبيق معرفتي في المشاريع الشخصية وفي الجامعة."

@@ -22,3 +22,7 @@ miguelangelabou/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vercel.json
+
+
+vercel --prod
+
