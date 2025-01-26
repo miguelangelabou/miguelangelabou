@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
       };
       
       
-      
+
       
       
       
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       
       function moveCarousel() {
-        const offset = (currentIndex * -20);
+        const offset = (currentIndex * - 20);
         carouselTrack.style.transform = `translateX(${offset}%)`;
       }
       
@@ -204,6 +204,12 @@ document.addEventListener("DOMContentLoaded", function() {
           moveCarousel();
         });
       });
+
+      document.getElementById("profile").addEventListener('click', () => {
+        const fullSizeImage = document.getElementById("profile").getAttribute('data-src');
+        modal.classList.remove("hidden");
+        modalImage.src = fullSizeImage;
+      })
       
       closeModal.addEventListener('click', function() {
         modal.classList.add("hidden");
