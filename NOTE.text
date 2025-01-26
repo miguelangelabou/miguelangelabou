@@ -1,0 +1,24 @@
+miguelangelabou/
+├── .vercel/
+│
+├── api/
+│   └── index.js
+│
+├── node_modules/
+│
+├── public/
+│   ├── assets/
+│   │       └── img.png
+│   ├── styles/
+│   │       ├── style.css
+│   │       └── output.css
+│   └── scripts/
+│            ├── functions.js
+│            └── languages.js
+│
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── vercel.json

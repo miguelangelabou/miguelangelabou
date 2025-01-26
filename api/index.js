@@ -6,7 +6,7 @@ const app = express();
 // Servir archivos estáticos desde la carpeta public
 app.use('/styles', express.static(path.join(__dirname, '../public/styles')));
 app.use('/scripts', express.static(path.join(__dirname, '../public/scripts')));
-app.use('/scripts', express.static(path.join(__dirname, '../public/assets')));
+app.use('/assets', express.static(path.join(__dirname, '../public/assets')));
 
 // Ruta para servir el archivo HTML
 app.get('/', (req, res) => {
@@ -16,21 +16,6 @@ app.get('/', (req, res) => {
 
 // Manejar otras rutas si es necesario
 app.get('/en', (req, res) => {
-    const filePath = path.join(__dirname, '../index.html');
-    res.sendFile(filePath);
-});
-
-app.get('/es', (req, res) => {
-    const filePath = path.join(__dirname, '../index.html');
-    res.sendFile(filePath);
-});
-
-app.get('/ar', (req, res) => {
-    const filePath = path.join(__dirname, '../index.html');
-    res.sendFile(filePath);
-});
-
-app.get('/ch', (req, res) => {
     const filePath = path.join(__dirname, '../index.html');
     res.sendFile(filePath);
 });
