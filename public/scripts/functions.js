@@ -57,16 +57,23 @@ document.addEventListener("DOMContentLoaded", function() {
           document.querySelectorAll(".name")[0].style.display = 'block';
         }
       }
+            
+      function moveSlide(direction, array) {
+        currentImageIndex = (currentImageIndex + direction + array.length) % array.length;
+        document.getElementById("modalImage").src = array[currentImageIndex];
+      }      
       
       window.addEventListener('scroll', () => {
         alignCirclesWithHeadings();
         hideMobileMenu();
         modal.classList.add("hidden");
+        document.getElementById("previewProject").classList.add("hidden");
       });
       
       window.addEventListener("resize", () => {
         alignCirclesWithHeadings();
         modal.classList.add("hidden");
+        document.getElementById("previewProject").classList.add("hidden");
       });
   
       window.onload = function() {
@@ -92,8 +99,15 @@ document.addEventListener("DOMContentLoaded", function() {
       const modal = document.getElementById("imageModal");
       const modalImage = document.getElementById("modalImage");
       const closeModal = document.getElementsByClassName("close")[0];
+      const closePreviewProject = document.getElementsByClassName("close")[1];
+      const projectContainers = document.querySelectorAll('.project');
+      const prevButton = document.querySelector('.prev-button');
+      const nextButton = document.querySelector('.next-button');  
       let currentIndex = 0;
+      let imagesArray;
+      let currentImageIndex = 0;
 
+      
       document.addEventListener('click', (event) => {
         if (!languageToggle.contains(event.target) && !languageMenu.contains(event.target)) {
           languageMenu.classList.add('hidden');
@@ -214,12 +228,53 @@ document.addEventListener("DOMContentLoaded", function() {
       closeModal.addEventListener('click', function() {
         modal.classList.add("hidden");
       });
-      
+
       modal.addEventListener('click', function(event) {
         if (event.target === modal) {
           modal.classList.add("hidden");
         }
       });
+
+      projectContainers.forEach(container => {
+        container.addEventListener('click', function(event) {
+          if (event.target.tagName === 'A' || event.target.tagName === 'I') return;
+          
+          const index = this.getAttribute('data-index');
+          currentProjectIndex = index;
+          currentImageIndex = 0;
+          imagesArray = JSON.parse(this.getAttribute('data-images'));
+      
+          document.getElementById("projectTitle").innerText = this.getAttribute('data-name');
+          document.getElementById("projectDescription").innerText = this.getAttribute('data-description');
+          document.getElementById("projectLanguages").innerText = this.getAttribute('data-languages');
+          document.getElementById("projectDate").innerText = this.getAttribute('data-date');
+          document.getElementById("projectRol").innerText = this.getAttribute('data-rol');
+          document.getElementById("projectFrameworks").innerText = this.getAttribute('data-frameworks');
+          document.getElementById("projectLink").href = this.getAttribute('data-project-link');
+          document.getElementById("githubLink").href = this.getAttribute('data-github-link');
+          document.getElementById("previewProjectImage").src = JSON.parse(this.getAttribute('data-images'))[currentImageIndex];
+          document.getElementById("previewProject").classList.remove("hidden");
+        });
+      });
+
+      document.getElementById("previewProject").addEventListener('click', (event) => {
+        if(!document.getElementById("previewProjectContainer").contains(event.target)) {
+          document.getElementById("previewProject").classList.add("hidden");
+        }
+      })
+
+      closePreviewProject.addEventListener('click', function() {
+        document.getElementById("previewProject").classList.add("hidden");
+      });
+
+      prevButton.addEventListener('click', function() {
+        moveSlide(-1, imagesArray);
+      });
+
+      nextButton.addEventListener('click', function() {
+        moveSlide(1, imagesArray);
+      });
+
     } catch (err) {
       console.log("Error: "+err)
     }

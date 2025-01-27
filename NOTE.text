@@ -26,3 +26,4 @@ miguelangelabou/
 
 vercel --prod
 
+npx tailwindcss -i ./public/styles/style.css -o ./public/styles/output.css --watch

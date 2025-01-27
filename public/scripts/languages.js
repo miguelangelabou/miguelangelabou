@@ -21,17 +21,52 @@ const translations = {
     },
     projects: {
       title: "Proyectos",
+      languages: "Lenguajes Aplicados:",
+      releaseDate: "Fecha de Lanzamiento:",
+      role: "Rol en el Proyecto:",
+      frameworks: "Frameworks o Librerías:",
       project1: {
         name: "¿QueTantoSabes?",
-        description: "\"¿QueTantoSabes?\" es un juego interactivo de preguntas y respuestas sobre Venezuela, desarrollado con HTML5, CSS3, JavaScript, PHP, JWT, MySQL."
+        preview: "\"¿QueTantoSabes?\" es un juego interactivo de preguntas y respuestas sobre Venezuela.",
+        description: "Es un juego interactivo de preguntas y respuestas que enriquece el conocimiento sobre Venezuela, combinando gamificación y aprendizaje sobre su cultura e historia.        ",
+        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+        date: "2024-12-27",
+        rol: "FullStack",
+        frameworks: "JWT",
+        images: [
+            "/assets/QueTantoSabes.png",
+            "/assets/MIGUEL_ABOU.jpeg"
+        ],
+        projectLink: "#",
+        githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
         name: "Proyecto 2",
-        description: "Descripción breve del proyecto 2, destacando las tecnologías utilizadas y las funcionalidades principales."
+        preview: "Descripción breve del proyecto 2, destacando las tecnologías utilizadas y las funcionalidades principales.",
+        description: "Descripción breve del proyecto 2, destacando las tecnologías utilizadas y las funcionalidades principales.",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_2.jpgjpeg"
+        ],
+        projectLink: "#",
+        githubLink: "#"
       },
       project3: {
         name: "Proyecto 3",
-        description: "Descripción breve del proyecto 3, destacando las tecnologías utilizadas y las funcionalidades principales."
+        preview: "Descripción breve del proyecto 3, destacando las tecnologías utilizadas y las funcionalidades principales.",
+        description: "Descripción breve del proyecto 3, destacando las tecnologías utilizadas y las funcionalidades principales.",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_3.jpgjpeg"
+        ],
+        projectLink: "#",
+        githubLink: "#"
       }
     },
     skills: {
@@ -55,9 +90,9 @@ const translations = {
     },
     education: {
       title: "Educación",
-      englishTitle: "Formación en idiomas",
-      englishDate: "2023 - Actualmente",
-      english: "Actualmente, estoy cursando un programa de inglés avanzado (nivel B2) y tengo un interés particular en aprender árabe. Utilizo la aplicación Duolingo regularmente, manteniendo una racha activa que refleja mi compromiso con el aprendizaje continuo. Creo que mis habilidades en inglés y mi interés en el árabe me permitirán comunicarme eficazmente en entornos multiculturales.",
+      languagesTitle: "Formación en idiomas",
+      languagesDate: "2023 - Actualmente",
+      languages: "Actualmente, estoy cursando un programa de inglés avanzado (nivel B2) y tengo un interés particular en aprender árabe. Utilizo la aplicación Duolingo regularmente, manteniendo una racha activa que refleja mi compromiso con el aprendizaje continuo. Creo que mis habilidades en inglés y mi interés en el árabe me permitirán comunicarme eficazmente en entornos multiculturales.",
       universityTitle: "Carrera Universitaria",
       universityDate: "2023 - Actualmente",
       university: "Me encuentro cursando la carrera de Ingeniería de Sistemas en el Instituto Universitario Politécnico Santiago Mariño, donde estoy adquiriendo conocimientos fundamentales en tecnología y desarrollo de software.",
@@ -85,23 +120,58 @@ const translations = {
       career: "Software Developer",
       description: "Hello! I am a software developer with over 4 years of experience, starting at the age of 13. I have worked on projects such as Discord bots, desktop applications, games, and web pages. I am excited about the possibility of joining an innovative team where I can contribute my skills and continue learning.",
       availableToWork: "Available for work",
-      languages: "<span class='font-bold'>Languages</span>: Spanish, English.",
+      languages: "<span class='font-bold'>Languages</span>: Spanish, languages.",
       downloadCV: "Download CV",
       copyEmail: "Copy Email"
     },
     projects: {
       title: "Projects",
+      languages: "Applied Languages:",
+      releaseDate: "Release Date:",
+      role: "Project Role:",
+      frameworks: "Frameworks or Libraries:",
       project1: {
         name: "¿QueTantoSabes?",
-        description: "\"¿QueTantoSabes?\" is an interactive question and answer game about Venezuela, developed with HTML5, CSS3, JavaScript, PHP, JWT, MySQL."
+        preview: "\"¿QueTantoSabes?\" is an interactive quiz game about Venezuela.",
+        description: "It is an interactive quiz game that enriches knowledge about Venezuela, combining gamification and learning about its culture and history.",
+        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+        date: "2024-12-27",
+        rol: "FullStack",
+        frameworks: "JWT",
+        images: [
+            "/assets/QueTantoSabes.png",
+            "/assets/MIGUEL_ABOU.jpeg"
+        ],
+        projectLink: "#",
+        githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
         name: "Project 2",
-        description: "Brief description of project 2, highlighting the technologies used and the main features."
+        preview: "Brief description of project 2, highlighting the technologies used and the main features.",
+        description: "Brief description of project 2, highlighting the technologies used and the main features.",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_2.jpgjpeg"
+        ],
+        projectLink: "#",
+        githubLink: "#"
       },
       project3: {
         name: "Project 3",
-        description: "Brief description of project 3, highlighting the technologies used and the main features."
+        preview: "Brief description of project 3, highlighting the technologies used and the main features.",
+        description: "Brief description of project 3, highlighting the technologies used and the main features.",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_3.jpgjpeg"
+        ],
+        projectLink: "#",
+        githubLink: "#"
       }
     },
     skills: {
@@ -125,9 +195,9 @@ const translations = {
     },
     education: {
       title: "Education",
-      englishTitle: "Language Training",
-      englishDate: "2023 - Present",
-      english: "I am currently enrolled in an advanced English program (B2 level) and have a particular interest in learning Arabic. I regularly use the Duolingo app, maintaining an active streak that reflects my commitment to continuous learning. I believe that my English skills and my interest in Arabic will enable me to communicate effectively in multicultural environments.",
+      languagesTitle: "Language Training",
+      languagesDate: "2023 - Present",
+      languages: "I am currently enrolled in an advanced languages program (B2 level) and have a particular interest in learning Arabic. I regularly use the Duolingo app, maintaining an active streak that reflects my commitment to continuous learning. I believe that my languages skills and my interest in Arabic will enable me to communicate effectively in multicultural environments.",
       universityTitle: "University Degree",
       universityDate: "2023 - Present",
       university: "I am currently pursuing a degree in Systems Engineering at the Instituto Universitario Politécnico Santiago Mariño, where I am acquiring fundamental knowledge in technology and software development.",
@@ -161,17 +231,53 @@ const translations = {
     },
     projects: {
       title: "项目",
+      languages: "应用语言：",
+      releaseDate: "发布日期：",
+      role: "项目角色：",
+      frameworks: "框架或库：",
       project1: {
         name: "¿QueTantoSabes?",
-        description: "\"¿QueTantoSabes?\" 这是一个关于委内瑞拉的互动问答游戏，使用HTML5、CSS3、JavaScript、PHP、JWT和MySQL开发。"
+        preview: "\"¿QueTantoSabes?\" 是一个关于委内瑞拉的互动问答游戏。",
+        description: "这是一个互动问答游戏，丰富对委内瑞拉的知识，结合游戏化和对其文化与历史的学习。",
+        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+        date: "2024-12-27",
+        rol: "FullStack",
+        frameworks: "JWT",
+        images: [
+            "/assets/QueTantoSabes.png",
+            "/assets/MIGUEL_ABOU.jpeg"
+        ],
+        projectLink: "#",
+        githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
+
       },
       project2: {
         name: "项目 2",
-        description: "项目 2 的简要描述，突出使用的技术和主要功能。"
+        preview: "项目 2 的简要描述，突出使用的技术和主要功能。",
+        description: "项目 2 的简要描述，突出使用的技术和主要功能。",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_2.jpgjpeg"
+        ],
+        projectLink: "#",
+        githubLink: "#"
       },
       project3: {
         name: "项目 3",
-        description: "项目 3 的简要描述，突出使用的技术和主要功能。"
+        preview: "项目 3 的简要描述，突出使用的技术和主要功能。",
+        description: "项目 3 的简要描述，突出使用的技术和主要功能。",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_3.jpgjpeg"
+        ],
+        projectLink: "#",
+        githubLink: "#"
       }
     },
     skills: {
@@ -195,9 +301,9 @@ const translations = {
     },
     education: {
       title: "教育",
-      englishTitle: "语言培训",
-      englishDate: "2023 - 现在",
-      english: "我目前正在参加高级英语课程（B2级），并对学习阿拉伯语特别感兴趣。我定期使用Duolingo应用程序，保持活跃的学习记录，这反映了我对持续学习的承诺。我相信我的英语能力和对阿拉伯语的兴趣将使我能够在多元文化环境中有效沟通。",
+      languagesTitle: "语言培训",
+      languagesDate: "2023 - 现在",
+      languages: "我目前正在参加高级英语课程（B2级），并对学习阿拉伯语特别感兴趣。我定期使用Duolingo应用程序，保持活跃的学习记录，这反映了我对持续学习的承诺。我相信我的英语能力和对阿拉伯语的兴趣将使我能够在多元文化环境中有效沟通。",
       universityTitle: "大学学位",
       universityDate: "2023 - 现在",
       university: "我目前在圣地亚哥·马里尼大学理工学院攻读系统工程学位，在那里我正在获得技术和软件开发的基础知识。",
@@ -231,17 +337,53 @@ const translations = {
     },
     projects: {
       title: "مشاريع",
+      languages: "اللغات المستخدمة:",
+      releaseDate: "تاريخ الإصدار:",
+      role: "دور في المشروع:",
+      frameworks: "إطارات العمل أو المكتبات:",
       project1: {
         name: "¿QueTantoSabes?",
-        description: "\"¿QueTantoSabes?\"هذه لعبة تفاعلية للأسئلة والأجوبة حول فنزويلا، تم تطويرها باستخدام HTML5 وCSS3 وJavaScript وPHP وJWT وMySQL."
+        preview: "\"¿QueTantoSabes?\" هو لعبة تفاعلية من الأسئلة والأجوبة حول فنزويلا.",
+        description: "هي لعبة تفاعلية من الأسئلة والأجوبة تعزز المعرفة حول فنزويلا، تجمع بين الألعاب والتعلم عن ثقافتها وتاريخها.",
+        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+        date: "2024-12-27",
+        rol: "FullStack",
+        frameworks: "JWT",
+        images: [
+            "/assets/QueTantoSabes.png",
+            "/assets/MIGUEL_ABOU.jpeg"
+        ],
+        projectLink: "#",
+        githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
+
       },
       project2: {
         name: "المشروع 2",
-        description: "وصف موجز للمشروع 2، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية."
+        preview: "وصف موجز للمشروع 2، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية.",
+        description: "وصف موجز للمشروع 2، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية.",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_2.jpgjpeg"
+        ],
+        projectLink: "#",
+        githubLink: "#"
       },
       project3: {
         name: "المشروع 3",
-        description: "وصف موجز للمشروع 3، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية."
+        preview: "وصف موجز للمشروع 3، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية.",
+        description: "وصف موجز للمشروع 3، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية.",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_3.jpgjpeg"
+        ],
+        projectLink: "#",
+        githubLink: "#"
       }
     },
     skills: {
@@ -265,9 +407,9 @@ const translations = {
     },
     education: {
       title: "التعليم",
-      englishTitle: "تدريب اللغات",
-      englishDate: "2023 - حتى الآن",
-      english: "أنا حاليًا أدرس برنامجًا متقدمًا في اللغة الإنجليزية (مستوى B2) ولدي اهتمام خاص بتعلم اللغة العربية. أستخدم تطبيق Duolingo بانتظام، وأحافظ على سلسلة نشطة تعكس التزامي بالتعلم المستمر. أعتقد أن مهاراتي في اللغة الإنجليزية واهتمامي باللغة العربية سيمكناني من التواصل بفعالية في بيئات متعددة الثقافات.",
+      languagesTitle: "تدريب اللغات",
+      languagesDate: "2023 - حتى الآن",
+      languages: "أنا حاليًا أدرس برنامجًا متقدمًا في اللغة الإنجليزية (مستوى B2) ولدي اهتمام خاص بتعلم اللغة العربية. أستخدم تطبيق Duolingo بانتظام، وأحافظ على سلسلة نشطة تعكس التزامي بالتعلم المستمر. أعتقد أن مهاراتي في اللغة الإنجليزية واهتمامي باللغة العربية سيمكناني من التواصل بفعالية في بيئات متعددة الثقافات.",
       universityTitle: "درجة جامعية",
       universityDate: "2023 - حتى الآن",
       university: "أنا حاليًا أدرس درجة في هندسة النظم في المعهد الجامعي البوليتكنيكي سانتياغو ماريño، حيث أكتسب المعرفة الأساسية في التكنولوجيا وتطوير البرمجيات.",
@@ -306,6 +448,7 @@ if (window.location.pathname === "/es") {
 }
 
 const shortLang = systemLanguage.split('-')[0];
+
 if (languagesArray.includes(shortLang)) {
   if (window.location.pathname === "/") {
     languages = translations[shortLang];
@@ -317,7 +460,7 @@ if (!["/es", "/en", "/ar", "/ch", "/"].includes(window.location.pathname)) {
   window.location.pathname = "/en";
 }
 
-
+const projects = ['project1', 'project2', 'project3'];
 
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("title").innerText = languages.title;
@@ -345,13 +488,32 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("downloadCV").innerText = languages.aboutMe.downloadCV;
   document.getElementById("copyEmail").innerText = languages.aboutMe.copyEmail;
 
+  document.getElementById("labelLanguages").innerText = languages.projects.languages;
+  document.getElementById("labelReleaseDate").innerText = languages.projects.releaseDate;
+  document.getElementById("labelRole").innerText = languages.projects.role;
+  document.getElementById("labelFrameworks").innerText = languages.projects.frameworks;  
+
   document.getElementById("projectsTitle").innerText = languages.projects.title;
   document.getElementById("project1Name").innerText = languages.projects.project1.name;
-  document.getElementById("project1Description").innerText = languages.projects.project1.description;
+  document.getElementById("project1Description").innerText = languages.projects.project1.preview;
   document.getElementById("project2Name").innerText = languages.projects.project2.name;
-  document.getElementById("project2Description").innerText = languages.projects.project2.description;
+  document.getElementById("project2Description").innerText = languages.projects.project2.preview;
   document.getElementById("project3Name").innerText = languages.projects.project3.name;
-  document.getElementById("project3Description").innerText = languages.projects.project3.description;
+  document.getElementById("project3Description").innerText = languages.projects.project3.preview;
+
+  projects.forEach((project, index) => {
+    const projectData = languages.projects[project];
+    const projectElement = document.querySelectorAll('.project')[index];
+    projectElement.setAttribute('data-name', projectData.name);
+    projectElement.setAttribute('data-description', projectData.description);
+    projectElement.setAttribute('data-languages', projectData.languages);
+    projectElement.setAttribute('data-date', projectData.date);
+    projectElement.setAttribute('data-rol', projectData.rol);
+    projectElement.setAttribute('data-frameworks', projectData.frameworks);
+    projectElement.setAttribute('data-images', JSON.stringify(projectData.images));
+    projectElement.setAttribute('data-project-link', projectData.projectLink);
+    projectElement.setAttribute('data-github-link', projectData.githubLink);
+  });
 
   document.getElementById("skillsTechnicalTitle").innerText = languages.skills.title;
   document.getElementById("skillsLanguageProgramming").innerText = languages.skills.programmingLanguages;
@@ -373,9 +535,9 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("empathyDescription").innerHTML = languages.skills.empathyDescription;
   
   document.getElementById("educationTitle").innerText = languages.education.title;
-  document.getElementById("languagesTitle").innerText = languages.education.englishTitle;
-  document.getElementById("englishDate").innerText = languages.education.englishDate;      
-  document.getElementById("languagesDescription").innerText = languages.education.english;
+  document.getElementById("languagesTitle").innerText = languages.education.languagesTitle;
+  document.getElementById("languagesDate").innerText = languages.education.languagesDate;      
+  document.getElementById("languagesDescription").innerText = languages.education.languages;
   document.getElementById("universityTitle").innerText = languages.education.universityTitle;
   document.getElementById("universityDate").innerText = languages.education.universityDate;    
   document.getElementById("universityDescription").innerText = languages.education.university;

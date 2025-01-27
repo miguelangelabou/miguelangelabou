@@ -138,26 +138,29 @@
         </div>
       </section>
 
-      <div class="overflow-hidden w-[97%] mx-auto mb-12">
+
+
+      <section class="overflow-hidden w-[97%] mx-auto mb-12">
         <div class="animation-carousel-track flex gap-[5%] w-[400%] md:w-[200%]" id="carouselTrack">      
           <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="Azure" src="/assets/AZURE.PNG" data-src="/assets/AZURE.PNG"/>
-          <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="English" src="/assets/ENGLISH_A1.PNG" data-src="/assets/ENGLISH_A1.PNG"/>
+          <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="languages" src="/assets/ENGLISH_A1.PNG" data-src="/assets/ENGLISH_A1.PNG"/>
           <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="Git y GitHub" src="/assets/GIT_GITHUB.PNG" data-src="/assets/GIT_GITHUB.PNG"/>
           <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="Node" src="/assets/NODE.PNG" data-src="/assets/NODE.PNG"/>
           <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="MySQL" src="/assets/SQL_MYSQL.PNG" data-src="/assets/SQL_MYSQL.PNG"/>
 
           <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="Azure" src="/assets/AZURE.PNG" data-src="/assets/AZURE.PNG"/>
-          <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="English" src="/assets/ENGLISH_A1.PNG" data-src="/assets/ENGLISH_A1.PNG"/>
+          <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="languages" src="/assets/ENGLISH_A1.PNG" data-src="/assets/ENGLISH_A1.PNG"/>
           <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="Git y GitHub" src="/assets/GIT_GITHUB.PNG" data-src="/assets/GIT_GITHUB.PNG"/>
           <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="Node" src="/assets/NODE.PNG" data-src="/assets/NODE.PNG"/>
           <img class="carousel-image transform transition duration-300 md:hover:scale-105" alt="MySQL" src="/assets/SQL_MYSQL.PNG" data-src="/assets/SQL_MYSQL.PNG"/>
         </div>
-      </div>
+      </section>
       
       <div id="imageModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-[100] hidden">
         <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer close">&times;</span>
-        <img class="max-w-4/5 max-h-4/5" id="modalImage" />
+        <img class="max-w-4/5 max-h-4/5" id="modalImage"/>
       </div>
+
 
 
       <section class="container mx-auto px-4 mb-12 animate-fade-in" id="Education">
@@ -184,7 +187,7 @@
               <div class="flex items-center mt-6">
                 <div class="bg-card p-6 rounded-lg shadow-lg transform transition duration-300 md:hover:scale-105">
                   <h3 class="text-xl font-bold mb-2" id="languagesTitle"></h3>
-                  <h6 class="opacity-70 leading-none text-xs mb-2" id="englishDate"></h6>                  
+                  <h6 class="opacity-70 leading-none text-xs mb-2" id="languagesDate"></h6>                  
                   <p id="languagesDescription"></p>
                 </div>
               </div> 
@@ -205,38 +208,70 @@
         <h2 class="text-2xl font-bold mb-8" id="projectsTitle"></h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-card p-6 rounded-lg shadow-lg flex flex-col justify-between h-full transform transition duration-300 md:hover:scale-105">
+          <div class="bg-card p-6 rounded-lg shadow-lg flex flex-col justify-between h-full transform transition duration-300 md:hover:scale-105 project" data-index="0">
             <img alt="QueTantoSabes" class="rounded mb-4 mx-auto" height="300" width="400" src="/assets/QueTantoSabes.png"/>
             <h3 class="text-xl font-bold mb-2" id="project1Name"></h3>
             <p id="project1Description"></p>
             <div class="flex items-center space-x-3 justify-end mt-auto">
-              <a class="text-white bg-green-900 hover:bg-green-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project1Link1"><i class="fas fa-globe"></i></a>
+              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project1Link1"><i class="fas fa-globe"></i></a>
               <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="https://github.com/miguelangelabou/QueTantoSabes" target="_blank" id="project1Link2"><i class="fas fa-code text-blue-500"></i></a>
             </div>
           </div>
 
-          <div class="bg-card p-6 rounded-lg shadow-lg flex flex-col justify-between h-full transition duration-300 md:hover:scale-105">
+          <div class="bg-card p-6 rounded-lg shadow-lg flex flex-col justify-between h-full transition duration-300 md:hover:scale-105 project" data-index="1">
             <img alt="Proyecto 2" class="rounded mb-4 mx-auto" height="300" width="400" src="/assets/PROYECTO_2.jpg"/>
             <h3 class="text-xl font-bold mb-2" id="project2Name"></h3>
             <p id="project2Description"></p>
             <div class="flex items-center space-x-3 justify-end mt-auto">
-              <a class="text-white bg-green-900 hover:bg-green-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project2Link1"><i class="fas fa-globe"></i></a>
+              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project2Link1"><i class="fas fa-globe"></i></a>
               <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project2Link2"><i class="fas fa-code text-blue-500"></i></a>
             </div>           
           </div>
 
-          <div class="bg-card p-6 rounded-lg shadow-lg flex flex-col justify-between h-full transition duration-300 md:hover:scale-105">
+          <div class="bg-card p-6 rounded-lg shadow-lg flex flex-col justify-between h-full transition duration-300 md:hover:scale-105 project" data-index="2">
             <img alt="Proyecto 3" class="rounded mb-4 mx-auto" height="300" width="400" src="/assets/PROYECTO_3.jpg"/>
             <h3 class="text-xl font-bold mb-2" id="project3Name"></h3>
             <p id="project3Description"></p>
             <div class="flex items-center space-x-3 justify-end mt-auto">
-              <a class="text-white bg-green-900 hover:bg-green-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project3Link1"><i class="fas fa-globe"></i></a>
+              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project3Link1"><i class="fas fa-globe"></i></a>
               <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project3Link2"><i class="fas fa-code text-blue-500"></i></a>
             </div>           
           </div>
         </div>
       </section>
       
+      <div id="previewProject" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-[50] hidden">
+        <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer close">&times;</span>
+        
+        <div id="previewProjectContainer" class="bg-card p-6 rounded-lg shadow-lg z-[51] max-w-lg w-full flex flex-col gap-[10%]">
+          <div class="flex items-center justify-between">
+            <button class="text-gray-600 text-2xl prev-button">&#10094;</button>
+            <img class="max-w-[60%] h-auto rounded-lg" id="previewProjectImage" alt="Project Image"/>
+            <button class="text-gray-600 text-2xl next-button">&#10095;</button>
+          </div>
+          
+          <div class="project-info mt-4 flex flex-row gap-[10%]">
+            <div class="max-w-[40%]">
+              <h2 id="projectTitle" class="text-xl font-bold"></h2>
+              <p id="projectDescription" class="mt-2"></p><br>  
+            </div>
+            <div>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <p><strong id="labelLanguages"></strong> <br><span id="projectLanguages"></span></p>
+                <p><strong id="labelReleaseDate"></strong> <br><span id="projectDate"></span></p>
+                <p class="mt-2"><strong id="labelRole"></strong> <br><span id="projectRol"></span></p>
+                <p class="mt-2"><strong id="labelFrameworks"></strong> <br><span id="projectFrameworks"></span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 flex flex-row w-full space-x-4">
+            <a id="projectLink" href="#" target="_blank" class="flex-1 text-white text-center bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg">Ver Proyecto</a>
+            <a id="githubLink" href="#" target="_blank" class="flex-1 text-white text-center bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
       
 
       <section class="container mx-auto p-6 mb-12 animate-fade-in bg-card rounded-lg shadow-lg" id="Skills">
