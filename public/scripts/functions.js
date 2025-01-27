@@ -57,11 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
           document.querySelectorAll(".name")[0].style.display = 'block';
         }
       }
-            
-      function moveSlide(direction, array) {
-        currentImageIndex = (currentImageIndex + direction + array.length) % array.length;
-        document.getElementById("modalImage").src = array[currentImageIndex];
-      }      
       
       window.addEventListener('scroll', () => {
         alignCirclesWithHeadings();
@@ -268,11 +263,14 @@ document.addEventListener("DOMContentLoaded", function() {
       });
 
       prevButton.addEventListener('click', function() {
-        moveSlide(-1, imagesArray);
+        currentImageIndex = (currentImageIndex + -1 + imagesArray.length) % imagesArray.length;
+        document.getElementById("previewProjectImage").src = imagesArray[currentImageIndex];
+
       });
 
       nextButton.addEventListener('click', function() {
-        moveSlide(1, imagesArray);
+        currentImageIndex = (currentImageIndex + 1 + imagesArray.length) % imagesArray.length;
+        document.getElementById("previewProjectImage").src = imagesArray[currentImageIndex];
       });
 
     } catch (err) {

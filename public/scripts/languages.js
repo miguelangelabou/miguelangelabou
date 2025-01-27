@@ -49,7 +49,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_2.jpgjpeg"
+            "/assets/PROYECTO_2.jpg"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -63,7 +63,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_3.jpgjpeg"
+            "/assets/PROYECTO_3.jpg"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -154,7 +154,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_2.jpgjpeg"
+            "/assets/PROYECTO_2.jpg"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -168,7 +168,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_3.jpgjpeg"
+            "/assets/PROYECTO_3.jpg"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -260,7 +260,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_2.jpgjpeg"
+            "/assets/PROYECTO_2.jpg"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -274,7 +274,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_3.jpgjpeg"
+            "/assets/PROYECTO_3.jpg"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -366,7 +366,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_2.jpgjpeg"
+            "/assets/PROYECTO_2.jpg"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -380,7 +380,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_3.jpgjpeg"
+            "/assets/PROYECTO_3.jpg"
         ],
         projectLink: "#",
         githubLink: "#"
