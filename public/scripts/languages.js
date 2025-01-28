@@ -138,8 +138,7 @@ const translations = {
         rol: "FullStack",
         frameworks: "JWT",
         images: [
-            "/assets/QueTantoSabes.png",
-            "/assets/MIGUEL_ABOU.jpeg"
+            "/assets/QueTantoSabes.png"
         ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
@@ -243,8 +242,7 @@ const translations = {
         rol: "FullStack",
         frameworks: "JWT",
         images: [
-            "/assets/QueTantoSabes.png",
-            "/assets/MIGUEL_ABOU.jpeg"
+            "/assets/QueTantoSabes.png"
         ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
@@ -349,8 +347,7 @@ const translations = {
         rol: "FullStack",
         frameworks: "JWT",
         images: [
-            "/assets/QueTantoSabes.png",
-            "/assets/MIGUEL_ABOU.jpeg"
+            "/assets/QueTantoSabes.png"
         ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
