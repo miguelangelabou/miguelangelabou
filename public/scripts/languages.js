@@ -5,6 +5,7 @@ const translations = {
     nav: {
       AboutMe: "Sobre Mí",
       Project: "Proyectos",
+      Experience: "Experiencia",
       Skills: "Habilidades",
       Education: "Educación",
       Reviews: "Reseñas",
@@ -18,6 +19,13 @@ const translations = {
       languages: "<span class='font-bold'>Idiomas</span>: Español, Inglés.",
       downloadCV: "Descargar CV",
       copyEmail: "Copiar Email"
+    },
+    experience: {
+      title: "Experiencia",
+      experience1: {
+        dateRole: "2023 - Actualmente | FullStack",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      }
     },
     projects: {
       title: "Proyectos",
@@ -110,6 +118,7 @@ const translations = {
     nav: {
       AboutMe: "About Me",
       Project: "Projects",
+      Experience: "Experience",
       Skills: "Skills",
       Education: "Education",
       Reviews: "Reviews",
@@ -123,6 +132,13 @@ const translations = {
       languages: "<span class='font-bold'>Languages</span>: Spanish, languages.",
       downloadCV: "Download CV",
       copyEmail: "Copy Email"
+    },
+    experience: {
+      title: "Experience",
+      experience1: {
+        dateRole: "2023 - Currently | FullStack",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      }
     },
     projects: {
       title: "Projects",
@@ -210,10 +226,11 @@ const translations = {
   },
   zh: {
     title: "软件开发者",
-    name: "米格尔·阿布",
+    name: "Miguelangel Abou",
     nav: {
       AboutMe: "关于我",
       Project: "项目",
+      Experience: "经验",
       Skills: "技能",
       Education: "教育",
       Reviews: "评论",
@@ -227,6 +244,13 @@ const translations = {
       languages: "<span class='font-bold'>语言</span>: 西班牙语，英语。",
       downloadCV: "下载简历",
       copyEmail: "复制电子邮件"
+    },
+    experience: {
+      title: "经验",
+      experience1: {
+        dateRole: "2023 - 目前 | FullStack",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      }
     },
     projects: {
       title: "项目",
@@ -310,15 +334,129 @@ const translations = {
       professionalDevelopment: "我通过 Udemy 等平台的在线课程不断学习新技能和技术。我喜欢每天学习更多关于编程和计算机科学的知识，我所知道的很多都是自学的。这帮助我跟上最新的趋势，并将我的知识应用于个人项目和大学学习。"
     },
     footer: {
-      copyright: "© 2024 米格尔·阿布。版权所有。"
+      copyright: "© 2024 Miguelangel Abou。版权所有。"
+    }
+  },
+  pt: {
+    title: "Desenvolvedor de Software",
+    name: "Miguelangel Abou",
+    nav: {
+      AboutMe: "Sobre Mim",
+      Project: "Projetos",
+      Experience: "Experiência",
+      Skills: "Habilidades",
+      Education: "Educação",
+      Reviews: "Avaliações",
+      Contact: "Contato"
+    },
+    aboutMe: {
+      title: "Sobre Mim",
+      career: "Desenvolvedor de Software",
+      description: "Olá! Sou um desenvolvedor de software com mais de 4 anos de experiência, começando aos 13 anos. Trabalhei em projetos como bots para Discord, aplicativos de desktop, jogos e páginas da web. Estou entusiasmado com a possibilidade de me juntar a uma equipe inovadora onde posso contribuir com minhas habilidades e continuar aprendendo.",
+      availableToWork: "Disponível para trabalhar",
+      languages: "<span class='font-bold'>Idiomas</span>: Espanhol, Inglês.",
+      downloadCV: "Baixar CV",
+      copyEmail: "Copiar Email"
+    },
+    experience: {
+      title: "Experiência",
+      experience1: {
+        dateRole: "2023 - Atualmente | FullStack",
+        description: "Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e tipografia. Lorem Ipsum tem sido o texto padrão da indústria desde os anos 1500."
+      }
+    },
+    projects: {
+      title: "Projetos",
+      languages: "Linguagens Aplicadas:",
+      releaseDate: "Data de Conclusão:",
+      role: "Papel no Projeto:",
+      frameworks: "Frameworks ou Bibliotecas:",
+      project1: {
+        name: "¿QueTantoSabes?",
+        preview: "\"¿QueTantoSabes?\" é um jogo interativo de perguntas e respostas sobre a Venezuela.",
+        description: "É um jogo interativo de perguntas e respostas que enriquece o conhecimento sobre a Venezuela, combinando gamificação e aprendizado sobre sua cultura e história.",
+        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+        date: "2024-12-27",
+        rol: "FullStack",
+        frameworks: "JWT",
+        images: [
+            "/assets/QueTantoSabes.webp",
+            "/assets/MIGUEL_ABOU.webp"
+        ],
+        projectLink: "#",
+        githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
+      },
+      project2: {
+        name: "Projeto 2",
+        preview: "Descrição breve do projeto 2, destacando as tecnologias utilizadas e as funcionalidades principais.",
+        description: "Descrição breve do projeto 2, destacando as tecnologias utilizadas e as funcionalidades principais.",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_2.webp"
+        ],
+        projectLink: "#",
+        githubLink: "#"
+      },
+      project3: {
+        name: "Projeto 3",
+        preview: "Descrição breve do projeto 3, destacando as tecnologias utilizadas e as funcionalidades principais.",
+        description: "Descrição breve do projeto 3, destacando as tecnologias utilizadas e as funcionalidades principais.",
+        languages: "XXXXXX",
+        date: "XXXX-XX-XX",
+        rol: "XXXXX",
+        frameworks: "XXX",
+        images: [
+            "/assets/PROYECTO_3.webp"
+        ],
+        projectLink: "#",
+        githubLink: "#"
+      }
+    },
+    skills: {
+      title: "Habilidades Técnicas",
+      programmingLanguages: "Linguagens de Programação",
+      frameworks: "Frameworks",
+      tools: "Ferramentas",
+      softSkillsTitle: "Habilidades Interpessoais",
+      communicationTitle: "<i class='fas fa-comments text-blue-500'></i> Comunicação",
+      communicationDescription: "Capacidade de expressar ideias e conceitos de forma clara e eficaz.",
+      teamworkTitle: "<i class='fas fa-users text-green-500'></i> Trabalho em Equipe",
+      teamworkDescription: "Colaboração eficaz com outros para alcançar objetivos comuns.",
+      problemSolvingTitle: "<i class='fas fa-lightbulb text-yellow-500'></i> Resolução de Problemas",
+      problemSolvingDescription: "Habilidade para identificar e resolver problemas de forma criativa.",
+      timeManagementTitle: "<i class='fas fa-clock text-purple-500'></i> Gestão do Tempo",
+      timeManagementDescription: "Capacidade de organizar e priorizar tarefas de forma eficiente.",
+      proactivityTitle: "<i class='fas fa-rocket text-orange-500'></i> Proatividade",
+      proactivityDescription: "Sou proativo e sempre busco oportunidades para melhorar e contribuir.",
+      empathyTitle: "<i class='fas fa-thumbs-up text-gray-500'></i> Empatia",
+      empathyDescription: "Compreensão das necessidades e perspectivas dos outros."
+    },
+    education: {
+      title: "Educação",
+      languagesTitle: "Formação em Idiomas",
+      languagesDate: "2023 - Atualmente",
+      languages: "Atualmente, estou cursando um programa de inglês avançado (nível B2) e tenho um interesse particular em aprender árabe. Uso o aplicativo Duolingo regularmente, mantendo uma sequência ativa que reflete meu compromisso com o aprendizado contínuo. Acredito que minhas habilidades em inglês e meu interesse no árabe me permitirão me comunicar eficazmente em ambientes multiculturais.",
+      universityTitle: "Curso Universitário",
+      universityDate: "2023 - Atualmente",
+      university: "Estou cursando a carreira de Engenharia de Sistemas no Instituto Universitário Politécnico Santiago Mariño, onde estou adquirindo conhecimentos fundamentais em tecnologia e desenvolvimento de software.",
+      professionalDevelopmentTitle: "Desenvolvimento Profissional",
+      professionalDevelopmentDate: "2020 - Atualmente",
+      professionalDevelopment: "Estou em constante aprendizado de novas habilidades e tecnologias através de cursos online em plataformas como Udemy. Adoro aprender cada dia mais sobre programação e informática, e grande parte do que sei aprendi de forma autodidata. Isso me ajuda a estar atualizado com as últimas tendências e a aplicar meus conhecimentos em projetos pessoais e na universidade."
+    },
+    footer: {
+      copyright: "© 2024 Miguelangel Abou. Todos os direitos reservados."
     }
   },
   ar: {
     title: "مطور برمجيات",
-    name: "ميغيل أنجل أبو",
+    name: "Miguelangel Abou",
     nav: {
       AboutMe: "عني",
       Project: "مشاريع",
+      Experience: "تجربة",
       Skills: "مهارات",
       Education: "تعليم",
       Reviews: "مراجعات",
@@ -332,6 +470,13 @@ const translations = {
       languages: "<span class='font-bold'>اللغات</span>: الإسبانية، الإنجليزية.",
       downloadCV: "تحميل السيرة الذاتية",
       copyEmail: "نسخ البريد الإلكتروني"
+    },
+    experience: {
+      title: "تجربة",
+      experience1: {
+        dateRole: "2023 - حاليًا | FullStack",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      }
     },
     projects: {
       title: "مشاريع",
@@ -415,7 +560,7 @@ const translations = {
       professionalDevelopment: "أنا في حالة تعلم مستمر لمهارات وتقنيات جديدة من خلال الدورات التدريبية عبر الإنترنت على منصات مثل Udemy. أحب أن أتعلم المزيد كل يوم عن البرمجة وتكنولوجيا المعلومات، وقد تعلمت الكثير مما أعرفه بشكل ذاتي. يساعدني ذلك على مواكبة أحدث الاتجاهات وتطبيق معرفتي في المشاريع الشخصية وفي الجامعة."
     },
     footer: {
-      copyright: "© 2024 ميغيل أنجل أبو. جميع الحقوق محفوظة."
+      copyright: "© 2024 Miguelangel Abou. جميع الحقوق محفوظة."
     }
   }
 };
@@ -469,12 +614,14 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("projectsNav").innerText = languages.nav.Project;
   document.getElementById("skillsNav").innerText = languages.nav.Skills;
   document.getElementById("educationNav").innerText = languages.nav.Education;
+  document.getElementById("experienceNav").innerText = languages.nav.Experience;
   document.getElementById("contactNav").innerText = languages.nav.Contact;
   
   document.getElementById("aboutMeNavMobile").innerText = languages.nav.AboutMe;
   document.getElementById("projectsNavMobile").innerText = languages.nav.Project;
   document.getElementById("skillsNavMobile").innerText = languages.nav.Skills;
   document.getElementById("educationNavMobile").innerText = languages.nav.Education;
+  document.getElementById("experienceNavMobile").innerText = languages.nav.Experience;
   document.getElementById("contactNavMobile").innerText = languages.nav.Contact;
   
   document.getElementById("aboutMeTitle").innerText = languages.aboutMe.title;
@@ -541,6 +688,10 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("professionalDevelopmentTitle").innerText = languages.education.professionalDevelopmentTitle;
   document.getElementById("professionalDevelopmentDate").innerText = languages.education.professionalDevelopmentDate;
   document.getElementById("professionalDevelopmentDescription").innerText = languages.education.professionalDevelopment;
+
+  document.getElementById("experienceTitle").innerText = languages.experience.title;
+  document.getElementById("experienceDateRol").innerText = languages.experience.experience1.dateRole;
+  document.getElementById("experienceDescription").innerText = languages.experience.experience1.description;
 
   document.getElementById("footerCopyright").innerText = languages.footer.copyright;    
 });

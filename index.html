@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <link href="/styles/output.css" rel="stylesheet">
 
-    <script src="/scripts/functions.js" defer></script>
     <script src="/scripts/languages.js" defer></script>
+    <script src="/scripts/functions.js" defer></script>
   </head>
   
   <body class="relative font-roboto text-sm md:text-base">
@@ -32,8 +32,12 @@
             
             <li>
               <a class="underline-animation text-black-500 hover:text-hover" href="#Education" id="educationNav"></a>
-            </li>                        
-            
+            </li>
+
+            <li>
+              <a class="underline-animation text-black-500 hover:text-hover" href="#Experience" id="experienceNav"></a>
+            </li>
+
             <li>
               <a class="underline-animation text-black-500 hover:text-hover" href="#Projects" id="projectsNav"></a>
             </li>
@@ -62,6 +66,7 @@
             <div class="absolute right-0 mt-2 w-48 bg-base border border-gray-200 rounded-lg shadow-lg hidden" id="language-menu">
               <a class="block px-4 py-2 text-text-color hover:text-[#3b82f6]" href="/es"><span class="fi fi-es mr-2"></span> Español</a>
               <a class="block px-4 py-2 text-text-color hover:text-[#3b82f6]" href="/en"><span class="fi fi-us mr-2"></span> English</a>
+              <a class="block px-4 py-2 text-text-color hover:text-[#3b82f6]" href="/pt"><span class="fi fi-br mr-2"></span> Portugués</a>
               <a class="block px-4 py-2 text-text-color hover:text-[#3b82f6]" href="/ch"><span class="fi fi-cn mr-2"></span> 中文</a>
               <a class="block px-4 py-2 text-text-color hover:text-[#3b82f6]" href="/ar"><span class="fi fi-sa mr-2"></span> التواصل</a>
             </div>
@@ -73,11 +78,15 @@
         <ul class="space-y-4 px-4 py-6">
           <li>
             <a class="block text-black-500 hover:text-hover" href="#AboutMe" id="aboutMeNavMobile"></a>
-          </li> 
+          </li>
           
           <li>
             <a class="block text-black-500 hover:text-hover" href="#Education" id="educationNavMobile"></a>
-          </li>          
+          </li>
+          
+          <li>
+            <a class="block text-black-500 hover:text-hover" href="#Experience" id="experienceNavMobile"></a>
+          </li>
           
           <li>
             <a class="block text-black-500 hover:text-hover" href="#Projects" id="projectsNavMobile"></a>
@@ -200,20 +209,25 @@
         </div>
       </section>
 
-      <!--<section class="container mx-auto px-4 mb-12 animate-fade-in" id="Experience">
-        <h2 class="text-2xl font-bold mb-2" id="experienceTitle">Experience</h2>
- 
-        <div class="flex gap-[4%] items-start mt-6 bg-card p-6 rounded-lg shadow-lg transform transition duration-300">
-          <img alt="Foto Miguelangel" class="rounded-full w-40" src="/assets/MIGUEL_ABOU.webp"/>
-          <div class="text-left w-auto">
-            <a class="text-xl font-bold mt-2 cursor-pointer hover:text-blue-400" href="#" target="_blank">Empresa 1</a>
-            <h6 class="opacity-70 leading-none text-xs mb-2">2023 - Actualmente</h6>
-            <p class="whitespace-normal break-words" id="universityDescription">Uwsejfnsknasncaskcalsmclaksmdalmdawmkdlamwdlawmdlawmdlamwdlkawd</p>
-          </div>
+      <section class="container mx-auto px-4 lg:px-0 mb-12 animate-fade-in" id="Experience">
+        <h2 class="text-2xl font-bold mb-2" id="experienceTitle"></h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
+          <div class="flex-col gap-[4%] items-start mt-6 bg-card p-6 rounded-lg shadow-lg transform transition duration-300">
+            <div class="text-left w-full inline-flex gap-[4%]">
+              <img alt="Foto Miguelangel" class="rounded-full w-12 h-12 my-auto" src="/assets/MIGUEL_ABOU.webp"/>
+              <div class="flex-col">
+                <h1 class="text-xl font-bold">Empresa 1</h1>
+                <h6 class="opacity-70 leading-none text-xs mb-2" id="experienceDateRol"></h6>
+              </div>
+              <a class="text-white bg-blue-400 hover:bg-transparent hover:text-blue-400 border-2 border-blue-400 transition-colors duration-300 ease-in-out p-1 rounded-lg ml-auto" style="height: fit-content;" href="#" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+            <p class="mt-4" id="experienceDescription"></p>
+          </div>  
         </div>
-      </section>-->
+      </section>
       
-      <section class="container mx-auto animate-fade-in mb-14" id="Projects">
+      <section class="container mx-auto px-4 lg:px-0 animate-fade-in mb-14" id="Projects">
         <h2 class="text-2xl font-bold mb-8" id="projectsTitle"></h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -224,8 +238,8 @@
             <h3 class="text-xl font-bold mb-2" id="project1Name"></h3>
             <p id="project1Description"></p>
             <div class="flex items-center space-x-3 justify-end mt-auto">
-              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project1Link1"><i class="fas fa-globe"></i></a>
-              <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="https://github.com/miguelangelabou/QueTantoSabes" target="_blank" id="project1Link2"><i class="fas fa-code text-blue-500"></i></a>
+              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="https://github.com/miguelangelabou/QueTantoSabes" target="_blank"><i class="fas fa-code text-blue-500"></i></a>
             </div>
           </div>
 
@@ -236,8 +250,8 @@
             <h3 class="text-xl font-bold mb-2" id="project2Name"></h3>
             <p id="project2Description"></p>
             <div class="flex items-center space-x-3 justify-end mt-auto">
-              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project2Link1"><i class="fas fa-globe"></i></a>
-              <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project2Link2"><i class="fas fa-code text-blue-500"></i></a>
+              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank"><i class="fas fa-code text-blue-500"></i></a>
             </div>           
           </div>
 
@@ -248,8 +262,8 @@
             <h3 class="text-xl font-bold mb-2" id="project3Name"></h3>
             <p id="project3Description"></p>
             <div class="flex items-center space-x-3 justify-end mt-auto">
-              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project3Link1"><i class="fas fa-globe"></i></a>
-              <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank" id="project3Link2"><i class="fas fa-code text-blue-500"></i></a>
+              <a class="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <a class="text-white bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6" href="#" target="_blank"><i class="fas fa-code text-blue-500"></i></a>
             </div>           
           </div>
         </div>
@@ -283,8 +297,8 @@
           </div>
 
           <div class="mt-4 flex flex-row w-full space-x-4">
-            <a id="projectLink" href="#" target="_blank" class="flex-1 text-white text-center bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg">Ver Proyecto</a>
-            <a id="githubLink" href="#" target="_blank" class="flex-1 text-white text-center bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg">Ver en GitHub</a>
+            <a id="projectLink" target="_blank" class="flex-1 text-white text-center bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg">Ver Proyecto</a>
+            <a id="githubLink" target="_blank" class="flex-1 text-white text-center bg-black hover:bg-neutral-900 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg">Ver en GitHub</a>
           </div>
         </div>
       </div>
@@ -372,5 +386,13 @@
         <p id="footerCopyright"></p>
       </div>
     </footer>
+
+    <script>
+      /*if (condition) {
+          import('./module.js').then(module => {
+
+          });
+      }*/
+    </script>
   </body>
 </html>

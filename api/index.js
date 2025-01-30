@@ -32,4 +32,9 @@ app.get('/ch', (req, res) => {
     res.sendFile(filePath);
 });
 
+app.get('/pt', (req, res) => {
+    const filePath = path.join(__dirname, '../index.html');
+    res.sendFile(filePath);
+});
+
 module.exports = app;

@@ -674,6 +674,16 @@ video {
   margin-bottom: 3rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -738,6 +748,18 @@ video {
   margin-top: auto;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
 .block {
   display: block;
 }
@@ -785,6 +807,10 @@ video {
   height: 1.2rem;
 }
 
+.h-\[280px\] {
+  height: 280px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -793,36 +819,8 @@ video {
   height: 100%;
 }
 
-.h-\[\%\] {
-  height: %;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
-.h-\[9\%\] {
-  height: 9%;
-}
-
-.h-\[98\%\] {
-  height: 98%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[300px\] {
-  height: 300px;
-}
-
-.h-\[260px\] {
-  height: 260px;
-}
-
-.h-\[280px\] {
-  height: 280px;
+.h-12 {
+  height: 3rem;
 }
 
 .min-h-\[40px\] {
@@ -831,6 +829,10 @@ video {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .w-48 {
@@ -861,8 +863,8 @@ video {
   width: 100%;
 }
 
-.w-40 {
-  width: 10rem;
+.w-12 {
+  width: 3rem;
 }
 
 .min-w-\[22px\] {
@@ -1021,12 +1023,12 @@ video {
   gap: 10%;
 }
 
-.gap-\[5\%\] {
-  gap: 5%;
-}
-
 .gap-\[4\%\] {
   gap: 4%;
+}
+
+.gap-\[5\%\] {
+  gap: 5%;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1087,9 +1089,23 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
+.border-blue-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(29 78 216 / var(--tw-border-opacity, 1));
+}
+
+.border-blue-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(96 165 250 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[rgba\(0\2c 0\2c 0\2c 0\.6\)\] {
@@ -1143,6 +1159,10 @@ video {
   padding: 2px;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1176,6 +1196,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .text-left {
@@ -1570,6 +1595,10 @@ body {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:text-\[\#3b82f6\]:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
@@ -1685,6 +1714,11 @@ body {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:text-3xl {
