@@ -22,7 +22,7 @@ const translations = {
     projects: {
       title: "Proyectos",
       languages: "Lenguajes Aplicados:",
-      releaseDate: "Fecha de Lanzamiento:",
+      releaseDate: "Fecha de Finalización:",
       role: "Rol en el Proyecto:",
       frameworks: "Frameworks o Librerías:",
       project1: {
@@ -34,7 +34,8 @@ const translations = {
         rol: "FullStack",
         frameworks: "JWT",
         images: [
-            "/assets/QueTantoSabes.png"
+            "/assets/QueTantoSabes.webp",
+            "/assets/MIGUEL_ABOU.webp"
         ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
@@ -48,7 +49,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_2.jpg"
+            "/assets/PROYECTO_2.webp"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -62,7 +63,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_3.jpg"
+            "/assets/PROYECTO_3.webp"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -138,7 +139,7 @@ const translations = {
         rol: "FullStack",
         frameworks: "JWT",
         images: [
-            "/assets/QueTantoSabes.png"
+            "/assets/QueTantoSabes.webp"
         ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
@@ -152,7 +153,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_2.jpg"
+            "/assets/PROYECTO_2.webp"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -166,7 +167,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_3.jpg"
+            "/assets/PROYECTO_3.webp"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -230,7 +231,7 @@ const translations = {
     projects: {
       title: "项目",
       languages: "应用语言：",
-      releaseDate: "发布日期：",
+      releaseDate: "完成日期：",
       role: "项目角色：",
       frameworks: "框架或库：",
       project1: {
@@ -242,7 +243,7 @@ const translations = {
         rol: "FullStack",
         frameworks: "JWT",
         images: [
-            "/assets/QueTantoSabes.png"
+            "/assets/QueTantoSabes.webp"
         ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
@@ -257,7 +258,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_2.jpg"
+            "/assets/PROYECTO_2.webp"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -271,7 +272,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_3.jpg"
+            "/assets/PROYECTO_3.webp"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -335,7 +336,7 @@ const translations = {
     projects: {
       title: "مشاريع",
       languages: "اللغات المستخدمة:",
-      releaseDate: "تاريخ الإصدار:",
+      releaseDate: "تاريخ الانتهاء:",
       role: "دور في المشروع:",
       frameworks: "إطارات العمل أو المكتبات:",
       project1: {
@@ -347,7 +348,7 @@ const translations = {
         rol: "FullStack",
         frameworks: "JWT",
         images: [
-            "/assets/QueTantoSabes.png"
+            "/assets/QueTantoSabes.webp"
         ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
@@ -362,7 +363,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_2.jpg"
+            "/assets/PROYECTO_2.webp"
         ],
         projectLink: "#",
         githubLink: "#"
@@ -376,7 +377,7 @@ const translations = {
         rol: "XXXXX",
         frameworks: "XXX",
         images: [
-            "/assets/PROYECTO_3.jpg"
+            "/assets/PROYECTO_3.webp"
         ],
         projectLink: "#",
         githubLink: "#"

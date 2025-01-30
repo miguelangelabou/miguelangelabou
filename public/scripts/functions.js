@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function() {
       window.addEventListener("resize", () => {
         alignCirclesWithHeadings();
         modal.classList.add("hidden");
-        document.getElementById("previewProject").classList.add("hidden");
       });
   
       window.onload = function() {
