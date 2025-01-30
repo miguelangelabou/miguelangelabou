@@ -41,10 +41,6 @@ const translations = {
         date: "2024-12-27",
         rol: "FullStack",
         frameworks: "JWT",
-        images: [
-            "/assets/QueTantoSabes.webp",
-            "/assets/MIGUEL_ABOU.webp"
-        ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
@@ -56,9 +52,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_2.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       },
@@ -70,9 +63,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_3.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       }
@@ -129,7 +119,7 @@ const translations = {
       career: "Software Developer",
       description: "Hello! I am a software developer with over 4 years of experience, starting at the age of 13. I have worked on projects such as Discord bots, desktop applications, games, and web pages. I am excited about the possibility of joining an innovative team where I can contribute my skills and continue learning.",
       availableToWork: "Available for work",
-      languages: "<span class='font-bold'>Languages</span>: Spanish, languages.",
+      languages: "<span class='font-bold'>Languages</span>: Spanish, English.",
       downloadCV: "Download CV",
       copyEmail: "Copy Email"
     },
@@ -154,9 +144,6 @@ const translations = {
         date: "2024-12-27",
         rol: "FullStack",
         frameworks: "JWT",
-        images: [
-            "/assets/QueTantoSabes.webp"
-        ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
@@ -168,9 +155,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_2.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       },
@@ -182,9 +166,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_3.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       }
@@ -212,7 +193,7 @@ const translations = {
       title: "Education",
       languagesTitle: "Language Training",
       languagesDate: "2023 - Present",
-      languages: "I am currently enrolled in an advanced languages program (B2 level) and have a particular interest in learning Arabic. I regularly use the Duolingo app, maintaining an active streak that reflects my commitment to continuous learning. I believe that my languages skills and my interest in Arabic will enable me to communicate effectively in multicultural environments.",
+      languages: "I am currently enrolled in an advanced English program (B2 level) and have a particular interest in learning Arabic. I regularly use the Duolingo app, maintaining an active streak that reflects my commitment to continuous learning. I believe that my languages skills and my interest in Arabic will enable me to communicate effectively in multicultural environments.",
       universityTitle: "University Degree",
       universityDate: "2023 - Present",
       university: "I am currently pursuing a degree in Systems Engineering at the Instituto Universitario Politécnico Santiago Mariño, where I am acquiring fundamental knowledge in technology and software development.",
@@ -266,9 +247,6 @@ const translations = {
         date: "2024-12-27",
         rol: "FullStack",
         frameworks: "JWT",
-        images: [
-            "/assets/QueTantoSabes.webp"
-        ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
 
@@ -281,9 +259,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_2.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       },
@@ -295,9 +270,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_3.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       }
@@ -379,10 +351,6 @@ const translations = {
         date: "2024-12-27",
         rol: "FullStack",
         frameworks: "JWT",
-        images: [
-            "/assets/QueTantoSabes.webp",
-            "/assets/MIGUEL_ABOU.webp"
-        ],
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
@@ -394,9 +362,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_2.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       },
@@ -408,9 +373,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_3.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       }
@@ -492,9 +454,7 @@ const translations = {
         date: "2024-12-27",
         rol: "FullStack",
         frameworks: "JWT",
-        images: [
-            "/assets/QueTantoSabes.webp"
-        ],
+        
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
 
@@ -507,9 +467,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_2.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       },
@@ -521,9 +478,6 @@ const translations = {
         date: "XXXX-XX-XX",
         rol: "XXXXX",
         frameworks: "XXX",
-        images: [
-            "/assets/PROYECTO_3.webp"
-        ],
         projectLink: "#",
         githubLink: "#"
       }
@@ -571,7 +525,7 @@ const translations = {
 let languages = translations;
 let lang;
 const systemLanguage = navigator.language || navigator.userLanguage;
-const languagesArray = ['ar', 'zh', 'en', 'es'];
+const languagesArray = ['ar', 'zh', 'en', 'es', 'pt'];
 
 if (window.location.pathname === "/es") {
   languages = translations.es;
@@ -582,6 +536,9 @@ if (window.location.pathname === "/es") {
 } else if (window.location.pathname === "/ch") {
   languages = translations.zh;
   lang = "zh";
+} else if (window.location.pathname === "/pt") {
+  languages = translations.pt;
+  lang = "pt";
 } else if (window.location.pathname === "/en" || window.location.pathname === "/") {
   languages = translations.en;
   lang = "en";
@@ -598,7 +555,7 @@ if (languagesArray.includes(shortLang)) {
   }
 }
 
-if (!["/es", "/en", "/ar", "/ch", "/"].includes(window.location.pathname)) {
+if (!["/es", "/en", "/ar", "/ch", "/pt", "/"].includes(window.location.pathname)) {
   window.location.pathname = "/en";
 }
 
@@ -654,7 +611,6 @@ document.addEventListener("DOMContentLoaded", function() {
     projectElement.setAttribute('data-date', projectData.date);
     projectElement.setAttribute('data-rol', projectData.rol);
     projectElement.setAttribute('data-frameworks', projectData.frameworks);
-    projectElement.setAttribute('data-images', JSON.stringify(projectData.images));
     projectElement.setAttribute('data-project-link', projectData.projectLink);
     projectElement.setAttribute('data-github-link', projectData.githubLink);
   });

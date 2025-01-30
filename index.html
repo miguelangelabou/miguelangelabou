@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title id="title"></title>
+    <title id="title">Loading...</title>
     <link rel="icon" href="/assets/ICONO.webp" type="image/png">
     
     
@@ -17,15 +17,29 @@
     <script src="/scripts/functions.js" defer></script>
   </head>
   
-  <body class="relative font-roboto text-sm md:text-base">
-    <header class="bg-base-header sticky top-0 z-[5] shadow" id="TOP">
+  <body class="relative font-roboto text-sm md:text-base flex items-center justify-center">
+    <div class="flex flex-col items-center" id="loader-screen">
+      <div class="spinner"></div>
+      <div class="loader">
+        <p>Loading</p>
+        <div class="overflow-hidden">
+          <span class="word">images</span>
+          <span class="word">scripts</span>
+          <span class="word">languages</span>
+          <span class="word">texts</span>
+          <span class="word">images</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="hidden bg-base-header sticky top-0 z-[5] shadow" id="TOP">
       <div class="container mx-auto px-4 py-6 flex justify-between items-center relative">
         <a class="text-text-color text-base md:text-lg lg:text-3xl font-bold text-center animate-fade-in name" href="#AboutMe"><i class="fas fa-code text-blue-400"></i> <span id="name"></span></a>
         
         <div></div>
         
         <nav class="flex items-center space-x-4">
-          <ul class="hidden md:flex space-x-4">
+          <ul class="hidden md:flex space-x-4 md:text-[13px] lg:text-base">
             <li>
               <a class="underline-animation text-black-500 hover:text-hover" href="#AboutMe" id="aboutMeNav"></a>
             </li>
@@ -104,7 +118,7 @@
     </header>
     
     
-    <main class="container mx-auto w-[95%] md:w-[1024px]">
+    <main class="hidden container mx-auto w-[95%] md:w-[1024px]">
       <section class="container mx-auto px-4 py-12" id="AboutMe">
         <div class="flex flex-col gap-12 md:gap-4 md:flex-row items-center md:items-start animate-fade-in">
           <div class="flex flex-col gap-4 items-center w-auto mb-10 md:mb-0">
@@ -164,7 +178,7 @@
       </section>
       
       <div id="imageModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-[100] hidden">
-        <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer close">&times;</span>
+        <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer z-[55] close">&times;</span>
         <img class="max-w-4/5 max-h-4/5" id="modalImage"/>
       </div>
 
@@ -215,9 +229,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
           <div class="flex-col gap-[4%] items-start mt-6 bg-card p-6 rounded-lg shadow-lg transform transition duration-300">
             <div class="text-left w-full inline-flex gap-[4%]">
-              <img alt="Foto Miguelangel" class="rounded-full w-12 h-12 my-auto" src="/assets/MIGUEL_ABOU.webp"/>
+              <img alt="Foto Miguelangel" class="rounded-full w-12 h-12 my-auto" src="/assets/ICONO.webp"/>
               <div class="flex-col">
-                <h1 class="text-xl font-bold">Empresa 1</h1>
+                <h1 class="text-xl font-bold">NexaTech</h1>
                 <h6 class="opacity-70 leading-none text-xs mb-2" id="experienceDateRol"></h6>
               </div>
               <a class="text-white bg-blue-400 hover:bg-transparent hover:text-blue-400 border-2 border-blue-400 transition-colors duration-300 ease-in-out p-1 rounded-lg ml-auto" style="height: fit-content;" href="#" target="_blank"><i class="fas fa-link"></i></a>
@@ -230,7 +244,7 @@
       <section class="container mx-auto px-4 lg:px-0 animate-fade-in mb-14" id="Projects">
         <h2 class="text-2xl font-bold mb-8" id="projectsTitle"></h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[380px] md:max-w-full mx-auto">
           <div class="bg-card p-6 rounded-lg shadow-lg flex flex-col justify-between h-full transform transition duration-300 md:hover:scale-105 project" data-index="0">
             <div class="mb-4 mx-auto">
               <img alt="QueTantoSabes" class="rounded w-full height-full" src="/assets/QueTantoSabes.webp"/>
@@ -270,29 +284,20 @@
       </section>
       
       <div id="previewProject" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-[50] hidden">
-        <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer close">&times;</span>
+        <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer z-[55] close">&times;</span>
         
         <div id="previewProjectContainer" class="bg-base p-6 rounded-lg shadow-lg z-[51] max-w-lg w-full flex flex-col gap-[10%]">
-          <div class="flex items-center justify-between">
-            <button class="text-gray-600 text-2xl prev-button">&#10094;</button>
-            <div class="max-w-[60%] h-[280px] mx-auto">
-              <img class="w-auto mx-auto rounded-lg mb-4" id="previewProjectImage" alt="Project Image"/>
-            </div>
-            <button class="text-gray-600 text-2xl next-button">&#10095;</button>
+          <div>
+            <h2 id="projectTitle" class="text-xl font-bold"></h2>
+            <p id="projectDescription" class="mt-2"></p><br>  
           </div>
-          
-          <div class="project-info mt-4 flex flex-row gap-[10%]">
-            <div class="max-w-[40%]">
-              <h2 id="projectTitle" class="text-xl font-bold"></h2>
-              <p id="projectDescription" class="mt-2"></p><br>  
-            </div>
-            <div>
-              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <p><strong id="labelLanguages"></strong> <br><span id="projectLanguages"></span></p>
-                <p><strong id="labelReleaseDate"></strong> <br><span id="projectDate"></span></p>
-                <p class="mt-2"><strong id="labelRole"></strong> <br><span id="projectRol"></span></p>
-                <p class="mt-2"><strong id="labelFrameworks"></strong> <br><span id="projectFrameworks"></span></p>
-              </div>
+
+          <div>
+            <div class="grid gap-4 grid-cols-2">
+              <p><strong id="labelLanguages"></strong> <br><span id="projectLanguages"></span></p>
+              <p><strong id="labelReleaseDate"></strong> <br><span id="projectDate"></span></p>
+              <p class="mt-2"><strong id="labelRole"></strong> <br><span id="projectRol"></span></p>
+              <p class="mt-2"><strong id="labelFrameworks"></strong> <br><span id="projectFrameworks"></span></p>
             </div>
           </div>
 
@@ -381,18 +386,22 @@
       </section> 
     </main>
       
-    <footer class="bg-blue-400 text-white py-6 mx-auto w-full md:w-4/5 md:rounded-t-[200px]">
+    <footer class="hidden bg-blue-400 text-white py-6 mx-auto w-full md:w-4/5 md:rounded-t-[200px]">
       <div class="container mx-auto px-4 text-center">
         <p id="footerCopyright"></p>
       </div>
     </footer>
 
     <script>
-      /*if (condition) {
-          import('./module.js').then(module => {
-
-          });
-      }*/
+      import('/scripts/languages.js').then(() => {
+        return import('/scripts/functions.js');
+      }).then(() => {
+        document.getElementById("loader-screen").classList.add('hidden');
+        document.querySelector("header").classList.remove('hidden');
+        document.querySelector("main").classList.remove('hidden');
+        document.querySelector("footer").classList.remove('hidden');
+        document.body.classList.remove('flex', 'items-center', 'justify-center');
+      })
     </script>
   </body>
 </html>

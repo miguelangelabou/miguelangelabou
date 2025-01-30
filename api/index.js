@@ -37,4 +37,9 @@ app.get('/pt', (req, res) => {
     res.sendFile(filePath);
 });
 
+app.get('*', (req, res) => {
+    const filePath = path.join(__dirname, '../index.html');
+    res.sendFile(filePath);
+});
+
 module.exports = app;

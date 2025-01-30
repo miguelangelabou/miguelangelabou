@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function() {
         alignCirclesWithHeadings();
         hideMobileMenu();
         modal.classList.add("hidden");
-        document.getElementById("previewProject").classList.add("hidden");
       });
       
       window.addEventListener("resize", () => {
@@ -95,11 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const closeModal = document.getElementsByClassName("close")[0];
       const closePreviewProject = document.getElementsByClassName("close")[1];
       const projectContainers = document.querySelectorAll('.project');
-      const prevButton = document.querySelector('.prev-button');
-      const nextButton = document.querySelector('.next-button');  
       let currentIndex = 0;
-      let imagesArray;
-      let currentImageIndex = 0;
 
       
       document.addEventListener('click', (event) => {
@@ -231,13 +226,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       projectContainers.forEach(container => {
         container.addEventListener('click', function(event) {
-          if (event.target.tagName === 'A' || event.target.tagName === 'I') return;
-          
-          const index = this.getAttribute('data-index');
-          currentProjectIndex = index;
-          currentImageIndex = 0;
-          imagesArray = JSON.parse(this.getAttribute('data-images'));
-      
+          if (event.target.tagName === 'A' || event.target.tagName === 'I') return;      
           document.getElementById("projectTitle").innerText = this.getAttribute('data-name');
           document.getElementById("projectDescription").innerText = this.getAttribute('data-description');
           document.getElementById("projectLanguages").innerText = this.getAttribute('data-languages');
@@ -246,7 +235,6 @@ document.addEventListener("DOMContentLoaded", function() {
           document.getElementById("projectFrameworks").innerText = this.getAttribute('data-frameworks');
           document.getElementById("projectLink").href = this.getAttribute('data-project-link');
           document.getElementById("githubLink").href = this.getAttribute('data-github-link');
-          document.getElementById("previewProjectImage").src = JSON.parse(this.getAttribute('data-images'))[currentImageIndex];
           document.getElementById("previewProject").classList.remove("hidden");
         });
       });
@@ -260,18 +248,6 @@ document.addEventListener("DOMContentLoaded", function() {
       closePreviewProject.addEventListener('click', function() {
         document.getElementById("previewProject").classList.add("hidden");
       });
-
-      prevButton.addEventListener('click', function() {
-        currentImageIndex = (currentImageIndex + -1 + imagesArray.length) % imagesArray.length;
-        document.getElementById("previewProjectImage").src = imagesArray[currentImageIndex];
-
-      });
-
-      nextButton.addEventListener('click', function() {
-        currentImageIndex = (currentImageIndex + 1 + imagesArray.length) % imagesArray.length;
-        document.getElementById("previewProjectImage").src = imagesArray[currentImageIndex];
-      });
-
     } catch (err) {
       console.log("Error: "+err)
     }
