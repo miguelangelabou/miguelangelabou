@@ -24,7 +24,7 @@ const translations = {
       title: "Experiencia",
       experience1: {
         dateRole: "2023 - Actualmente | FullStack",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "En Skynoff Technology, he trabajado como desarrollador Full Stack, participando en proyectos que abarcan desde el front-end hasta el back-end, utilizando tecnologías como React y Node.js."
       }
     },
     projects: {
@@ -127,7 +127,7 @@ const translations = {
       title: "Experience",
       experience1: {
         dateRole: "2023 - Currently | FullStack",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "At Skynoff Technology, I worked as a Full Stack Developer, participating in projects that span from front-end to back-end, using technologies like React and Node.js."
       }
     },
     projects: {
@@ -230,7 +230,7 @@ const translations = {
       title: "经验",
       experience1: {
         dateRole: "2023 - 目前 | FullStack",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "在Skynoff Technology，我担任全栈开发人员，参与了从前端到后端的项目，使用React和Node.js等技术。"
       }
     },
     projects: {
@@ -334,7 +334,7 @@ const translations = {
       title: "Experiência",
       experience1: {
         dateRole: "2023 - Atualmente | FullStack",
-        description: "Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e tipografia. Lorem Ipsum tem sido o texto padrão da indústria desde os anos 1500."
+        description: "Na Skynoff Technology, trabalhei como desenvolvedor Full Stack, participando de projetos que abrangem desde o front-end até o back-end, utilizando tecnologias como React e Node.js."
       }
     },
     projects: {
@@ -437,7 +437,7 @@ const translations = {
       title: "تجربة",
       experience1: {
         dateRole: "2023 - حاليًا | FullStack",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "في Skynoff Technology، عملت كمطور Full Stack، مشاركًا في مشاريع تمتد من الواجهة الأمامية إلى الواجهة الخلفية، باستخدام تقنيات مثل React وNode.js."
       }
     },
     projects: {
