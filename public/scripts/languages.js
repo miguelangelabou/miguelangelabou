@@ -559,7 +559,7 @@ if (!["/es", "/en", "/ar", "/ch", "/pt", "/"].includes(window.location.pathname)
   window.location.pathname = "/en";
 }
 
-const projects = ['project1', 'project2', 'project3'];
+const projects = ['project1'/*, 'project2', 'project3'*/];
 
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("title").innerText = languages.title;
@@ -597,10 +597,10 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("projectsTitle").innerText = languages.projects.title;
   document.getElementById("project1Name").innerText = languages.projects.project1.name;
   document.getElementById("project1Description").innerText = languages.projects.project1.preview;
-  document.getElementById("project2Name").innerText = languages.projects.project2.name;
+  /*document.getElementById("project2Name").innerText = languages.projects.project2.name;
   document.getElementById("project2Description").innerText = languages.projects.project2.preview;
   document.getElementById("project3Name").innerText = languages.projects.project3.name;
-  document.getElementById("project3Description").innerText = languages.projects.project3.preview;
+  document.getElementById("project3Description").innerText = languages.projects.project3.preview;*/
 
   projects.forEach((project, index) => {
     const projectData = languages.projects[project];
