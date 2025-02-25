@@ -639,7 +639,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("languagesDate").innerText = languages.education.languagesDate;      
   document.getElementById("languagesDescription").innerText = languages.education.languages;
   document.getElementById("universityTitle").innerText = languages.education.universityTitle;
-  document.getElementById("universityDate").innerText = languages.education.universityDate;    
+  document.getElementById("universityDate").innerText = languages.education.universityDate;
   document.getElementById("universityDescription").innerText = languages.education.university;
   document.getElementById("professionalDevelopmentTitle").innerText = languages.education.professionalDevelopmentTitle;
   document.getElementById("professionalDevelopmentDate").innerText = languages.education.professionalDevelopmentDate;
