@@ -14,7 +14,7 @@ const translations = {
     aboutMe: {
       title: "Sobre Mí",
       career: "Desarrollador de Software",
-      description: "¡Hola! Soy un desarrollador de software con más de 4 años de experiencia, comenzando a los 13 años. He trabajado en proyectos como bots para Discord, aplicaciones de escritorio, juegos y páginas web. Estoy entusiasmado por la posibilidad de unirme a un equipo innovador donde pueda aportar mis habilidades y seguir aprendiendo.",
+      description: "¡Hola! Soy un desarrollador de software con más de 5 años de experiencia, comenzando a los 13 años. He trabajado en proyectos como bots para Discord, aplicaciones de escritorio, juegos y páginas web. Estoy entusiasmado por la posibilidad de unirme a un equipo innovador donde pueda aportar mis habilidades y seguir aprendiendo.",
       availableToWork: "Disponible para trabajar",
       languages: "<span class='font-bold'>Idiomas</span>: Español, Inglés.",
       downloadCV: "Descargar CV",
@@ -45,27 +45,38 @@ const translations = {
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
-        name: "Proyecto 2",
-        preview: "Descripción breve del proyecto 2, destacando las tecnologías utilizadas y las funcionalidades principales.",
-        description: "Descripción breve del proyecto 2, destacando las tecnologías utilizadas y las funcionalidades principales.",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Globos Anabell",
+        preview: "Sitio web de comercio electrónico para la venta de globos y decoraciones, con un diseño atractivo y funcional, utilizando tecnologías modernas y un SEO funcional.",
+        description: "Un E-commerce para un tienda en España de ventas de globos, decoración, flores, con sistema de Carrito de Compra, una barra de progreso para poner un maximo de presupuesto, un sistema administrativo para el dueño de al empresa donde puede modificar la información de la empresa y llevar un registro de compras y estadisticas.",
+        languages: "Typescript, CSS, HTML",
+        date: "2025-03-24",
+        rol: "Freelance",
+        frameworks: "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+        projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
-        name: "Proyecto 3",
-        preview: "Descripción breve del proyecto 3, destacando las tecnologías utilizadas y las funcionalidades principales.",
-        description: "Descripción breve del proyecto 3, destacando las tecnologías utilizadas y las funcionalidades principales.",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Dulce Control",
+        preview: "Sistema de gestión para una pastelería, con funcionalidades de registro de productos, ventas y estadísticas.",
+        description: "Software administrativo para llevar control de ventas para una tienda de dulces y postres, con manejo registro de auditoria, registro de ventas, control de recetas, control de inventario para producir, control de stock de dulces, sistema de pago por partes (Abonos/Credito), dashboard de estadisticas con información relevante sobre el mismo.",
+        languages: "Typescript, CSS, HTML",
+        date: "2025-05-27",
+        rol: "Freelance",
+        frameworks: "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+        projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
-      }
+      },
+      project4: {
+        name: "JM Arquitectos",
+        preview: "Landing Page con sistema administrativo para una empresa constructora.",
+        description: "Landing Page con sistema administrativo para una empresa de arquitectura, con funcionalidades de registro de proyectos, clientes y estadísticas.",
+        languages: "Typescript, CSS, HTML",
+        date: "2025-07-02",
+        rol: "Freelance",
+        frameworks: "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+        projectLink: "https://jmarquitectos.vercel.app/",
+        githubLink: "#"
+      }      
     },
     skills: {
       title: "Habilidades técnicas",
@@ -117,7 +128,7 @@ const translations = {
     aboutMe: {
       title: "About Me",
       career: "Software Developer",
-      description: "Hello! I am a software developer with over 4 years of experience, starting at the age of 13. I have worked on projects such as Discord bots, desktop applications, games, and web pages. I am excited about the possibility of joining an innovative team where I can contribute my skills and continue learning.",
+      description: "Hello! I am a software developer with over 5 years of experience, starting at the age of 13. I have worked on projects such as Discord bots, desktop applications, games, and web pages. I am excited about the possibility of joining an innovative team where I can contribute my skills and continue learning.",
       availableToWork: "Available for work",
       languages: "<span class='font-bold'>Languages</span>: Spanish, English.",
       downloadCV: "Download CV",
@@ -148,25 +159,36 @@ const translations = {
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
-        name: "Project 2",
-        preview: "Brief description of project 2, highlighting the technologies used and the main features.",
-        description: "Brief description of project 2, highlighting the technologies used and the main features.",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Globos Anabell",
+        preview: "E-commerce website for selling balloons and decorations, with an attractive and functional design, built with modern technologies and effective SEO.",
+        description: "An e-commerce for a shop in Spain selling balloons, decorations, and flowers, featuring a shopping cart, a progress bar to set a maximum budget, and an admin panel for the owner to edit company info and track purchases and statistics.",
+        languages: "TypeScript, CSS, HTML",
+        date: "2025-03-24",
+        rol: "Freelance",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
-        name: "Project 3",
-        preview: "Brief description of project 3, highlighting the technologies used and the main features.",
-        description: "Brief description of project 3, highlighting the technologies used and the main features.",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Dulce Control",
+        preview: "Management system for a pastry shop, with product registration, sales, and statistics.",
+        description: "Administrative software for a candy and desserts shop: audit log, sales records, recipe management, production inventory control, candy stock control, installment/credit payments, and a statistics dashboard with relevant insights.",
+        languages: "TypeScript, CSS, HTML",
+        date: "2025-05-27",
+        rol: "Freelance",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://cookie-control.vercel.app/",
+        githubLink: "#"
+      },
+      project4: {
+        name: "JM Arquitectos",
+        preview: "Landing page with an admin system for a construction/architecture company.",
+        description: "Landing page with an admin panel for an architecture company, including project, client, and statistics registration.",
+        languages: "TypeScript, CSS, HTML",
+        date: "2025-07-02",
+        rol: "Freelance",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
     },
@@ -252,25 +274,36 @@ const translations = {
 
       },
       project2: {
-        name: "项目 2",
-        preview: "项目 2 的简要描述，突出使用的技术和主要功能。",
-        description: "项目 2 的简要描述，突出使用的技术和主要功能。",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Globos Anabell",
+        preview: "用于销售气球和装饰品的电商网站，设计美观、功能完善，采用现代技术并具备有效的 SEO。",
+        description: "为一家位于西班牙、销售气球、装饰和鲜花的商店开发的电商项目，包含购物车、用于设置预算上限的进度条，以及店主可用于修改企业信息并记录采购与统计的后台管理。",
+        languages: "TypeScript、CSS、HTML",
+        date: "2025-03-24",
+        rol: "自由职业",
+        frameworks: "React、Node.js、Next.js、Firebase、Tailwind CSS、shadcn/ui、Lucide Icons",
+        projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
-        name: "项目 3",
-        preview: "项目 3 的简要描述，突出使用的技术和主要功能。",
-        description: "项目 3 的简要描述，突出使用的技术和主要功能。",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Dulce Control",
+        preview: "面向甜品店的管理系统，支持商品登记、销售与统计。",
+        description: "用于糖果与甜点店的行政管理软件：审计日志、销售记录、配方管理、生产库存控制、糖果库存管理、分期/赊账支付，以及提供关键信息的统计仪表盘。",
+        languages: "TypeScript、CSS、HTML",
+        date: "2025-05-27",
+        rol: "自由职业",
+        frameworks: "React、Node.js、Next.js、Firebase、Tailwind CSS、shadcn/ui、Lucide Icons",
+        projectLink: "https://cookie-control.vercel.app/",
+        githubLink: "#"
+      },
+      project4: {
+        name: "JM Arquitectos",
+        preview: "为建筑公司打造的落地页，并配有后台管理系统。",
+        description: "面向建筑/建筑设计公司的落地页，带有后台管理，可登记项目、客户与统计数据。",
+        languages: "TypeScript、CSS、HTML",
+        date: "2025-07-02",
+        rol: "自由职业",
+        frameworks: "React、Node.js、Next.js、Firebase、Tailwind CSS、shadcn/ui、Lucide Icons",
+        projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
     },
@@ -324,7 +357,7 @@ const translations = {
     aboutMe: {
       title: "Sobre Mim",
       career: "Desenvolvedor de Software",
-      description: "Olá! Sou um desenvolvedor de software com mais de 4 anos de experiência, começando aos 13 anos. Trabalhei em projetos como bots para Discord, aplicativos de desktop, jogos e páginas da web. Estou entusiasmado com a possibilidade de me juntar a uma equipe inovadora onde posso contribuir com minhas habilidades e continuar aprendendo.",
+      description: "Olá! Sou um desenvolvedor de software com mais de 5 anos de experiência, começando aos 13 anos. Trabalhei em projetos como bots para Discord, aplicativos de desktop, jogos e páginas da web. Estou entusiasmado com a possibilidade de me juntar a uma equipe inovadora onde posso contribuir com minhas habilidades e continuar aprendendo.",
       availableToWork: "Disponível para trabalhar",
       languages: "<span class='font-bold'>Idiomas</span>: Espanhol, Inglês.",
       downloadCV: "Baixar CV",
@@ -355,25 +388,36 @@ const translations = {
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
-        name: "Projeto 2",
-        preview: "Descrição breve do projeto 2, destacando as tecnologias utilizadas e as funcionalidades principais.",
-        description: "Descrição breve do projeto 2, destacando as tecnologias utilizadas e as funcionalidades principais.",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Globos Anabell",
+        preview: "Site de e-commerce para venda de balões e decorações, com design atraente e funcional, usando tecnologias modernas e SEO eficaz.",
+        description: "E-commerce para uma loja na Espanha de balões, decoração e flores, com carrinho de compras, barra de progresso para definir orçamento máximo e um painel administrativo onde o proprietário pode editar as informações da empresa e acompanhar compras e estatísticas.",
+        languages: "TypeScript, CSS, HTML",
+        date: "2025-03-24",
+        rol: "Freelancer",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
-        name: "Projeto 3",
-        preview: "Descrição breve do projeto 3, destacando as tecnologias utilizadas e as funcionalidades principais.",
-        description: "Descrição breve do projeto 3, destacando as tecnologias utilizadas e as funcionalidades principais.",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Dulce Control",
+        preview: "Sistema de gestão para uma confeitaria, com registro de produtos, vendas e estatísticas.",
+        description: "Software administrativo para gerenciar as vendas de uma loja de doces e sobremesas: registro de auditoria, registro de vendas, gestão de receitas, controle de estoque para produção, controle de estoque de doces, pagamento parcelado (abonos/crédito) e um dashboard de estatísticas com insights relevantes.",
+        languages: "TypeScript, CSS, HTML",
+        date: "2025-05-27",
+        rol: "Freelancer",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://cookie-control.vercel.app/",
+        githubLink: "#"
+      },
+      project4: {
+        name: "JM Arquitectos",
+        preview: "Landing page com sistema administrativo para uma empresa de arquitetura.",
+        description: "Landing page com painel administrativo para uma empresa de arquitetura, com cadastro de projetos, clientes e estatísticas.",
+        languages: "TypeScript, CSS, HTML",
+        date: "2025-07-02",
+        rol: "Freelancer",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
     },
@@ -427,7 +471,7 @@ const translations = {
     aboutMe: {
       title: "عني",
       career: "مطور برمجيات",
-      description: "مرحبًا! أنا مطور برمجيات لدي أكثر من 4 سنوات من الخبرة، بدأت في سن 13. لقد عملت في مشاريع مثل بوتات Discord، وتطبيقات سطح المكتب، والألعاب، وصفحات الويب. أنا متحمس لاحتمالية الانضمام إلى فريق مبتكر حيث يمكنني تقديم مهاراتي ومواصلة التعلم.",
+      description: "مرحبًا! أنا مطور برمجيات لدي أكثر من 5 سنوات من الخبرة، بدأت في سن 13. لقد عملت في مشاريع مثل بوتات Discord، وتطبيقات سطح المكتب، والألعاب، وصفحات الويب. أنا متحمس لاحتمالية الانضمام إلى فريق مبتكر حيث يمكنني تقديم مهاراتي ومواصلة التعلم.",
       availableToWork: "متاح للعمل",
       languages: "<span class='font-bold'>اللغات</span>: الإسبانية، الإنجليزية.",
       downloadCV: "تحميل السيرة الذاتية",
@@ -460,25 +504,36 @@ const translations = {
 
       },
       project2: {
-        name: "المشروع 2",
-        preview: "وصف موجز للمشروع 2، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية.",
-        description: "وصف موجز للمشروع 2، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية.",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Globos Anabell",
+        preview: "موقع تجارة إلكترونية لبيع البالونات والديكورات، بتصميم جذاب ووظائف متكاملة، باستخدام تقنيات حديثة وتحسين SEO فعّال.",
+        description: "متجر إلكتروني لبيع البالونات والديكور والزهور في إسبانيا، مع سلة تسوّق، وشريط تقدّم لتحديد الحد الأقصى للميزانية، ونظام إداري لمالك الشركة لتعديل معلومات الشركة وتتبع المشتريات والإحصاءات.",
+        languages: "TypeScript، CSS، HTML",
+        date: "2025-03-24",
+        rol: "عمل حر",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
-        name: "المشروع 3",
-        preview: "وصف موجز للمشروع 3، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية.",
-        description: "وصف موجز للمشروع 3، مع تسليط الضوء على التقنيات المستخدمة والميزات الرئيسية.",
-        languages: "XXXXXX",
-        date: "XXXX-XX-XX",
-        rol: "XXXXX",
-        frameworks: "XXX",
-        projectLink: "#",
+        name: "Dulce Control",
+        preview: "نظام إدارة لمحل حلويات، بميزات تسجيل المنتجات والمبيعات والإحصاءات.",
+        description: "برنامج إداري لإدارة مبيعات متجر للحلويات والحلويات المخبوزة، يتضمّن سجل تدقيق، تسجيل المبيعات، إدارة الوصفات، التحكم في مخزون الإنتاج، التحكم في مخزون الحلويات، نظام دفع بالأقساط (دفعات/ائتمان)، ولوحة مؤشرات إحصائية بمعلومات ذات صلة.",
+        languages: "TypeScript، CSS، HTML",
+        date: "2025-05-27",
+        rol: "عمل حر",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://cookie-control.vercel.app/",
+        githubLink: "#"
+      },
+      project4: {
+        name: "JM Arquitectos",
+        preview: "صفحة هبوط مع نظام إداري لشركة معمارية.",
+        description: " صفحة هبوط مع نظام إداري لشركة هندسة معمارية، بقدرات تسجيل المشاريع والعملاء والإحصاءات.",
+        languages: "TypeScript، CSS، HTML",
+        date: "2025-07-02",
+        rol: "عمل حر",
+        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
     },
@@ -559,7 +614,7 @@ if (!["/es", "/en", "/ar", "/ch", "/pt", "/"].includes(window.location.pathname)
   window.location.pathname = "/en";
 }
 
-const projects = ['project1'/*, 'project2', 'project3'*/];
+const projects = ['project1', 'project2', 'project3', 'project4'];
 
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("title").innerText = languages.title;
@@ -597,10 +652,12 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("projectsTitle").innerText = languages.projects.title;
   document.getElementById("project1Name").innerText = languages.projects.project1.name;
   document.getElementById("project1Description").innerText = languages.projects.project1.preview;
-  /*document.getElementById("project2Name").innerText = languages.projects.project2.name;
+  document.getElementById("project2Name").innerText = languages.projects.project2.name;
   document.getElementById("project2Description").innerText = languages.projects.project2.preview;
   document.getElementById("project3Name").innerText = languages.projects.project3.name;
-  document.getElementById("project3Description").innerText = languages.projects.project3.preview;*/
+  document.getElementById("project3Description").innerText = languages.projects.project3.preview;
+  document.getElementById("project4Name").innerText = languages.projects.project4.name;
+  document.getElementById("project4Description").innerText = languages.projects.project4.preview;
 
   projects.forEach((project, index) => {
     const projectData = languages.projects[project];
