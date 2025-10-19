@@ -1,6 +1,6 @@
 const translations = {
   es: {
-    title: "Desarrollador de Software",
+    title: "Ingeniero de Software",
     name: "Miguelangel Abou",
     nav: {
       AboutMe: "Sobre Mí",
@@ -13,8 +13,8 @@ const translations = {
     },
     aboutMe: {
       title: "Sobre Mí",
-      career: "Desarrollador de Software",
-      description: "¡Hola! Soy un desarrollador de software con más de 5 años de experiencia, comenzando a los 13 años. He trabajado en proyectos como bots para Discord, aplicaciones de escritorio, juegos y páginas web. Estoy entusiasmado por la posibilidad de unirme a un equipo innovador donde pueda aportar mis habilidades y seguir aprendiendo.",
+      career: "Ingeniero de Software",
+      description: "¡Hola! Soy un ingeniero de software con más de 5 años de experiencia, comenzando a los 16 años. He trabajado en proyectos en producción como CRUD empresariales, SaaS, aplicaciones de escritorio, juegos y páginas web. Estoy entusiasmado por la posibilidad de unirme a un equipo innovador donde pueda aportar mis habilidades y seguir aprendiendo.",
       availableToWork: "Disponible para trabajar",
       languages: "<span class='font-bold'>Idiomas</span>: Español, Inglés.",
       downloadCV: "Descargar CV",
@@ -46,8 +46,8 @@ const translations = {
       },
       project2: {
         name: "Globos Anabell",
-        preview: "Sitio web de comercio electrónico para la venta de globos y decoraciones, con un diseño atractivo y funcional, utilizando tecnologías modernas y un SEO funcional.",
-        description: "Un E-commerce para un tienda en España de ventas de globos, decoración, flores, con sistema de Carrito de Compra, una barra de progreso para poner un maximo de presupuesto, un sistema administrativo para el dueño de al empresa donde puede modificar la información de la empresa y llevar un registro de compras y estadisticas.",
+        preview: "Sitio web de comercio electrónico para la venta de globos y decoraciones, con un diseño atractivo y funcional, utilizando tecnologías modernas y SEO efectivo.",
+        description: "E-commerce para una tienda en España de globos, decoración y flores, con carrito de compra, una barra de progreso para establecer un máximo de presupuesto y un sistema administrativo para el dueño de la empresa donde puede modificar la información de la empresa y llevar un registro de compras y estadísticas.",
         languages: "Typescript, CSS, HTML",
         date: "2025-03-24",
         rol: "Freelance",
@@ -58,18 +58,18 @@ const translations = {
       project3: {
         name: "Dulce Control",
         preview: "Sistema de gestión para una pastelería, con funcionalidades de registro de productos, ventas y estadísticas.",
-        description: "Software administrativo para llevar control de ventas para una tienda de dulces y postres, con manejo registro de auditoria, registro de ventas, control de recetas, control de inventario para producir, control de stock de dulces, sistema de pago por partes (Abonos/Credito), dashboard de estadisticas con información relevante sobre el mismo.",
+        description: "Software administrativo para llevar control de ventas, inventario, empleados y estadísticas para una tienda de dulces y postres; registro de ventas, control de recetas, control de inventario para producir, control de stock de dulces, sistema de pago por partes (Abonos/Crédito) y un dashboard de estadísticas con información relevante.",
         languages: "Typescript, CSS, HTML",
         date: "2025-05-27",
         rol: "Freelance",
-        frameworks: "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+        frameworks: "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "Landing Page con sistema administrativo para una empresa constructora.",
-        description: "Landing Page con sistema administrativo para una empresa de arquitectura, con funcionalidades de registro de proyectos, clientes y estadísticas.",
+        preview: "Landing Page para una empresa constructora.",
+        description: "Landing Page para una empresa constructora.",
         languages: "Typescript, CSS, HTML",
         date: "2025-07-02",
         rol: "Freelance",
@@ -100,21 +100,21 @@ const translations = {
     education: {
       title: "Educación",
       languagesTitle: "Formación en idiomas",
-      languagesDate: "2023 - Actualmente",
-      languages: "Actualmente, estoy cursando un programa de inglés avanzado (nivel A2) y tengo un interés particular en aprender árabe. Utilizo la aplicación Duolingo regularmente, manteniendo una racha activa que refleja mi compromiso con el aprendizaje continuo. Creo que mis habilidades en inglés y mi interés en el árabe me permitirán comunicarme eficazmente en entornos multiculturales.",
+      languagesDate: "2022 - Actualmente",
+      languages: "Actualmente, estoy cursando un programa de inglés intermedio (nivel B2) y tengo un interés particular en aprender árabe. Creo que mis habilidades en inglés y mi interés en el árabe me permitirán comunicarme eficazmente en entornos multiculturales.",
       universityTitle: "Carrera Universitaria",
-      universityDate: "2023 - Actualmente",
-      university: "Me encuentro cursando la carrera de Ingeniería de Sistemas en el Instituto Universitario Politécnico Santiago Mariño, donde estoy adquiriendo conocimientos fundamentales en tecnología y desarrollo de software.",
+      universityDate: "2021 - Actualmente",
+      university: "Me encuentro cursando la carrera de Ingeniería de Sistemas en el Instituto Universitario Politécnico Santiago Mariño.",
       professionalDevelopmentTitle: "Desarrollo Profesional",
       professionalDevelopmentDate: "2020 - Actualmente",
-      professionalDevelopment: "Estoy en constante aprendizaje de nuevas habilidades y tecnologías a través de cursos en línea en plataformas como Udemy. Me encanta aprender cada día más sobre programación e informática, y gran parte de lo que sé lo he aprendido de manera autodidacta. Esto me ayuda a estar al día con las últimas tendencias y a aplicar mis conocimientos en proyectos personales y en la universidad."
+      professionalDevelopment: "Estoy en constante aprendizaje de nuevas habilidades y tecnologías a través de cursos en línea en plataformas. Me encanta aprender cada día más sobre programación e informática, y todas las nuevas tecnologias."
     },
     footer: {
       copyright: "© 2024 Miguelangel Abou. Todos los derechos reservados."
     }
   },
   en: {
-    title: "Software Developer",
+    title: "Software Engineer",
     name: "Miguelangel Abou",
     nav: {
       AboutMe: "About Me",
@@ -127,9 +127,10 @@ const translations = {
     },
     aboutMe: {
       title: "About Me",
-      career: "Software Developer",
-      description: "Hello! I am a software developer with over 5 years of experience, starting at the age of 13. I have worked on projects such as Discord bots, desktop applications, games, and web pages. I am excited about the possibility of joining an innovative team where I can contribute my skills and continue learning.",
-      availableToWork: "Available for work",
+      career: "Software Engineer",
+      description:
+        "Hello! I’m a software engineer with over 5 years of experience, starting at 16. I have worked on production projects such as enterprise CRUD systems, SaaS, desktop applications, games, and websites. I’m excited about the possibility of joining an innovative team where I can contribute my skills and keep learning.",
+      availableToWork: "Available to work",
       languages: "<span class='font-bold'>Languages</span>: Spanish, English.",
       downloadCV: "Download CV",
       copyEmail: "Copy Email"
@@ -137,20 +138,22 @@ const translations = {
     experience: {
       title: "Experience",
       experience1: {
-        dateRole: "2023 - Currently | FullStack",
-        description: "At Skynoff Technology, I worked as a Full Stack Developer, participating in projects that span from front-end to back-end, using technologies like React and Node.js."
+        dateRole: "2023 - Present | FullStack",
+        description:
+          "At Skynoff Technology, I have worked as a Full Stack developer, participating in projects that span from front-end to back-end, using technologies such as React and Node.js."
       }
     },
     projects: {
       title: "Projects",
-      languages: "Applied Languages:",
-      releaseDate: "Release Date:",
-      role: "Project Role:",
+      languages: "Languages Used:",
+      releaseDate: "Completion Date:",
+      role: "Role in the Project:",
       frameworks: "Frameworks or Libraries:",
       project1: {
         name: "¿QueTantoSabes?",
-        preview: "\"¿QueTantoSabes?\" is an interactive quiz game about Venezuela.",
-        description: "It is an interactive quiz game that enriches knowledge about Venezuela, combining gamification and learning about its culture and history.",
+        preview: "“¿QueTantoSabes?” is an interactive quiz game about Venezuela.",
+        description:
+          "It’s an interactive quiz game that enriches knowledge about Venezuela, combining gamification and learning about its culture and history.",
         languages: "HTML, CSS, JavaScript, PHP, MySQL",
         date: "2024-12-27",
         rol: "FullStack",
@@ -160,34 +163,41 @@ const translations = {
       },
       project2: {
         name: "Globos Anabell",
-        preview: "E-commerce website for selling balloons and decorations, with an attractive and functional design, built with modern technologies and effective SEO.",
-        description: "An e-commerce for a shop in Spain selling balloons, decorations, and flowers, featuring a shopping cart, a progress bar to set a maximum budget, and an admin panel for the owner to edit company info and track purchases and statistics.",
-        languages: "TypeScript, CSS, HTML",
+        preview:
+          "E-commerce website for selling balloons and decorations, with an attractive and functional design, using modern technologies and effective SEO.",
+        description:
+          "An e-commerce for a shop in Spain selling balloons, decorations, and flowers, featuring a shopping cart, a progress bar to set a maximum budget, and an admin system for the business owner to edit company information and track purchases and statistics.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-03-24",
         rol: "Freelance",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        frameworks:
+          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
-        preview: "Management system for a pastry shop, with product registration, sales, and statistics.",
-        description: "Administrative software for a candy and desserts shop: audit log, sales records, recipe management, production inventory control, candy stock control, installment/credit payments, and a statistics dashboard with relevant insights.",
-        languages: "TypeScript, CSS, HTML",
+        preview:
+          "Management system for a pastry shop, with product registration, sales, and statistics.",
+        description:
+          "Administrative software to manage sales, inventory, employees, and statistics for a candy and desserts shop; recipe management, production inventory control, candy stock control, installment/credit payments, and a statistics dashboard with relevant insights.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-05-27",
         rol: "Freelance",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        frameworks:
+          "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "Landing page with an admin system for a construction/architecture company.",
-        description: "Landing page with an admin panel for an architecture company, including project, client, and statistics registration.",
-        languages: "TypeScript, CSS, HTML",
+        preview: "Landing page for a construction company.",
+        description: "Landing page for a construction company.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-07-02",
         rol: "Freelance",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        frameworks:
+          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
@@ -198,37 +208,51 @@ const translations = {
       frameworks: "Frameworks",
       tools: "Tools",
       softSkillsTitle: "Soft Skills",
-      communicationTitle: "<i class='fas fa-comments text-blue-500'></i> Communication",
-      communicationDescription: "Ability to express ideas and concepts clearly and effectively.",
+      communicationTitle:
+        "<i class='fas fa-comments text-blue-500'></i> Communication",
+      communicationDescription:
+        "Ability to express ideas and concepts clearly and effectively.",
       teamworkTitle: "<i class='fas fa-users text-green-500'></i> Teamwork",
-      teamworkDescription: "Effective collaboration with others to achieve common goals.",
-      problemSolvingTitle: "<i class='fas fa-lightbulb text-yellow-500'></i> Problem Solving",
-      problemSolvingDescription: "Ability to identify and creatively solve problems.",
-      timeManagementTitle: "<i class='fas fa-clock text-purple-500'></i> Time Management",
-      timeManagementDescription: "Ability to organize and prioritize tasks efficiently.",
-      proactivityTitle: "<i class='fas fa-rocket text-orange-500'></i> Proactivity",
-      proactivityDescription: "I am proactive and always look for opportunities to improve and contribute.",
+      teamworkDescription:
+        "Effective collaboration with others to achieve common goals.",
+      problemSolvingTitle:
+        "<i class='fas fa-lightbulb text-yellow-500'></i> Problem Solving",
+      problemSolvingDescription:
+        "Ability to identify and creatively solve problems.",
+      timeManagementTitle:
+        "<i class='fas fa-clock text-purple-500'></i> Time Management",
+      timeManagementDescription:
+        "Ability to organize and prioritize tasks efficiently.",
+      proactivityTitle:
+        "<i class='fas fa-rocket text-orange-500'></i> Proactivity",
+      proactivityDescription:
+        "I am proactive and always look for opportunities to improve and contribute.",
       empathyTitle: "<i class='fas fa-thumbs-up text-gray-500'></i> Empathy",
-      empathyDescription: "Understanding the needs and perspectives of others."
+      empathyDescription:
+        "Understanding the needs and perspectives of others."
     },
     education: {
       title: "Education",
       languagesTitle: "Language Training",
-      languagesDate: "2023 - Present",
-      languages: "I am currently enrolled in an advanced English program (A2 level) and have a particular interest in learning Arabic. I regularly use the Duolingo app, maintaining an active streak that reflects my commitment to continuous learning. I believe that my languages skills and my interest in Arabic will enable me to communicate effectively in multicultural environments.",
+      languagesDate: "2022 - Present",
+      languages:
+        "I am currently enrolled in an intermediate English program (B2 level) and have a particular interest in learning Arabic. I believe that my English skills and my interest in Arabic will enable me to communicate effectively in multicultural environments.",
       universityTitle: "University Degree",
-      universityDate: "2023 - Present",
-      university: "I am currently pursuing a degree in Systems Engineering at the Instituto Universitario Politécnico Santiago Mariño, where I am acquiring fundamental knowledge in technology and software development.",
+      universityDate: "2021 - Present",
+      university:
+        "I am currently pursuing a degree in Systems Engineering at the Instituto Universitario Politécnico Santiago Mariño.",
       professionalDevelopmentTitle: "Professional Development",
       professionalDevelopmentDate: "2020 - Present",
-      professionalDevelopment: "I am constantly learning new skills and technologies through online courses on platforms like Udemy. I love learning more about programming and computer science every day, and much of what I know I have learned independently. This helps me stay up to date with the latest trends and apply my knowledge in personal projects and at university."
+      professionalDevelopment:
+        "I am constantly learning new skills and technologies through online courses on various platforms. I love learning more every day about programming and computing, and all the new technologies."
     },
     footer: {
-      copyright: "© 2024 Miguelangel Abou. All rights reserved."
+      copyright:
+        "© 2024 Miguelangel Abou. All rights reserved."
     }
   },
   zh: {
-    title: "软件开发者",
+    title: "软件工程师",
     name: "Miguelangel Abou",
     nav: {
       AboutMe: "关于我",
@@ -241,68 +265,76 @@ const translations = {
     },
     aboutMe: {
       title: "关于我",
-      career: "软件开发者",
-      description: "你好！我是一名拥有超过4年经验的软件开发人员，从13岁开始。我参与过Discord机器人、桌面应用程序、游戏和网页等项目。我对加入一个创新团队感到兴奋，希望能贡献我的技能并继续学习。",
-      availableToWork: "可工作",
-      languages: "<span class='font-bold'>语言</span>: 西班牙语，英语。",
+      career: "软件工程师",
+      description:
+        "你好！我是一名拥有 5 年以上经验的软件工程师，从 16 岁开始从事开发。我参与并上线过企业级 CRUD、SaaS、桌面应用、游戏以及网站等项目。我期待加入一个富有创新的团队，在贡献所长的同时持续学习进步。",
+      availableToWork: "可入职",
+      languages: "<span class='font-bold'>语言</span>：西班牙语、英语。",
       downloadCV: "下载简历",
-      copyEmail: "复制电子邮件"
+      copyEmail: "复制邮箱"
     },
     experience: {
       title: "经验",
       experience1: {
-        dateRole: "2023 - 目前 | FullStack",
-        description: "在Skynoff Technology，我担任全栈开发人员，参与了从前端到后端的项目，使用React和Node.js等技术。"
+        dateRole: "2023 - 现在 | FullStack",
+        description:
+          "在 Skynoff Technology，我担任全栈开发，参与从前端到后端的项目，使用 React 与 Node.js 等技术。"
       }
     },
     projects: {
       title: "项目",
-      languages: "应用语言：",
+      languages: "使用语言：",
       releaseDate: "完成日期：",
       role: "项目角色：",
       frameworks: "框架或库：",
       project1: {
         name: "¿QueTantoSabes?",
-        preview: "\"¿QueTantoSabes?\" 是一个关于委内瑞拉的互动问答游戏。",
-        description: "这是一个互动问答游戏，丰富对委内瑞拉的知识，结合游戏化和对其文化与历史的学习。",
+        preview: "“¿QueTantoSabes?” 是一个关于委内瑞拉的互动问答游戏。",
+        description:
+          "这是一个互动问答游戏，通过游戏化提升对委内瑞拉的了解，学习其文化与历史。",
         languages: "HTML, CSS, JavaScript, PHP, MySQL",
         date: "2024-12-27",
         rol: "FullStack",
         frameworks: "JWT",
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
-
       },
       project2: {
         name: "Globos Anabell",
-        preview: "用于销售气球和装饰品的电商网站，设计美观、功能完善，采用现代技术并具备有效的 SEO。",
-        description: "为一家位于西班牙、销售气球、装饰和鲜花的商店开发的电商项目，包含购物车、用于设置预算上限的进度条，以及店主可用于修改企业信息并记录采购与统计的后台管理。",
-        languages: "TypeScript、CSS、HTML",
+        preview:
+          "用于销售气球与装饰品的电商网站，设计美观、功能完善，采用现代技术并具备有效的 SEO。",
+        description:
+          "为一家位于西班牙、销售气球、装饰与鲜花的商店打造的电商项目：购物车、可设置预算上限的进度条，以及供店主编辑企业信息、查看采购记录与统计的管理后台。",
+        languages: "Typescript, CSS, HTML",
         date: "2025-03-24",
-        rol: "自由职业",
-        frameworks: "React、Node.js、Next.js、Firebase、Tailwind CSS、shadcn/ui、Lucide Icons",
+        rol: "Freelance",
+        frameworks:
+          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
         preview: "面向甜品店的管理系统，支持商品登记、销售与统计。",
-        description: "用于糖果与甜点店的行政管理软件：审计日志、销售记录、配方管理、生产库存控制、糖果库存管理、分期/赊账支付，以及提供关键信息的统计仪表盘。",
-        languages: "TypeScript、CSS、HTML",
+        description:
+          "用于糖果与甜点店的行政管理软件：销售登记、配方管理、生产库存控制、成品库存控制、分期/赊账支付，以及提供关键信息的统计看板。",
+        languages: "Typescript, CSS, HTML",
         date: "2025-05-27",
-        rol: "自由职业",
-        frameworks: "React、Node.js、Next.js、Firebase、Tailwind CSS、shadcn/ui、Lucide Icons",
+        rol: "Freelance",
+        frameworks:
+          "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "为建筑公司打造的落地页，并配有后台管理系统。",
-        description: "面向建筑/建筑设计公司的落地页，带有后台管理，可登记项目、客户与统计数据。",
-        languages: "TypeScript、CSS、HTML",
+        preview: "建筑公司的落地页。",
+        description: "建筑公司的落地页。",
+        languages: "Typescript, CSS, HTML",
         date: "2025-07-02",
-        rol: "自由职业",
-        frameworks: "React、Node.js、Next.js、Firebase、Tailwind CSS、shadcn/ui、Lucide Icons",
+        rol: "Freelance",
+        frameworks:
+          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
@@ -313,37 +345,53 @@ const translations = {
       frameworks: "框架",
       tools: "工具",
       softSkillsTitle: "软技能",
-      communicationTitle: "<i class='fas fa-comments text-blue-500'></i> 沟通",
-      communicationDescription: "清晰有效地表达想法和概念的能力。",
-      teamworkTitle: "<i class='fas fa-users text-green-500'></i> 团队合作",
-      teamworkDescription: "与他人有效合作以实现共同目标。",
-      problemSolvingTitle: "<i class='fas fa-lightbulb text-yellow-500'></i> 问题解决",
-      problemSolvingDescription: "识别和创造性解决问题的能力。",
-      timeManagementTitle: "<i class='fas fa-clock text-purple-500'></i> 时间管理",
-      timeManagementDescription: "有效组织和优先处理任务的能力。",
-      proactivityTitle: "<i class='fas fa-rocket text-orange-500'></i> 主动性",
-      proactivityDescription: "我积极主动，总是寻找改进和贡献的机会。",
-      empathyTitle: "<i class='fas fa-thumbs-up text-gray-500'></i> 同理心",
-      empathyDescription: "理解他人的需求和观点。"
+      communicationTitle:
+        "<i class='fas fa-comments text-blue-500'></i> 沟通",
+      communicationDescription:
+        "能清晰有效地表达想法与概念。",
+      teamworkTitle:
+        "<i class='fas fa-users text-green-500'></i> 团队合作",
+      teamworkDescription:
+        "与他人高效协作以达成共同目标。",
+      problemSolvingTitle:
+        "<i class='fas fa-lightbulb text-yellow-500'></i> 问题解决",
+      problemSolvingDescription:
+        "具备识别与创造性解决问题的能力。",
+      timeManagementTitle:
+        "<i class='fas fa-clock text-purple-500'></i> 时间管理",
+      timeManagementDescription:
+        "能够高效组织并合理安排优先级。",
+      proactivityTitle:
+        "<i class='fas fa-rocket text-orange-500'></i> 主动性",
+      proactivityDescription:
+        "积极主动，持续寻求改进与贡献的机会。",
+      empathyTitle:
+        "<i class='fas fa-thumbs-up text-gray-500'></i> 同理心",
+      empathyDescription:
+        "理解他人的需求与视角。"
     },
     education: {
       title: "教育",
-      languagesTitle: "语言培训",
-      languagesDate: "2023 - 现在",
-      languages: "我目前正在参加高级英语课程（A2级），并对学习阿拉伯语特别感兴趣。我定期使用Duolingo应用程序，保持活跃的学习记录，这反映了我对持续学习的承诺。我相信我的英语能力和对阿拉伯语的兴趣将使我能够在多元文化环境中有效沟通。",
+      languagesTitle: "语言学习",
+      languagesDate: "2022 - 至今",
+      languages:
+        "目前就读于英语中级课程（B2），并对学习阿拉伯语有浓厚兴趣。我相信自身的英语能力与对阿拉伯语的兴趣能帮助我在多元文化环境中高效沟通。",
       universityTitle: "大学学位",
-      universityDate: "2023 - 现在",
-      university: "我目前在圣地亚哥·马里尼大学理工学院攻读系统工程学位，在那里我正在获得技术和软件开发的基础知识。",
+      universityDate: "2021 - 至今",
+      university:
+        "目前就读于 Instituto Universitario Politécnico Santiago Mariño 的系统工程专业。",
       professionalDevelopmentTitle: "职业发展",
-      professionalDevelopmentDate: "2020 - 现在",
-      professionalDevelopment: "我通过 Udemy 等平台的在线课程不断学习新技能和技术。我喜欢每天学习更多关于编程和计算机科学的知识，我所知道的很多都是自学的。这帮助我跟上最新的趋势，并将我的知识应用于个人项目和大学学习。"
+      professionalDevelopmentDate: "2020 - 至今",
+      professionalDevelopment:
+        "通过各类在线平台持续学习新技能与新技术。我热爱每天学习更多关于编程与计算机的知识，以及新兴技术。"
     },
     footer: {
-      copyright: "© 2024 Miguelangel Abou。版权所有。"
+      copyright:
+        "© 2024 Miguelangel Abou。版权所有。"
     }
   },
   pt: {
-    title: "Desenvolvedor de Software",
+    title: "Engenheiro de Software",
     name: "Miguelangel Abou",
     nav: {
       AboutMe: "Sobre Mim",
@@ -356,8 +404,9 @@ const translations = {
     },
     aboutMe: {
       title: "Sobre Mim",
-      career: "Desenvolvedor de Software",
-      description: "Olá! Sou um desenvolvedor de software com mais de 5 anos de experiência, começando aos 13 anos. Trabalhei em projetos como bots para Discord, aplicativos de desktop, jogos e páginas da web. Estou entusiasmado com a possibilidade de me juntar a uma equipe inovadora onde posso contribuir com minhas habilidades e continuar aprendendo.",
+      career: "Engenheiro de Software",
+      description:
+        "Olá! Sou engenheiro de software com mais de 5 anos de experiência, começando aos 16 anos. Trabalhei em projetos em produção como CRUDs empresariais, SaaS, aplicativos de desktop, jogos e sites. Estou entusiasmado com a possibilidade de me juntar a uma equipe inovadora onde eu possa contribuir com minhas habilidades e continuar aprendendo.",
       availableToWork: "Disponível para trabalhar",
       languages: "<span class='font-bold'>Idiomas</span>: Espanhol, Inglês.",
       downloadCV: "Baixar CV",
@@ -367,19 +416,22 @@ const translations = {
       title: "Experiência",
       experience1: {
         dateRole: "2023 - Atualmente | FullStack",
-        description: "Na Skynoff Technology, trabalhei como desenvolvedor Full Stack, participando de projetos que abrangem desde o front-end até o back-end, utilizando tecnologias como React e Node.js."
+        description:
+          "Na Skynoff Technology, atuei como desenvolvedor Full Stack, participando de projetos do front-end ao back-end, usando tecnologias como React e Node.js."
       }
     },
     projects: {
       title: "Projetos",
-      languages: "Linguagens Aplicadas:",
+      languages: "Linguagens Utilizadas:",
       releaseDate: "Data de Conclusão:",
       role: "Papel no Projeto:",
       frameworks: "Frameworks ou Bibliotecas:",
       project1: {
         name: "¿QueTantoSabes?",
-        preview: "\"¿QueTantoSabes?\" é um jogo interativo de perguntas e respostas sobre a Venezuela.",
-        description: "É um jogo interativo de perguntas e respostas que enriquece o conhecimento sobre a Venezuela, combinando gamificação e aprendizado sobre sua cultura e história.",
+        preview:
+          "“¿QueTantoSabes?” é um jogo interativo de perguntas e respostas sobre a Venezuela.",
+        description:
+          "É um jogo interativo que enriquece o conhecimento sobre a Venezuela, combinando gamificação e aprendizado sobre sua cultura e história.",
         languages: "HTML, CSS, JavaScript, PHP, MySQL",
         date: "2024-12-27",
         rol: "FullStack",
@@ -389,34 +441,41 @@ const translations = {
       },
       project2: {
         name: "Globos Anabell",
-        preview: "Site de e-commerce para venda de balões e decorações, com design atraente e funcional, usando tecnologias modernas e SEO eficaz.",
-        description: "E-commerce para uma loja na Espanha de balões, decoração e flores, com carrinho de compras, barra de progresso para definir orçamento máximo e um painel administrativo onde o proprietário pode editar as informações da empresa e acompanhar compras e estatísticas.",
-        languages: "TypeScript, CSS, HTML",
+        preview:
+          "Site de e-commerce para venda de balões e decorações, com design atraente e funcional, usando tecnologias modernas e SEO eficaz.",
+        description:
+          "E-commerce para uma loja na Espanha de balões, decoração e flores, com carrinho de compras, uma barra de progresso para definir um orçamento máximo e um sistema administrativo para o proprietário editar informações da empresa e acompanhar compras e estatísticas.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-03-24",
-        rol: "Freelancer",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        rol: "Freelance",
+        frameworks:
+          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
-        preview: "Sistema de gestão para uma confeitaria, com registro de produtos, vendas e estatísticas.",
-        description: "Software administrativo para gerenciar as vendas de uma loja de doces e sobremesas: registro de auditoria, registro de vendas, gestão de receitas, controle de estoque para produção, controle de estoque de doces, pagamento parcelado (abonos/crédito) e um dashboard de estatísticas com insights relevantes.",
-        languages: "TypeScript, CSS, HTML",
+        preview:
+          "Sistema de gestão para uma confeitaria, com cadastro de produtos, vendas e estatísticas.",
+        description:
+          "Software administrativo para gerenciar vendas, inventário, funcionários e estatísticas de uma loja de doces e sobremesas; gestão de receitas, controle de estoque de produção, controle de estoque de doces, pagamentos parcelados/crédito e um dashboard de estatísticas com insights relevantes.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-05-27",
-        rol: "Freelancer",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        rol: "Freelance",
+        frameworks:
+          "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "Landing page com sistema administrativo para uma empresa de arquitetura.",
-        description: "Landing page com painel administrativo para uma empresa de arquitetura, com cadastro de projetos, clientes e estatísticas.",
-        languages: "TypeScript, CSS, HTML",
+        preview: "Landing page para uma empresa construtora.",
+        description: "Landing page para uma empresa construtora.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-07-02",
-        rol: "Freelancer",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        rol: "Freelance",
+        frameworks:
+          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
@@ -427,112 +486,138 @@ const translations = {
       frameworks: "Frameworks",
       tools: "Ferramentas",
       softSkillsTitle: "Habilidades Interpessoais",
-      communicationTitle: "<i class='fas fa-comments text-blue-500'></i> Comunicação",
-      communicationDescription: "Capacidade de expressar ideias e conceitos de forma clara e eficaz.",
-      teamworkTitle: "<i class='fas fa-users text-green-500'></i> Trabalho em Equipe",
-      teamworkDescription: "Colaboração eficaz com outros para alcançar objetivos comuns.",
-      problemSolvingTitle: "<i class='fas fa-lightbulb text-yellow-500'></i> Resolução de Problemas",
-      problemSolvingDescription: "Habilidade para identificar e resolver problemas de forma criativa.",
-      timeManagementTitle: "<i class='fas fa-clock text-purple-500'></i> Gestão do Tempo",
-      timeManagementDescription: "Capacidade de organizar e priorizar tarefas de forma eficiente.",
-      proactivityTitle: "<i class='fas fa-rocket text-orange-500'></i> Proatividade",
-      proactivityDescription: "Sou proativo e sempre busco oportunidades para melhorar e contribuir.",
-      empathyTitle: "<i class='fas fa-thumbs-up text-gray-500'></i> Empatia",
-      empathyDescription: "Compreensão das necessidades e perspectivas dos outros."
+      communicationTitle:
+        "<i class='fas fa-comments text-blue-500'></i> Comunicação",
+      communicationDescription:
+        "Capacidade de expressar ideias e conceitos de forma clara e eficaz.",
+      teamworkTitle:
+        "<i class='fas fa-users text-green-500'></i> Trabalho em Equipe",
+      teamworkDescription:
+        "Colaboração eficaz com outras pessoas para alcançar objetivos comuns.",
+      problemSolvingTitle:
+        "<i class='fas fa-lightbulb text-yellow-500'></i> Resolução de Problemas",
+      problemSolvingDescription:
+        "Habilidade de identificar e resolver problemas de forma criativa.",
+      timeManagementTitle:
+        "<i class='fas fa-clock text-purple-500'></i> Gestão do Tempo",
+      timeManagementDescription:
+        "Capacidade de organizar e priorizar tarefas com eficiência.",
+      proactivityTitle:
+        "<i class='fas fa-rocket text-orange-500'></i> Proatividade",
+      proactivityDescription:
+        "Sou proativo e busco sempre oportunidades para melhorar e contribuir.",
+      empathyTitle:
+        "<i class='fas fa-thumbs-up text-gray-500'></i> Empatia",
+      empathyDescription:
+        "Compreensão das necessidades e perspectivas dos outros."
     },
     education: {
       title: "Educação",
       languagesTitle: "Formação em Idiomas",
-      languagesDate: "2023 - Atualmente",
-      languages: "Atualmente, estou cursando um programa de inglês avançado (nível A2) e tenho um interesse particular em aprender árabe. Uso o aplicativo Duolingo regularmente, mantendo uma sequência ativa que reflete meu compromisso com o aprendizado contínuo. Acredito que minhas habilidades em inglês e meu interesse no árabe me permitirão me comunicar eficazmente em ambientes multiculturais.",
-      universityTitle: "Curso Universitário",
-      universityDate: "2023 - Atualmente",
-      university: "Estou cursando a carreira de Engenharia de Sistemas no Instituto Universitário Politécnico Santiago Mariño, onde estou adquirindo conhecimentos fundamentais em tecnologia e desenvolvimento de software.",
+      languagesDate: "2022 - Atualmente",
+      languages:
+        "Atualmente curso um programa de inglês intermediário (nível B2) e tenho um interesse especial em aprender árabe. Acredito que minhas habilidades em inglês e meu interesse pelo árabe me permitirão me comunicar de forma eficaz em ambientes multiculturais.",
+      universityTitle: "Graduação",
+      universityDate: "2021 - Atualmente",
+      university:
+        "Estou cursando Engenharia de Sistemas no Instituto Universitário Politécnico Santiago Mariño.",
       professionalDevelopmentTitle: "Desenvolvimento Profissional",
       professionalDevelopmentDate: "2020 - Atualmente",
-      professionalDevelopment: "Estou em constante aprendizado de novas habilidades e tecnologias através de cursos online em plataformas como Udemy. Adoro aprender cada dia mais sobre programação e informática, e grande parte do que sei aprendi de forma autodidata. Isso me ajuda a estar atualizado com as últimas tendências e a aplicar meus conhecimentos em projetos pessoais e na universidade."
+      professionalDevelopment:
+        "Estou em constante aprendizado de novas habilidades e tecnologias por meio de cursos online em diversas plataformas. Adoro aprender todos os dias sobre programação e informática, além de novas tecnologias."
     },
     footer: {
-      copyright: "© 2024 Miguelangel Abou. Todos os direitos reservados."
+      copyright:
+        "© 2024 Miguelangel Abou. Todos os direitos reservados."
     }
   },
   ar: {
-    title: "مطور برمجيات",
+    title: "مهندس برمجيات",
     name: "Miguelangel Abou",
     nav: {
       AboutMe: "عني",
-      Project: "مشاريع",
-      Experience: "تجربة",
-      Skills: "مهارات",
-      Education: "تعليم",
-      Reviews: "مراجعات",
+      Project: "المشاريع",
+      Experience: "الخبرة",
+      Skills: "المهارات",
+      Education: "التعليم",
+      Reviews: "المراجعات",
       Contact: "اتصال"
     },
     aboutMe: {
       title: "عني",
-      career: "مطور برمجيات",
-      description: "مرحبًا! أنا مطور برمجيات لدي أكثر من 5 سنوات من الخبرة، بدأت في سن 13. لقد عملت في مشاريع مثل بوتات Discord، وتطبيقات سطح المكتب، والألعاب، وصفحات الويب. أنا متحمس لاحتمالية الانضمام إلى فريق مبتكر حيث يمكنني تقديم مهاراتي ومواصلة التعلم.",
+      career: "مهندس برمجيات",
+      description:
+        "مرحبًا! أنا مهندس برمجيات لديّ أكثر من 5 سنوات من الخبرة، بدأتُ في سن 16 عامًا. عملتُ على مشاريع جاهزة للإنتاج مثل أنظمة CRUD للشركات، وSaaS، وتطبيقات سطح المكتب، والألعاب، ومواقع الويب. أنا متحمّس لإمكانية الانضمام إلى فريق مبتكر حيث يمكنني تقديم مهاراتي ومواصلة التعلّم.",
       availableToWork: "متاح للعمل",
       languages: "<span class='font-bold'>اللغات</span>: الإسبانية، الإنجليزية.",
       downloadCV: "تحميل السيرة الذاتية",
       copyEmail: "نسخ البريد الإلكتروني"
     },
     experience: {
-      title: "تجربة",
+      title: "الخبرة",
       experience1: {
-        dateRole: "2023 - حاليًا | FullStack",
-        description: "في Skynoff Technology، عملت كمطور Full Stack، مشاركًا في مشاريع تمتد من الواجهة الأمامية إلى الواجهة الخلفية، باستخدام تقنيات مثل React وNode.js."
+        dateRole: "2023 - حتى الآن | FullStack",
+        description:
+          "في Skynoff Technology، عملتُ كمطور Full Stack، وشاركتُ في مشاريع تمتد من الواجهة الأمامية إلى الواجهة الخلفية، باستخدام تقنيات مثل React وNode.js."
       }
     },
     projects: {
-      title: "مشاريع",
+      title: "المشاريع",
       languages: "اللغات المستخدمة:",
       releaseDate: "تاريخ الانتهاء:",
-      role: "دور في المشروع:",
-      frameworks: "إطارات العمل أو المكتبات:",
+      role: "الدور في المشروع:",
+      frameworks: "الأُطر أو المكتبات:",
       project1: {
-        name: "¿QueTantoSabes?",
-        preview: "\"¿QueTantoSabes?\" هو لعبة تفاعلية من الأسئلة والأجوبة حول فنزويلا.",
-        description: "هي لعبة تفاعلية من الأسئلة والأجوبة تعزز المعرفة حول فنزويلا، تجمع بين الألعاب والتعلم عن ثقافتها وتاريخها.",
+        name: "¿QueTantoSabes؟",
+        preview:
+          "“¿QueTantoSabes؟” لعبة تفاعلية للأسئلة والأجوبة عن فنزويلا.",
+        description:
+          "لعبة تفاعلية تُثري المعرفة عن فنزويلا، وتجمع بين التلعيب وتعلّم ثقافتها وتاريخها.",
         languages: "HTML, CSS, JavaScript, PHP, MySQL",
         date: "2024-12-27",
         rol: "FullStack",
         frameworks: "JWT",
-        
         projectLink: "#",
-        githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
-
+        githubLink:
+          "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
         name: "Globos Anabell",
-        preview: "موقع تجارة إلكترونية لبيع البالونات والديكورات، بتصميم جذاب ووظائف متكاملة، باستخدام تقنيات حديثة وتحسين SEO فعّال.",
-        description: "متجر إلكتروني لبيع البالونات والديكور والزهور في إسبانيا، مع سلة تسوّق، وشريط تقدّم لتحديد الحد الأقصى للميزانية، ونظام إداري لمالك الشركة لتعديل معلومات الشركة وتتبع المشتريات والإحصاءات.",
-        languages: "TypeScript، CSS، HTML",
+        preview:
+          "موقع تجارة إلكترونية لبيع البالونات والديكورات، بتصميم جذاب ووظائف متكاملة، باستخدام تقنيات حديثة وتهيئة فعالة لمحركات البحث.",
+        description:
+          "متجر إلكتروني في إسبانيا لبيع البالونات والديكور والزهور؛ يتضمن سلة مشتريات، وشريط تقدم لتحديد الحد الأقصى للميزانية، ونظامًا إداريًا يمكّن صاحب المتجر من تعديل معلومات الشركة وتتبع المشتريات والإحصاءات.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-03-24",
         rol: "عمل حر",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        frameworks:
+          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
-        preview: "نظام إدارة لمحل حلويات، بميزات تسجيل المنتجات والمبيعات والإحصاءات.",
-        description: "برنامج إداري لإدارة مبيعات متجر للحلويات والحلويات المخبوزة، يتضمّن سجل تدقيق، تسجيل المبيعات، إدارة الوصفات، التحكم في مخزون الإنتاج، التحكم في مخزون الحلويات، نظام دفع بالأقساط (دفعات/ائتمان)، ولوحة مؤشرات إحصائية بمعلومات ذات صلة.",
-        languages: "TypeScript، CSS، HTML",
+        preview:
+          "نظام إدارة لمحل حلويات، يوفّر تسجيل المنتجات والمبيعات والإحصاءات.",
+        description:
+          "برنامج إداري لمتجر حلويات: إدارة الوصفات، التحكم في مخزون الإنتاج، إدارة مخزون الحلويات، المدفوعات بالأقساط/الائتمان، ولوحة مؤشرات إحصائية بمعلومات ذات صلة.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-05-27",
         rol: "عمل حر",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        frameworks:
+          "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "صفحة هبوط مع نظام إداري لشركة معمارية.",
-        description: " صفحة هبوط مع نظام إداري لشركة هندسة معمارية، بقدرات تسجيل المشاريع والعملاء والإحصاءات.",
-        languages: "TypeScript، CSS، HTML",
+        preview: "صفحة هبوط لشركة إنشاءات.",
+        description: "صفحة هبوط لشركة إنشاءات.",
+        languages: "Typescript, CSS, HTML",
         date: "2025-07-02",
         rol: "عمل حر",
-        frameworks: "React, Node.js, Next.js, Firebase, Tailwind CSS, shadcn/ui, Lucide Icons",
+        frameworks:
+          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
@@ -543,33 +628,49 @@ const translations = {
       frameworks: "الأطر",
       tools: "الأدوات",
       softSkillsTitle: "المهارات الشخصية",
-      communicationTitle: "<i class='fas fa-comments text-blue-500'></i> التواصل",
-      communicationDescription: "القدرة على التعبير عن الأفكار والمفاهيم بوضوح وفعالية.",
-      teamworkTitle: "<i class='fas fa-users text-green-500'></i> العمل الجماعي",
-      teamworkDescription: "التعاون الفعال مع الآخرين لتحقيق الأهداف المشتركة.",
-      problemSolvingTitle: "<i class='fas fa-lightbulb text-yellow-500'></i> حل المشكلات",
-      problemSolvingDescription: "القدرة على تحديد وحل المشكلات بطريقة إبداعية.",
-      timeManagementTitle: "<i class='fas fa-clock text-purple-500'></i> إدارة الوقت",
-      timeManagementDescription: "القدرة على تنظيم وتحديد أولويات المهام بكفاءة.",
-      proactivityTitle: "<i class='fas fa-rocket text-orange-500'></i> المبادرة",
-      proactivityDescription: "أنا شخص مبادر وأبحث دائمًا عن فرص للتحسين والمساهمة.",
-      empathyTitle: "<i class='fas fa-thumbs-up text-gray-500'></i> التعاطف",
-      empathyDescription: "فهم احتياجات ووجهات نظر الآخرين."
+      communicationTitle:
+        "<i class='fas fa-comments text-blue-500'></i> التواصل",
+      communicationDescription:
+        "القدرة على التعبير عن الأفكار والمفاهيم بوضوح وفعالية.",
+      teamworkTitle:
+        "<i class='fas fa-users text-green-500'></i> العمل الجماعي",
+      teamworkDescription:
+        "تعاون فعّال مع الآخرين لتحقيق الأهداف المشتركة.",
+      problemSolvingTitle:
+        "<i class='fas fa-lightbulb text-yellow-500'></i> حل المشكلات",
+      problemSolvingDescription:
+        "القدرة على تحديد المشكلات وحلّها بطريقة إبداعية.",
+      timeManagementTitle:
+        "<i class='fas fa-clock text-purple-500'></i> إدارة الوقت",
+      timeManagementDescription:
+        "القدرة على تنظيم المهام وتحديد أولوياتها بكفاءة.",
+      proactivityTitle:
+        "<i class='fas fa-rocket text-orange-500'></i> المبادرة",
+      proactivityDescription:
+        "شخص مبادر يسعى دائمًا لفرص التحسين والمساهمة.",
+      empathyTitle:
+        "<i class='fas fa-thumbs-up text-gray-500'></i> التعاطف",
+      empathyDescription:
+        "فهم احتياجات ووجهات نظر الآخرين."
     },
     education: {
       title: "التعليم",
-      languagesTitle: "تدريب اللغات",
-      languagesDate: "2023 - حتى الآن",
-      languages: "أنا حاليًا أدرس برنامجًا متقدمًا في اللغة الإنجليزية (مستوى A2) ولدي اهتمام خاص بتعلم اللغة العربية. أستخدم تطبيق Duolingo بانتظام، وأحافظ على سلسلة نشطة تعكس التزامي بالتعلم المستمر. أعتقد أن مهاراتي في اللغة الإنجليزية واهتمامي باللغة العربية سيمكناني من التواصل بفعالية في بيئات متعددة الثقافات.",
-      universityTitle: "درجة جامعية",
-      universityDate: "2023 - حتى الآن",
-      university: "أنا حاليًا أدرس درجة في هندسة النظم في المعهد الجامعي البوليتكنيكي سانتياغو ماريño، حيث أكتسب المعرفة الأساسية في التكنولوجيا وتطوير البرمجيات.",
+      languagesTitle: "تعلّم اللغات",
+      languagesDate: "2022 - حتى الآن",
+      languages:
+        "أدرس حاليًا برنامجًا للغة الإنجليزية بمستوى متوسط (B2)، ولدي اهتمام خاص بتعلّم اللغة العربية. أؤمن بأن مهاراتي في الإنجليزية واهتمامي بالعربية ستمكّناني من التواصل بفعالية في بيئات متعددة الثقافات.",
+      universityTitle: "الدرجة الجامعية",
+      universityDate: "2021 - حتى الآن",
+      university:
+        "أتابع دراسة هندسة النظم في المعهد الجامعي البوليتكنيكي سانتياغو ماريّنو.",
       professionalDevelopmentTitle: "التطوير المهني",
       professionalDevelopmentDate: "2020 - حتى الآن",
-      professionalDevelopment: "أنا في حالة تعلم مستمر لمهارات وتقنيات جديدة من خلال الدورات التدريبية عبر الإنترنت على منصات مثل Udemy. أحب أن أتعلم المزيد كل يوم عن البرمجة وتكنولوجيا المعلومات، وقد تعلمت الكثير مما أعرفه بشكل ذاتي. يساعدني ذلك على مواكبة أحدث الاتجاهات وتطبيق معرفتي في المشاريع الشخصية وفي الجامعة."
+      professionalDevelopment:
+        "أتعلّم باستمرار مهارات وتقنيات جديدة عبر دورات عبر الإنترنت على منصات مختلفة. أحب أن أتعلّم كل يوم المزيد عن البرمجة وعلوم الحاسوب والتقنيات الحديثة."
     },
     footer: {
-      copyright: "© 2024 Miguelangel Abou. جميع الحقوق محفوظة."
+      copyright:
+        "© 2024 Miguelangel Abou. جميع الحقوق محفوظة."
     }
   }
 };
