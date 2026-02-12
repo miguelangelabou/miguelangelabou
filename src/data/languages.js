@@ -1,676 +1,753 @@
 export const translations = {
   es: {
-    title: "Ingeniero de Software",
+    title: "Senior Software Engineer",
     name: "Miguelangel Abou",
     nav: {
-      AboutMe: "Sobre Mí",
+      AboutMe: "Perfil Profesional",
       Project: "Proyectos",
       Experience: "Experiencia",
-      Skills: "Habilidades",
+      Skills: "Stack Técnico",
       Education: "Educación",
-      Reviews: "Reseñas",
+      Reviews: "Testimonios",
       Contact: "Contacto"
     },
+    header: {
+      logoSuffix: ".Engineer" 
+    },
     aboutMe: {
-      title: "Sobre Mí",
-      career: "Ingeniero de Software",
-      description: "¡Hola! Soy un ingeniero de software con más de 5 años de experiencia, comenzando a los 16 años. He trabajado en proyectos en producción como CRUD empresariales, SaaS, aplicaciones de escritorio, juegos y páginas web. Estoy entusiasmado por la posibilidad de unirme a un equipo innovador donde pueda aportar mis habilidades y seguir aprendiendo.",
-      availableToWork: "Disponible para trabajar",
-      languages: "<span class='font-bold'>Idiomas</span>: Español, Inglés.",
+      title: "Perfil Profesional",
+      career: "Senior Software Engineer", // Eliminado "Distributed Architectures" para no repetir si se usa en Hero
+      description: "Ingeniero de Software Senior con más de 6 años de experiencia liderando el desarrollo de ecosistemas digitales de alto impacto, desde plataformas SaaS y E-commerce hasta aplicaciones críticas de escritorio. Especialista en transformar requisitos complejos en arquitecturas escalables, priorizando el rendimiento, la seguridad (JWT/OAuth) y la excelencia técnica. Experto en sistemas distribuidos, microservicios y optimización de bases de datos SQL/NoSQL en entornos de alta concurrencia.",
+      availableToWork: "Disponible para nuevos retos",
+      languages: "<span class='font-bold'>Idiomas</span>: Español (Nativo), Inglés (Profesional - B2).",
       downloadCV: "Descargar CV",
-      copyEmail: "Copiar Email"
+      copyEmail: "Copiar Email",
+      englishVoice: "Voz en Inglés",
+      voice: "Voz",
+      projectsCount: "10+ Proyectos en Prod."
     },
     experience: {
-      title: "Experiencia",
+      title: "Trayectoria Profesional",
       experience1: {
-        dateRole: "2023 - Actualmente | FullStack",
-        description: "En Skynoff Technology, he trabajado como desarrollador Full Stack, participando en proyectos que abarcan desde el front-end hasta el back-end, utilizando tecnologías como React y Node.js."
+        dateRole: "Ene 2020 - Presente | Senior Software Engineer", // Cambiado de Full Stack Developer
+        description: "En Skynoff Technology, lidero el ciclo completo de desarrollo (SDLC) de aplicaciones web escalables. He diseñado e implementado APIs RESTful optimizadas para mejorar la comunicación entre sistemas frontend y backend distribuidos. Colaboro estrechamente con equipos multidisciplinarios para crear soluciones innovadoras, gestionando infraestructura en GCP y Vercel, y asegurando la integridad de datos en entornos de producción."
       }
     },
     projects: {
-      title: "Proyectos",
-      languages: "Lenguajes Aplicados:",
-      releaseDate: "Fecha de Finalización:",
-      role: "Rol en el Proyecto:",
-      frameworks: "Frameworks o Librerías:",
+      title: "Portafolio Destacado",
+      subtitle: "Selección de trabajos recientes de alto impacto.",
+      viewGithub: "Ver todo en GitHub",
+      languages: "Core Stack:",
+      releaseDate: "Despliegue:",
+      role: "Rol Técnico:",
+      frameworks: "Ecosistema & Librerías:",
+      viewDemo: "Ver Demo",
+      githubRepo: "GitHub",
       project1: {
         name: "¿QueTantoSabes?",
-        preview: "\"¿QueTantoSabes?\" es un juego interactivo de preguntas y respuestas sobre Venezuela.",
-        description: "Es un juego interactivo de preguntas y respuestas que enriquece el conocimiento sobre Venezuela, combinando gamificación y aprendizaje sobre su cultura e historia.        ",
-        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+        preview: "Plataforma interactiva de gamificación educativa con arquitectura optimizada.",
+        description: "Sistema interactivo de preguntas y respuestas diseñado para enriquecer el conocimiento cultural. Desarrollado con un enfoque en rendimiento y experiencia de usuario fluida, gestionando lógica compleja de juego y persistencia de datos relacionales.",
+        languages: "PHP, MySQL, JavaScript, HTML5, CSS3",
         date: "2024-12-27",
-        rol: "FullStack",
-        frameworks: "JWT",
+        rol: "Full Stack Architect",
+        frameworks: "Arquitectura MVC, JWT Auth, Optimización SQL",
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
         name: "Globos Anabell",
-        preview: "Sitio web de comercio electrónico para la venta de globos y decoraciones, con un diseño atractivo y funcional, utilizando tecnologías modernas y SEO efectivo.",
-        description: "E-commerce para una tienda en España de globos, decoración y flores, con carrito de compra, una barra de progreso para establecer un máximo de presupuesto y un sistema administrativo para el dueño de la empresa donde puede modificar la información de la empresa y llevar un registro de compras y estadísticas.",
-        languages: "Typescript, CSS, HTML",
+        preview: "E-commerce integral con gestión de inventario en tiempo real y panel administrativo.",
+        description: "Solución de comercio electrónico robusta para el mercado español. Incluye lógica de negocio compleja para presupuestos dinámicos, gestión de estado global, integración de pasarelas de pago y un CMS personalizado para la administración total del inventario y análisis de ventas.",
+        languages: "TypeScript, React, Node.js",
         date: "2025-03-24",
-        rol: "Freelance",
-        frameworks: "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+        rol: "Lead Engineer",
+        frameworks: "Next.js, Firebase (Auth/Firestore), Tailwind CSS, Shadcn UI, Vercel",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
-        preview: "Sistema de gestión para una pastelería, con funcionalidades de registro de productos, ventas y estadísticas.",
-        description: "Software administrativo para llevar control de ventas, inventario, empleados y estadísticas para una tienda de dulces y postres; registro de ventas, control de recetas, control de inventario para producir, control de stock de dulces, sistema de pago por partes (Abonos/Crédito) y un dashboard de estadísticas con información relevante.",
-        languages: "Typescript, CSS, HTML",
+        preview: "SaaS administrativo para gestión de recursos empresariales (ERP) en hostelería.",
+        description: "Software de gestión empresarial diseñado para optimizar flujos de trabajo en pastelería. Características críticas incluyen: control de inventario de materia prima vs. producción, gestión de cuentas por cobrar (créditos), control de personal y dashboard analítico para la toma de decisiones estratégicas.",
+        languages: "TypeScript, React, Node.js",
         date: "2025-05-27",
-        rol: "Freelance",
-        frameworks: "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+        rol: "Lead Engineer",
+        frameworks: "Next.js, Firebase, Recharts, Tailwind CSS, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "Landing Page para una empresa constructora.",
-        description: "Landing Page para una empresa constructora.",
-        languages: "Typescript, CSS, HTML",
+        preview: "Landing page corporativa de alto rendimiento y conversión.",
+        description: "Interfaz digital corporativa enfocada en UX/UI y Core Web Vitals. Implementación de diseño responsivo avanzado y optimización de activos para garantizar tiempos de carga mínimos y máxima retención de usuarios.",
+        languages: "TypeScript, React, HTML5",
         date: "2025-07-02",
-        rol: "Freelance",
-        frameworks: "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+        rol: "Frontend Architect",
+        frameworks: "Next.js, Tailwind CSS, Shadcn UI, Framer Motion",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }      
     },
     skills: {
-      title: "Habilidades técnicas",
-      programmingLanguages: "Lenguajes de Programación",
-      frameworks: "Frameworks",
-      tools: "Herramientas",
-      softSkillsTitle: "Habilidades Blandas",
-      communicationTitle: "Comunicación",
-      communicationDescription: "Capacidad para expresar ideas y conceptos de manera clara y efectiva.",
-      teamworkTitle: "Trabajo en Equipo",
-      teamworkDescription: "Colaboración efectiva con otros para alcanzar objetivos comunes.",
-      problemSolvingTitle: "Resolución de Problemas",
-      problemSolvingDescription: "Habilidad para identificar y resolver problemas de manera creativa.",
-      timeManagementTitle: "Gestión del Tiempo",
-      timeManagementDescription: "Capacidad para organizar y priorizar tareas eficientemente.",
-      proactivityTitle: "Proactividad",
-      proactivityDescription: "Soy proactivo y siempre busco oportunidades para mejorar y contribuir.",
-      empathyTitle: "Empatía",
-      empathyDescription: "Comprensión de las necesidades y perspectivas de otros."      
+      title: "Stack Tecnológico",
+      description: "Stack tecnológico actualizado y herramientas que utilizo para construir productos digitales robustos y escalables.",
+      frontendTitle: "Frontend & UI",
+      backendTitle: "Backend & Data",
+      devopsTitle: "DevOps & Core",
+      programmingLanguages: "Lenguajes & Core",
+      frameworks: "Frameworks & Ecosistema",
+      tools: "Infraestructura & Herramientas",
+      softSkillsTitle: "Competencias de Liderazgo",
+      communicationTitle: "Comunicación Técnica",
+      communicationDescription: "Capacidad para traducir complejidad técnica en lenguaje de negocio claro.",
+      teamworkTitle: "Colaboración Ágil",
+      teamworkDescription: "Experiencia en metodologías Scrum y flujos de trabajo Git/GitHub.",
+      problemSolvingTitle: "Pensamiento Arquitectónico",
+      problemSolvingDescription: "Enfoque analítico para la resolución de problemas raíz y optimización de sistemas.",
+      timeManagementTitle: "Gestión de Entregas",
+      timeManagementDescription: "Priorización eficiente en entornos de ritmo acelerado y fechas límite críticas.",
+      proactivityTitle: "Innovación Continua",
+      proactivityDescription: "Impulso constante por adoptar mejores prácticas y nuevas tecnologías.",
+      empathyTitle: "Enfoque en Usuario",
+      empathyDescription: "Comprensión profunda de las necesidades del cliente final y stakeholders."      
     },
     education: {
-      title: "Educación",
-      languagesTitle: "Formación en idiomas",
-      languagesDate: "2022 - Actualmente",
-      languages: "Actualmente, estoy cursando un programa de inglés intermedio (nivel B2) y tengo un interés particular en aprender árabe. Creo que mis habilidades en inglés y mi interés en el árabe me permitirán comunicarme eficazmente en entornos multiculturales.",
-      universityTitle: "Carrera Universitaria",
-      universityDate: "2021 - Actualmente",
-      university: "Me encuentro cursando la carrera de Ingeniería de Sistemas en el Instituto Universitario Politécnico Santiago Mariño.",
-      professionalDevelopmentTitle: "Desarrollo Profesional",
-      professionalDevelopmentDate: "2020 - Actualmente",
-      professionalDevelopment: "Estoy en constante aprendizaje de nuevas habilidades y tecnologías a través de cursos en línea en plataformas. Me encanta aprender cada día más sobre programación e informática, y todas las nuevas tecnologias."
+      title: "Formación Académica",
+      languagesTitle: "Idiomas",
+      languagesDate: "Nivel Profesional",
+      languages: "Español (Nativo) e Inglés (Working Proficiency - B2). Interés activo en lenguas semíticas (Árabe) para entornos multiculturales.",
+      universityTitle: "Ingeniería de Sistemas",
+      universityDate: "Oct 2016 - Feb 2021",
+      university: "Instituto Universitario Politécnico Santiago Mariño. Formación sólida en ciencias de la computación, estructuras de datos y gestión de proyectos.",
+      professionalDevelopmentTitle: "Certificaciones Técnicas",
+      professionalDevelopmentDate: "Formación Continua",
+      professionalDevelopment: "Especializaciones en: Diseño de Bases de Datos (SQL/MySQL), Desarrollo Backend (Node.js/Express), Frontend Avanzado (React/TypeScript) y Control de Versiones."
     },
     footer: {
-      copyright: "© 2024 Miguelangel Abou. Todos los derechos reservados."
+      copyright: "© 2026 Miguelangel Abou. Senior Software Engineer.",
+      builtWith: "Diseñado y Construido con"
+    },
+    loader: {
+      text: "INICIALIZANDO SISTEMA..."
     }
   },
   en: {
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     name: "Miguelangel Abou",
     nav: {
-      AboutMe: "About Me",
+      AboutMe: "Professional Profile",
       Project: "Projects",
       Experience: "Experience",
-      Skills: "Skills",
+      Skills: "Tech Stack",
       Education: "Education",
       Reviews: "Reviews",
       Contact: "Contact"
     },
+    header: {
+      logoSuffix: ".Engineer"
+    },
     aboutMe: {
-      title: "About Me",
-      career: "Software Engineer",
+      title: "Professional Profile",
+      career: "Senior Software Engineer",
       description:
-        "Hello! I’m a software engineer with over 5 years of experience, starting at 16. I have worked on production projects such as enterprise CRUD systems, SaaS, desktop applications, games, and websites. I’m excited about the possibility of joining an innovative team where I can contribute my skills and keep learning.",
-      availableToWork: "Available to work",
-      languages: "<span class='font-bold'>Languages</span>: Spanish, English.",
+        "Senior Software Engineer with over 6 years of experience leading the development of high-impact digital ecosystems, from SaaS platforms and E-commerce to critical desktop applications. Specialist in transforming complex requirements into scalable architectures, prioritizing performance, security (JWT/OAuth), and technical excellence. Expert in distributed systems, microservices, and SQL/NoSQL database optimization in high-concurrency environments.",
+      availableToWork: "Open to new challenges",
+      languages: "<span class='font-bold'>Languages</span>: Spanish (Native), English (Professional Working).",
       downloadCV: "Download CV",
-      copyEmail: "Copy Email"
+      copyEmail: "Copy Email",
+      englishVoice: "English Voice",
+      voice: "Voice",
+      projectsCount: "10+ Projects in Prod."
     },
     experience: {
-      title: "Experience",
+      title: "Professional Experience",
       experience1: {
-        dateRole: "2023 - Present | FullStack",
+        dateRole: "Jan 2020 - Present | Senior Software Engineer",
         description:
-          "At Skynoff Technology, I have worked as a Full Stack developer, participating in projects that span from front-end to back-end, using technologies such as React and Node.js."
+          "At Skynoff Technology, I lead the full software development life cycle (SDLC) for scalable web applications. I have designed and implemented optimized RESTful APIs to enhance communication between distributed frontend and backend systems. I collaborate closely with multidisciplinary teams to create innovative solutions, managing infrastructure on GCP and Vercel, and ensuring data integrity in production environments."
       }
     },
     projects: {
-      title: "Projects",
-      languages: "Languages Used:",
-      releaseDate: "Completion Date:",
-      role: "Role in the Project:",
-      frameworks: "Frameworks or Libraries:",
+      title: "Featured Portfolio",
+      subtitle: "Selection of recent high-impact works.",
+      viewGithub: "View all on GitHub",
+      languages: "Core Stack:",
+      releaseDate: "Deployed:",
+      role: "Technical Role:",
+      frameworks: "Ecosystem & Libraries:",
+      viewDemo: "View Demo",
+      githubRepo: "GitHub",
       project1: {
         name: "¿QueTantoSabes?",
-        preview: "“¿QueTantoSabes?” is an interactive quiz game about Venezuela.",
+        preview: "Interactive educational gamification platform with optimized architecture.",
         description:
-          "It’s an interactive quiz game that enriches knowledge about Venezuela, combining gamification and learning about its culture and history.",
-        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+          "Interactive quiz system designed to enrich cultural knowledge. Developed with a focus on performance and fluid user experience, managing complex game logic and relational data persistence.",
+        languages: "PHP, MySQL, JavaScript, HTML5, CSS3",
         date: "2024-12-27",
-        rol: "FullStack",
-        frameworks: "JWT",
+        rol: "Full Stack Architect",
+        frameworks: "MVC Architecture, JWT Auth, SQL Optimization",
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
         name: "Globos Anabell",
-        preview:
-          "E-commerce website for selling balloons and decorations, with an attractive and functional design, using modern technologies and effective SEO.",
+        preview: "Comprehensive E-commerce with real-time inventory management and admin panel.",
         description:
-          "An e-commerce for a shop in Spain selling balloons, decorations, and flowers, featuring a shopping cart, a progress bar to set a maximum budget, and an admin system for the business owner to edit company information and track purchases and statistics.",
-        languages: "Typescript, CSS, HTML",
+          "Robust e-commerce solution for the Spanish market. Includes complex business logic for dynamic budgeting, global state management, payment gateway integration, and a custom CMS for total inventory administration and sales analysis.",
+        languages: "TypeScript, React, Node.js",
         date: "2025-03-24",
-        rol: "Freelance",
+        rol: "Lead Engineer",
         frameworks:
-          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Firebase (Auth/Firestore), Tailwind CSS, Shadcn UI, Vercel",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
-        preview:
-          "Management system for a pastry shop, with product registration, sales, and statistics.",
+        preview: "Administrative SaaS for Enterprise Resource Planning (ERP) in hospitality.",
         description:
-          "Administrative software to manage sales, inventory, employees, and statistics for a candy and desserts shop; recipe management, production inventory control, candy stock control, installment/credit payments, and a statistics dashboard with relevant insights.",
-        languages: "Typescript, CSS, HTML",
+          "Business management software designed to optimize workflows in confectionery. Critical features include: raw material vs. production inventory control, accounts receivable management, staff control, and an analytical dashboard for strategic decision-making.",
+        languages: "TypeScript, React, Node.js",
         date: "2025-05-27",
-        rol: "Freelance",
+        rol: "Lead Engineer",
         frameworks:
-          "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Firebase, Recharts, Tailwind CSS, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "Landing page for a construction company.",
-        description: "Landing page for a construction company.",
-        languages: "Typescript, CSS, HTML",
+        preview: "High-performance corporate landing page.",
+        description: "Corporate digital interface focused on UX/UI and Core Web Vitals. Implementation of advanced responsive design and asset optimization to ensure minimal load times and maximum user retention.",
+        languages: "TypeScript, React, HTML5",
         date: "2025-07-02",
-        rol: "Freelance",
+        rol: "Frontend Architect",
         frameworks:
-          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Tailwind CSS, Shadcn UI, Framer Motion",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
     },
     skills: {
-      title: "Technical Skills",
-      programmingLanguages: "Programming Languages",
-      frameworks: "Frameworks",
-      tools: "Tools",
-      softSkillsTitle: "Soft Skills",
+      title: "Technical Stack",
+      description: "Updated tech stack and tools I use to build robust and scalable digital products.",
+      frontendTitle: "Frontend & UI",
+      backendTitle: "Backend & Data",
+      devopsTitle: "DevOps & Core",
+      programmingLanguages: "Languages & Core",
+      frameworks: "Frameworks & Ecosystem",
+      tools: "Infrastructure & Tools",
+      softSkillsTitle: "Leadership Competencies",
       communicationTitle:
-        "Communication",
+        "Technical Communication",
       communicationDescription:
-        "Ability to express ideas and concepts clearly and effectively.",
-      teamworkTitle: "Teamwork",
+        "Ability to translate technical complexity into clear business language.",
+      teamworkTitle: "Agile Collaboration",
       teamworkDescription:
-        "Effective collaboration with others to achieve common goals.",
+        "Experience in Scrum methodologies and Git/GitHub workflows.",
       problemSolvingTitle:
-        "Problem Solving",
+        "Architectural Thinking",
       problemSolvingDescription:
-        "Ability to identify and creatively solve problems.",
+        "Analytical approach to root cause analysis and system optimization.",
       timeManagementTitle:
-        "Time Management",
+        "Delivery Management",
       timeManagementDescription:
-        "Ability to organize and prioritize tasks efficiently.",
+        "Efficient prioritization in fast-paced environments and critical deadlines.",
       proactivityTitle:
-        "Proactivity",
+        "Continuous Innovation",
       proactivityDescription:
-        "I am proactive and always look for opportunities to improve and contribute.",
-      empathyTitle: "Empathy",
+        "Constant drive to adopt best practices and new technologies.",
+      empathyTitle: "User Focus",
       empathyDescription:
-        "Understanding the needs and perspectives of others."
+        "Deep understanding of end-client and stakeholder needs."
     },
     education: {
       title: "Education",
-      languagesTitle: "Language Training",
-      languagesDate: "2022 - Present",
+      languagesTitle: "Languages",
+      languagesDate: "Professional Level",
       languages:
-        "I am currently enrolled in an intermediate English program (B2 level) and have a particular interest in learning Arabic. I believe that my English skills and my interest in Arabic will enable me to communicate effectively in multicultural environments.",
-      universityTitle: "University Degree",
-      universityDate: "2021 - Present",
+        "Spanish (Native) and English (Professional Working - B2). Active interest in Semitic languages (Arabic) for multicultural environments.",
+      universityTitle: "Systems Engineering",
+      universityDate: "Oct 2016 - Feb 2021",
       university:
-        "I am currently pursuing a degree in Systems Engineering at the Instituto Universitario Politécnico Santiago Mariño.",
-      professionalDevelopmentTitle: "Professional Development",
-      professionalDevelopmentDate: "2020 - Present",
+        "Instituto Universitario Politécnico Santiago Mariño. Solid foundation in computer science, data structures, and project management.",
+      professionalDevelopmentTitle: "Technical Certifications",
+      professionalDevelopmentDate: "Continuous Learning",
       professionalDevelopment:
-        "I am constantly learning new skills and technologies through online courses on various platforms. I love learning more every day about programming and computing, and all the new technologies."
+        "Specializations in: Database Design (SQL/MySQL), Backend Development (Node.js/Express), Advanced Frontend (React/TypeScript), and Version Control."
     },
     footer: {
       copyright:
-        "© 2024 Miguelangel Abou. All rights reserved."
+        "© 2026 Miguelangel Abou. Senior Software Engineer.",
+      builtWith: "Designed & Built with"
+    },
+    loader: {
+      text: "INITIALIZING SYSTEM..."
     }
   },
   zh: {
-    title: "软件工程师",
+    title: "高级软件工程师",
     name: "Miguelangel Abou",
     nav: {
-      AboutMe: "关于我",
+      AboutMe: "个人简介",
       Project: "项目",
-      Experience: "经验",
-      Skills: "技能",
-      Education: "教育",
-      Reviews: "评论",
-      Contact: "联系"
+      Experience: "工作经历",
+      Skills: "技术栈",
+      Education: "教育背景",
+      Reviews: "评价",
+      Contact: "联系方式"
+    },
+    header: {
+      logoSuffix: ".工程师"
     },
     aboutMe: {
-      title: "关于我",
-      career: "软件工程师",
+      title: "个人简介",
+      career: "高级软件工程师",
       description:
-        "你好！我是一名拥有 5 年以上经验的软件工程师，从 16 岁开始从事开发。我参与并上线过企业级 CRUD、SaaS、桌面应用、游戏以及网站等项目。我期待加入一个富有创新的团队，在贡献所长的同时持续学习进步。",
-      availableToWork: "可入职",
-      languages: "<span class='font-bold'>语言</span>：西班牙语、英语。",
+        "拥有超过6年经验的高级软件工程师，领导高影响力数字生态系统的开发，从SaaS平台和电子商务到关键桌面应用程序。专注于将复杂需求转化为可扩展的架构，优先考虑性能、安全性（JWT/OAuth）和技术卓越性。在高并发环境下的分布式系统、微服务和SQL/NoSQL数据库优化方面拥有专家级经验。",
+      availableToWork: "可接受新挑战",
+      languages: "<span class='font-bold'>语言</span>: 西班牙语（母语），英语（专业工作能力）。",
       downloadCV: "下载简历",
-      copyEmail: "复制邮箱"
+      copyEmail: "复制邮箱",
+      englishVoice: "英语语音",
+      voice: "语音",
+      projectsCount: "10+ 已上线项目"
     },
     experience: {
-      title: "经验",
+      title: "职业经历",
       experience1: {
-        dateRole: "2023 - 现在 | FullStack",
+        dateRole: "2020年1月 - 至今 | 高级软件工程师",
         description:
-          "在 Skynoff Technology，我担任全栈开发，参与从前端到后端的项目，使用 React 与 Node.js 等技术。"
+          "在 Skynoff Technology，我领导可扩展 Web 应用程序的整个软件开发生命周期 (SDLC)。我设计并实施了优化的 RESTful API，以增强分布式前端和后端系统之间的通信。我与多学科团队密切合作，创建创新解决方案，管理 GCP 和 Vercel 上的基础设施，并确保生产环境中的数据完整性。"
       }
     },
     projects: {
-      title: "项目",
-      languages: "使用语言：",
-      releaseDate: "完成日期：",
-      role: "项目角色：",
-      frameworks: "框架或库：",
+      title: "精选作品集",
+      subtitle: "近期高影响力作品精选。",
+      viewGithub: "在 GitHub 查看全部",
+      languages: "核心技术栈：",
+      releaseDate: "发布日期：",
+      role: "技术角色：",
+      frameworks: "生态系统与库：",
+      viewDemo: "查看演示",
+      githubRepo: "GitHub",
       project1: {
         name: "¿QueTantoSabes?",
-        preview: "“¿QueTantoSabes?” 是一个关于委内瑞拉的互动问答游戏。",
+        preview: "架构优化的交互式教育游戏化平台。",
         description:
-          "这是一个互动问答游戏，通过游戏化提升对委内瑞拉的了解，学习其文化与历史。",
-        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+          "旨在丰富文化知识的交互式问答系统。开发重点在于性能和流畅的用户体验，管理复杂的游戏逻辑和关系数据持久性。",
+        languages: "PHP, MySQL, JavaScript, HTML5, CSS3",
         date: "2024-12-27",
-        rol: "FullStack",
-        frameworks: "JWT",
+        rol: "全栈架构师",
+        frameworks: "MVC 架构, JWT 认证, SQL 优化",
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
         name: "Globos Anabell",
-        preview:
-          "用于销售气球与装饰品的电商网站，设计美观、功能完善，采用现代技术并具备有效的 SEO。",
+        preview: "具有实时库存管理和管理面板的综合电子商务。",
         description:
-          "为一家位于西班牙、销售气球、装饰与鲜花的商店打造的电商项目：购物车、可设置预算上限的进度条，以及供店主编辑企业信息、查看采购记录与统计的管理后台。",
-        languages: "Typescript, CSS, HTML",
+          "针对西班牙市场的强大电子商务解决方案。包括用于动态预算、全局状态管理、支付网关集成以及用于全面库存管理和销售分析的自定义 CMS 的复杂业务逻辑。",
+        languages: "TypeScript, React, Node.js",
         date: "2025-03-24",
-        rol: "Freelance",
+        rol: "首席工程师",
         frameworks:
-          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Firebase (Auth/Firestore), Tailwind CSS, Shadcn UI, Vercel",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
-        preview: "面向甜品店的管理系统，支持商品登记、销售与统计。",
+        preview: "用于酒店业企业资源规划 (ERP) 的管理 SaaS。",
         description:
-          "用于糖果与甜点店的行政管理软件：销售登记、配方管理、生产库存控制、成品库存控制、分期/赊账支付，以及提供关键信息的统计看板。",
-        languages: "Typescript, CSS, HTML",
+          "旨在优化糖果行业工作流程的企业管理软件。关键功能包括：原材料与生产库存控制、应收账款管理、人员控制以及用于战略决策的分析仪表板。",
+        languages: "TypeScript, React, Node.js",
         date: "2025-05-27",
-        rol: "Freelance",
+        rol: "首席工程师",
         frameworks:
-          "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Firebase, Recharts, Tailwind CSS, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "建筑公司的落地页。",
-        description: "建筑公司的落地页。",
-        languages: "Typescript, CSS, HTML",
+        preview: "高性能企业着陆页。",
+        description: "专注于 UX/UI 和核心 Web 指标的企业数字界面。实施高级响应式设计和资产优化，以确保最短的加载时间和最大的用户留存率。",
+        languages: "TypeScript, React, HTML5",
         date: "2025-07-02",
-        rol: "Freelance",
+        rol: "前端架构师",
         frameworks:
-          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Tailwind CSS, Shadcn UI, Framer Motion",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
     },
     skills: {
-      title: "技术技能",
-      programmingLanguages: "编程语言",
-      frameworks: "框架",
-      tools: "工具",
-      softSkillsTitle: "软技能",
+      title: "技术栈",
+      description: "用于构建强大且可扩展的数字产品的最新技术栈和工具。",
+      frontendTitle: "前端与用户界面",
+      backendTitle: "后端与数据",
+      devopsTitle: "DevOps与核心",
+      programmingLanguages: "语言与核心",
+      frameworks: "框架与生态系统",
+      tools: "基础设施与工具",
+      softSkillsTitle: "领导能力",
       communicationTitle:
-        "沟通",
+        "技术沟通",
       communicationDescription:
-        "能清晰有效地表达想法与概念。",
-      teamworkTitle:
-        "团队合作",
+        "能够将复杂的技术问题转化为清晰的业务语言。",
+      teamworkTitle: "敏捷协作",
       teamworkDescription:
-        "与他人高效协作以达成共同目标。",
+        "拥有 Scrum 方法论和 Git/GitHub 工作流的经验。",
       problemSolvingTitle:
-        "问题解决",
+        "架构思维",
       problemSolvingDescription:
-        "具备识别与创造性解决问题的能力。",
+        "采用分析方法进行根本原因分析和系统优化。",
       timeManagementTitle:
-        "时间管理",
+        "交付管理",
       timeManagementDescription:
-        "能够高效组织并合理安排优先级。",
+        "在快节奏环境和关键截止日期前进行高效的优先级排序。",
       proactivityTitle:
-        "主动性",
+        "持续创新",
       proactivityDescription:
-        "积极主动，持续寻求改进与贡献的机会。",
-      empathyTitle:
-        "同理心",
+        "不断推动采用最佳实践和新技术。",
+      empathyTitle: "用户至上",
       empathyDescription:
-        "理解他人的需求与视角。"
+        "深刻理解最终客户和利益相关者的需求。"
     },
     education: {
-      title: "教育",
-      languagesTitle: "语言学习",
-      languagesDate: "2022 - 至今",
+      title: "教育背景",
+      languagesTitle: "语言能力",
+      languagesDate: "专业水平",
       languages:
-        "目前就读于英语中级课程（B2），并对学习阿拉伯语有浓厚兴趣。我相信自身的英语能力与对阿拉伯语的兴趣能帮助我在多元文化环境中高效沟通。",
-      universityTitle: "大学学位",
-      universityDate: "2021 - 至今",
+        "西班牙语（母语）和英语（专业工作能力 - B2）。对多元文化环境中的闪米特语（阿拉伯语）有浓厚兴趣。",
+      universityTitle: "系统工程",
+      universityDate: "2016年10月 - 2021年2月",
       university:
-        "目前就读于 Instituto Universitario Politécnico Santiago Mariño 的系统工程专业。",
-      professionalDevelopmentTitle: "职业发展",
-      professionalDevelopmentDate: "2020 - 至今",
+        "圣地亚哥马里尼奥理工学院。在计算机科学、数据结构和项目管理方面拥有扎实的基础。",
+      professionalDevelopmentTitle: "技术认证",
+      professionalDevelopmentDate: "持续学习",
       professionalDevelopment:
-        "通过各类在线平台持续学习新技能与新技术。我热爱每天学习更多关于编程与计算机的知识，以及新兴技术。"
+        "专业领域：数据库设计 (SQL/MySQL), 后端开发 (Node.js/Express), 高级前端 (React/TypeScript) 和版本控制。"
     },
     footer: {
       copyright:
-        "© 2024 Miguelangel Abou。版权所有。"
+        "© 2026 Miguelangel Abou. 高级软件工程师。",
+      builtWith: "设计与构建使用"
+    },
+    loader: {
+      text: "正在初始化系统..."
     }
   },
   pt: {
-    title: "Engenheiro de Software",
+    title: "Engenheiro de Software Sênior",
     name: "Miguelangel Abou",
     nav: {
-      AboutMe: "Sobre Mim",
+      AboutMe: "Perfil Profissional",
       Project: "Projetos",
       Experience: "Experiência",
-      Skills: "Habilidades",
+      Skills: "Stack Tecnológico",
       Education: "Educação",
-      Reviews: "Avaliações",
+      Reviews: "Depoimentos",
       Contact: "Contato"
     },
+    header: {
+      logoSuffix: ".Engenheiro"
+    },
     aboutMe: {
-      title: "Sobre Mim",
-      career: "Engenheiro de Software",
+      title: "Perfil Profissional",
+      career: "Engenheiro de Software Sênior",
       description:
-        "Olá! Sou engenheiro de software com mais de 5 anos de experiência, começando aos 16 anos. Trabalhei em projetos em produção como CRUDs empresariais, SaaS, aplicativos de desktop, jogos e sites. Estou entusiasmado com a possibilidade de me juntar a uma equipe inovadora onde eu possa contribuir com minhas habilidades e continuar aprendendo.",
-      availableToWork: "Disponível para trabalhar",
-      languages: "<span class='font-bold'>Idiomas</span>: Espanhol, Inglês.",
+        "Engenheiro de Software Sênior com mais de 6 anos de experiência liderando o desenvolvimento de ecossistemas digitais de alto impacto, desde plataformas SaaS e E-commerce até aplicações críticas de desktop. Especialista em transformar requisitos complexos em arquiteturas escaláveis, priorizando desempenho, segurança (JWT/OAuth) e excelência técnica. Expert em sistemas distribuídos, microsserviços e otimização de bancos de dados SQL/NoSQL em ambientes de alta concorrência.",
+      availableToWork: "Aberto a novos desafios",
+      languages: "<span class='font-bold'>Idiomas</span>: Espanhol (Nativo), Inglês (Profissional - B2).",
       downloadCV: "Baixar CV",
-      copyEmail: "Copiar Email"
+      copyEmail: "Copiar Email",
+      englishVoice: "Voz em Inglês",
+      voice: "Voz",
+      projectsCount: "10+ Projetos em Prod."
     },
     experience: {
-      title: "Experiência",
+      title: "Experiência Profissional",
       experience1: {
-        dateRole: "2023 - Atualmente | FullStack",
+        dateRole: "Jan 2020 - Presente | Engenheiro de Software Sênior",
         description:
-          "Na Skynoff Technology, atuei como desenvolvedor Full Stack, participando de projetos do front-end ao back-end, usando tecnologias como React e Node.js."
+          "Na Skynoff Technology, lidero o ciclo completo de desenvolvimento de software (SDLC) para aplicações web escaláveis. Projetei e implementei APIs RESTful otimizadas para melhorar a comunicação entre sistemas frontend e backend distribuídos. Colaboro estreitamente com equipes multidisciplinares para criar soluções inovadoras, gerenciando infraestrutura no GCP e Vercel, e garantindo a integridade dos dados em ambientes de produção."
       }
     },
     projects: {
-      title: "Projetos",
-      languages: "Linguagens Utilizadas:",
-      releaseDate: "Data de Conclusão:",
-      role: "Papel no Projeto:",
-      frameworks: "Frameworks ou Bibliotecas:",
+      title: "Portfólio em Destaque",
+      subtitle: "Seleção de trabalhos recentes de alto impacto.",
+      viewGithub: "Ver tudo no GitHub",
+      languages: "Stack Principal:",
+      releaseDate: "Lançamento:",
+      role: "Papel Técnico:",
+      frameworks: "Ecossistema & Bibliotecas:",
+      viewDemo: "Ver Demo",
+      githubRepo: "GitHub",
       project1: {
         name: "¿QueTantoSabes?",
-        preview:
-          "“¿QueTantoSabes?” é um jogo interativo de perguntas e respostas sobre a Venezuela.",
+        preview: "Plataforma interativa de gamificação educacional com arquitetura otimizada.",
         description:
-          "É um jogo interativo que enriquece o conhecimento sobre a Venezuela, combinando gamificação e aprendizado sobre sua cultura e história.",
-        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+          "Sistema interativo de perguntas e respostas projetado para enriquecer o conhecimento cultural. Desenvolvido com foco em desempenho e experiência do usuário fluida, gerenciando lógica de jogo complexa e persistência de dados relacionais.",
+        languages: "PHP, MySQL, JavaScript, HTML5, CSS3",
         date: "2024-12-27",
-        rol: "FullStack",
-        frameworks: "JWT",
+        rol: "Arquiteto Full Stack",
+        frameworks: "Arquitetura MVC, JWT Auth, Otimização SQL",
         projectLink: "#",
         githubLink: "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
         name: "Globos Anabell",
-        preview:
-          "Site de e-commerce para venda de balões e decorações, com design atraente e funcional, usando tecnologias modernas e SEO eficaz.",
+        preview: "E-commerce abrangente com gestão de inventário em tempo real e painel administrativo.",
         description:
-          "E-commerce para uma loja na Espanha de balões, decoração e flores, com carrinho de compras, uma barra de progresso para definir um orçamento máximo e um sistema administrativo para o proprietário editar informações da empresa e acompanhar compras e estatísticas.",
-        languages: "Typescript, CSS, HTML",
+          "Solução robusta de comércio eletrônico para o mercado espanhol. Inclui lógica de negócios complexa para orçamentos dinâmicos, gerenciamento de estado global, integração de gateway de pagamento e um CMS personalizado para administração total de inventário e análise de vendas.",
+        languages: "TypeScript, React, Node.js",
         date: "2025-03-24",
-        rol: "Freelance",
+        rol: "Engenheiro Líder",
         frameworks:
-          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Firebase (Auth/Firestore), Tailwind CSS, Shadcn UI, Vercel",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
-        preview:
-          "Sistema de gestão para uma confeitaria, com cadastro de produtos, vendas e estatísticas.",
+        preview: "SaaS administrativo para Planejamento de Recursos Empresariais (ERP) em hotelaria.",
         description:
-          "Software administrativo para gerenciar vendas, inventário, funcionários e estatísticas de uma loja de doces e sobremesas; gestão de receitas, controle de estoque de produção, controle de estoque de doces, pagamentos parcelados/crédito e um dashboard de estatísticas com insights relevantes.",
-        languages: "Typescript, CSS, HTML",
+          "Software de gestão empresarial projetado para otimizar fluxos de trabalho em confeitaria. Recursos críticos incluem: controle de estoque de matéria-prima vs. produção, gestão de contas a receber, controle de pessoal e painel analítico para tomada de decisões estratégicas.",
+        languages: "TypeScript, React, Node.js",
         date: "2025-05-27",
-        rol: "Freelance",
+        rol: "Engenheiro Líder",
         frameworks:
-          "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Firebase, Recharts, Tailwind CSS, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "Landing page para uma empresa construtora.",
-        description: "Landing page para uma empresa construtora.",
-        languages: "Typescript, CSS, HTML",
+        preview: "Landing page corporativa de alto desempenho.",
+        description: "Interface digital corporativa focada em UX/UI e Core Web Vitals. Implementação de design responsivo avançado e otimização de ativos para garantir tempos de carregamento mínimos e máxima retenção de usuários.",
+        languages: "TypeScript, React, HTML5",
         date: "2025-07-02",
-        rol: "Freelance",
+        rol: "Arquiteto Frontend",
         frameworks:
-          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Tailwind CSS, Shadcn UI, Framer Motion",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
     },
     skills: {
-      title: "Habilidades Técnicas",
-      programmingLanguages: "Linguagens de Programação",
-      frameworks: "Frameworks",
-      tools: "Ferramentas",
-      softSkillsTitle: "Habilidades Interpessoais",
+      title: "Stack Tecnológico",
+      description: "Stack tecnológico atualizado e ferramentas que utilizo para construir produtos digitais robustos e escaláveis.",
+      frontendTitle: "Frontend & UI",
+      backendTitle: "Backend & Dados",
+      devopsTitle: "DevOps & Core",
+      programmingLanguages: "Linguagens & Core",
+      frameworks: "Frameworks & Ecossistema",
+      tools: "Infraestrutura & Ferramentas",
+      softSkillsTitle: "Competências de Liderança",
       communicationTitle:
-        "Comunicação",
+        "Comunicação Técnica",
       communicationDescription:
-        "Capacidade de expressar ideias e conceitos de forma clara e eficaz.",
-      teamworkTitle:
-        "Trabalho em Equipe",
+        "Capacidade de traduzir complexidade técnica em linguagem de negócios clara.",
+      teamworkTitle: "Colaboração Ágil",
       teamworkDescription:
-        "Colaboração eficaz com outras pessoas para alcançar objetivos comuns.",
+        "Experiência em metodologias Scrum e fluxos de trabalho Git/GitHub.",
       problemSolvingTitle:
-        "Resolução de Problemas",
+        "Pensamento Arquitetônico",
       problemSolvingDescription:
-        "Habilidade de identificar e resolver problemas de forma criativa.",
+        "Abordagem analítica para análise de causa raiz e otimização de sistemas.",
       timeManagementTitle:
-        "Gestão do Tempo",
+        "Gestão de Entregas",
       timeManagementDescription:
-        "Capacidade de organizar e priorizar tarefas com eficiência.",
+        "Priorização eficiente em ambientes de ritmo acelerado e prazos críticos.",
       proactivityTitle:
-        "Proatividade",
+        "Inovação Contínua",
       proactivityDescription:
-        "Sou proativo e busco sempre oportunidades para melhorar e contribuir.",
-      empathyTitle:
-        "Empatia",
+        "Impulso constante para adotar melhores práticas e novas tecnologias.",
+      empathyTitle: "Foco no Usuário",
       empathyDescription:
-        "Compreensão das necessidades e perspectivas dos outros."
+        "Compreensão profunda das necessidades do cliente final e das partes interessadas."
     },
     education: {
       title: "Educação",
-      languagesTitle: "Formação em Idiomas",
-      languagesDate: "2022 - Atualmente",
+      languagesTitle: "Idiomas",
+      languagesDate: "Nível Profissional",
       languages:
-        "Atualmente curso um programa de inglês intermediário (nível B2) e tenho um interesse especial em aprender árabe. Acredito que minhas habilidades em inglês e meu interesse pelo árabe me permitirão me comunicar de forma eficaz em ambientes multiculturais.",
-      universityTitle: "Graduação",
-      universityDate: "2021 - Atualmente",
+        "Espanhol (Nativo) e Inglês (Profissional - B2). Interesse ativo em línguas semíticas (Árabe) para ambientes multiculturais.",
+      universityTitle: "Engenharia de Sistemas",
+      universityDate: "Out 2016 - Fev 2021",
       university:
-        "Estou cursando Engenharia de Sistemas no Instituto Universitário Politécnico Santiago Mariño.",
-      professionalDevelopmentTitle: "Desenvolvimento Profissional",
-      professionalDevelopmentDate: "2020 - Atualmente",
+        "Instituto Universitário Politécnico Santiago Mariño. Base sólida em ciência da computação, estruturas de dados e gestão de projetos.",
+      professionalDevelopmentTitle: "Certificações Técnicas",
+      professionalDevelopmentDate: "Aprendizado Contínuo",
       professionalDevelopment:
-        "Estou em constante aprendizado de novas habilidades e tecnologias por meio de cursos online em diversas plataformas. Adoro aprender todos os dias sobre programação e informática, além de novas tecnologias."
+        "Especializações em: Design de Banco de Dados (SQL/MySQL), Desenvolvimento Backend (Node.js/Express), Frontend Avançado (React/TypeScript) e Controle de Versão."
     },
     footer: {
       copyright:
-        "© 2024 Miguelangel Abou. Todos os direitos reservados."
+        "© 2026 Miguelangel Abou. Engenheiro de Software Sênior.",
+      builtWith: "Projetado e Construído com"
+    },
+    loader: {
+      text: "INICIALIZANDO SISTEMA..."
     }
   },
   ar: {
-    title: "مهندس برمجيات",
+    title: "مهندس برمجيات أول",
     name: "Miguelangel Abou",
     nav: {
-      AboutMe: "عني",
+      AboutMe: "الملف المهني",
       Project: "المشاريع",
       Experience: "الخبرة",
-      Skills: "المهارات",
+      Skills: "التقنيات",
       Education: "التعليم",
-      Reviews: "المراجعات",
+      Reviews: "التوصيات",
       Contact: "اتصال"
     },
+    header: {
+      logoSuffix: ".مهندس"
+    },
     aboutMe: {
-      title: "عني",
-      career: "مهندس برمجيات",
+      title: "الملف المهني",
+      career: "مهندس برمجيات أول",
       description:
-        "مرحبًا! أنا مهندس برمجيات لديّ أكثر من 5 سنوات من الخبرة، بدأتُ في سن 16 عامًا. عملتُ على مشاريع جاهزة للإنتاج مثل أنظمة CRUD للشركات، وSaaS، وتطبيقات سطح المكتب، والألعاب، ومواقع الويب. أنا متحمّس لإمكانية الانضمام إلى فريق مبتكر حيث يمكنني تقديم مهاراتي ومواصلة التعلّم.",
-      availableToWork: "متاح للعمل",
-      languages: "<span class='font-bold'>اللغات</span>: الإسبانية، الإنجليزية.",
+        "مهندس برمجيات أول بخبرة تزيد عن 6 سنوات في قيادة تطوير النظم البيئية الرقمية عالية التأثير، من منصات SaaS والتجارة الإلكترونية إلى تطبيقات سطح المكتب الحيوية. متخصص في تحويل المتطلبات المعقدة إلى معماريات قابلة للتوسع، مع إعطاء الأولوية للأداء والأمان (JWT/OAuth) والتميز التقني. خبير في الأنظمة الموزعة، والخدمات المصغرة (Microservices)، وتحسين قواعد البيانات SQL/NoSQL في بيئات عالية التزامن.",
+      availableToWork: "متاح لتحديات جديدة",
+      languages: "<span class='font-bold'>اللغات</span>: الإسبانية (اللغة الأم)، الإنجليزية (مهنية - B2).",
       downloadCV: "تحميل السيرة الذاتية",
-      copyEmail: "نسخ البريد الإلكتروني"
+      copyEmail: "نسخ البريد الإلكتروني",
+      englishVoice: "الصوت بالإنجليزية",
+      voice: "صوت",
+      projectsCount: "10+ مشاريع في الإنتاج"
     },
     experience: {
-      title: "الخبرة",
+      title: "الخبرة المهنية",
       experience1: {
-        dateRole: "2023 - حتى الآن | FullStack",
+        dateRole: "يناير 2020 - حتى الآن | مهندس برمجيات أول",
         description:
-          "في Skynoff Technology، عملتُ كمطور Full Stack، وشاركتُ في مشاريع تمتد من الواجهة الأمامية إلى الواجهة الخلفية، باستخدام تقنيات مثل React وNode.js."
+          "في Skynoff Technology، أقود دورة حياة تطوير البرمجيات (SDLC) الكاملة لتطبيقات الويب القابلة للتوسع. قمت بتصميم وتنفيذ واجهات برمجة تطبيقات RESTful مُحسَّنة لتعزيز الاتصال بين أنظمة الواجهة الأمامية والخلفية الموزعة. أتعاون بشكل وثيق مع فرق متعددة التخصصات لإنشاء حلول مبتكرة، وإدارة البنية التحتية على GCP وVercel، وضمان سلامة البيانات في بيئات الإنتاج."
       }
     },
     projects: {
-      title: "المشاريع",
-      languages: "اللغات المستخدمة:",
-      releaseDate: "تاريخ الانتهاء:",
-      role: "الدور في المشروع:",
-      frameworks: "الأُطر أو المكتبات:",
+      title: "أعمال مختارة",
+      subtitle: "مختارات من الأعمال الحديثة عالية التأثير.",
+      viewGithub: "عرض الكل على GitHub",
+      languages: "التقنيات الأساسية:",
+      releaseDate: "تاريخ النشر:",
+      role: "الدور التقني:",
+      frameworks: "النظام البيئي والمكتبات:",
+      viewDemo: "عرض تجريبي",
+      githubRepo: "GitHub",
       project1: {
         name: "¿QueTantoSabes؟",
-        preview:
-          "“¿QueTantoSabes؟” لعبة تفاعلية للأسئلة والأجوبة عن فنزويلا.",
+        preview: "منصة تعليمية تفاعلية تعتمد على التلعيب (Gamification) ذات بنية محسنة.",
         description:
-          "لعبة تفاعلية تُثري المعرفة عن فنزويلا، وتجمع بين التلعيب وتعلّم ثقافتها وتاريخها.",
-        languages: "HTML, CSS, JavaScript, PHP, MySQL",
+          "نظام تفاعلي للأسئلة والأجوبة مصمم لإثراء المعرفة الثقافية. تم تطويره مع التركيز على الأداء وتجربة مستخدم سلسة، وإدارة منطق اللعبة المعقد واستدامة البيانات العلائقية.",
+        languages: "PHP, MySQL, JavaScript, HTML5, CSS3",
         date: "2024-12-27",
-        rol: "FullStack",
-        frameworks: "JWT",
+        rol: "مهندس Full Stack",
+        frameworks: "معمارية MVC، مصادقة JWT، تحسين SQL",
         projectLink: "#",
         githubLink:
           "https://github.com/miguelangelabou/QueTantoSabes"
       },
       project2: {
         name: "Globos Anabell",
-        preview:
-          "موقع تجارة إلكترونية لبيع البالونات والديكورات، بتصميم جذاب ووظائف متكاملة، باستخدام تقنيات حديثة وتهيئة فعالة لمحركات البحث.",
+        preview: "متجر إلكتروني شامل مع إدارة المخزون في الوقت الفعلي ولوحة تحكم إدارية.",
         description:
-          "متجر إلكتروني في إسبانيا لبيع البالونات والديكور والزهور؛ يتضمن سلة مشتريات، وشريط تقدم لتحديد الحد الأقصى للميزانية، ونظامًا إداريًا يمكّن صاحب المتجر من تعديل معلومات الشركة وتتبع المشتريات والإحصاءات.",
-        languages: "Typescript, CSS, HTML",
+          "حل تجارة إلكترونية قوي للسوق الإسباني. يتضمن منطق أعمال معقدًا للميزانيات الديناميكية، وإدارة الحالة العالمية، وتكامل بوابات الدفع، ونظام إدارة محتوى (CMS) مخصص للإدارة الكاملة للمخزون وتحليل المبيعات.",
+        languages: "TypeScript, React, Node.js",
         date: "2025-03-24",
-        rol: "عمل حر",
+        rol: "مهندس رئيسي",
         frameworks:
-          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Firebase (Auth/Firestore), Tailwind CSS, Shadcn UI, Vercel",
         projectLink: "https://globosanabell.vercel.app/",
         githubLink: "#"
       },
       project3: {
         name: "Dulce Control",
-        preview:
-          "نظام إدارة لمحل حلويات، يوفّر تسجيل المنتجات والمبيعات والإحصاءات.",
+        preview: "نظام SaaS إداري لتخطيط موارد المؤسسات (ERP) في قطاع الضيافة.",
         description:
-          "برنامج إداري لمتجر حلويات: إدارة الوصفات، التحكم في مخزون الإنتاج، إدارة مخزون الحلويات، المدفوعات بالأقساط/الائتمان، ولوحة مؤشرات إحصائية بمعلومات ذات صلة.",
-        languages: "Typescript, CSS, HTML",
+          "برنامج إدارة أعمال مصمم لتحسين سير العمل في محلات الحلويات. تشمل الميزات الحيوية: التحكم في مخزون المواد الخام مقابل الإنتاج، وإدارة الحسابات المدينة، ومراقبة الموظفين، ولوحة تحكم تحليلية لاتخاذ القرارات الاستراتيجية.",
+        languages: "TypeScript, React, Node.js",
         date: "2025-05-27",
-        rol: "عمل حر",
+        rol: "مهندس رئيسي",
         frameworks:
-          "React.js, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Firebase, Recharts, Tailwind CSS, Lucide Icons",
         projectLink: "https://cookie-control.vercel.app/",
         githubLink: "#"
       },
       project4: {
         name: "JM Arquitectos",
-        preview: "صفحة هبوط لشركة إنشاءات.",
-        description: "صفحة هبوط لشركة إنشاءات.",
-        languages: "Typescript, CSS, HTML",
+        preview: "صفحة هبوط للشركات عالية الأداء.",
+        description: "واجهة رقمية للشركات تركز على تجربة المستخدم/واجهة المستخدم (UX/UI) ومؤشرات الويب الأساسية (Core Web Vitals). تنفيذ تصميم متجاوب متقدم وتحسين الأصول لضمان الحد الأدنى من أوقات التحميل وأقصى قدر من الاحتفاظ بالمستخدمين.",
+        languages: "TypeScript, React, HTML5",
         date: "2025-07-02",
-        rol: "عمل حر",
+        rol: "مهندس واجهات أمامية",
         frameworks:
-          "React, Node.js, Next.JS, Firebase, Tailwind CSS, Shadcn UI, Lucide Icons",
+          "Next.js, Tailwind CSS, Shadcn UI, Framer Motion",
         projectLink: "https://jmarquitectos.vercel.app/",
         githubLink: "#"
       }
     },
     skills: {
-      title: "المهارات التقنية",
-      programmingLanguages: "لغات البرمجة",
-      frameworks: "الأطر",
-      tools: "الأدوات",
-      softSkillsTitle: "المهارات الشخصية",
+      title: "المكدس التقني",
+      description: "مكدس تكنولوجي محدث وأدوات أستخدمها لبناء منتجات رقمية قوية وقابلة للتوسع.",
+      frontendTitle: "الواجهة الأمامية وواجهة المستخدم",
+      backendTitle: "الواجهة الخلفية والبيانات",
+      devopsTitle: "DevOps والأساسيات",
+      programmingLanguages: "اللغات والأساسيات",
+      frameworks: "الأطر والنظام البيئي",
+      tools: "البنية التحتية والأدوات",
+      softSkillsTitle: "كفاءات القيادة",
       communicationTitle:
-        "التواصل",
+        "التواصل التقني",
       communicationDescription:
-        "القدرة على التعبير عن الأفكار والمفاهيم بوضوح وفعالية.",
+        "القدرة على ترجمة التعقيدات التقنية إلى لغة أعمال واضحة.",
       teamworkTitle:
-        "العمل الجماعي",
+        "التعاون المرن (Agile)",
       teamworkDescription:
-        "تعاون فعّال مع الآخرين لتحقيق الأهداف المشتركة.",
+        "خبرة في منهجيات Scrum وسير عمل Git/GitHub.",
       problemSolvingTitle:
-        "حل المشكلات",
+        "التفكير المعماري",
       problemSolvingDescription:
-        "القدرة على تحديد المشكلات وحلّها بطريقة إبداعية.",
+        "نهج تحليلي لتحليل الأسباب الجذرية وتحسين النظام.",
       timeManagementTitle:
-        "إدارة الوقت",
+        "إدارة التسليم",
       timeManagementDescription:
-        "القدرة على تنظيم المهام وتحديد أولوياتها بكفاءة.",
+        "تحديد الأولويات بكفاءة في البيئات سريعة الخطى والمواعيد النهائية الحاسمة.",
       proactivityTitle:
-        "المبادرة",
+        "الابتكار المستمر",
       proactivityDescription:
-        "شخص مبادر يسعى دائمًا لفرص التحسين والمساهمة.",
+        "الدافع المستمر لتبني أفضل الممارسات والتقنيات الجديدة.",
       empathyTitle:
-        "التعاطف",
+        "التركيز على المستخدم",
       empathyDescription:
-        "فهم احتياجات ووجهات نظر الآخرين."
+        "فهم عميق لاحتياجات العميل النهائي وأصحاب المصلحة."
     },
     education: {
       title: "التعليم",
-      languagesTitle: "تعلّم اللغات",
-      languagesDate: "2022 - حتى الآن",
+      languagesTitle: "اللغات",
+      languagesDate: "مستوى احترافي",
       languages:
-        "أدرس حاليًا برنامجًا للغة الإنجليزية بمستوى متوسط (B2)، ولدي اهتمام خاص بتعلّم اللغة العربية. أؤمن بأن مهاراتي في الإنجليزية واهتمامي بالعربية ستمكّناني من التواصل بفعالية في بيئات متعددة الثقافات.",
-      universityTitle: "الدرجة الجامعية",
-      universityDate: "2021 - حتى الآن",
+        "الإسبانية (اللغة الأم) والإنجليزية (كفاءة مهنية - B2). اهتمام نشط باللغات السامية (العربية) للبيئات متعددة الثقافات.",
+      universityTitle: "هندسة النظم",
+      universityDate: "أكتوبر 2016 - فبراير 2021",
       university:
-        "أتابع دراسة هندسة النظم في المعهد الجامعي البوليتكنيكي سانتياغو ماريّنو.",
-      professionalDevelopmentTitle: "التطوير المهني",
-      professionalDevelopmentDate: "2020 - حتى الآن",
+        "المعهد الجامعي البوليتكنيكي سانتياغو ماريّنو. أساس متين في علوم الحاسوب، وهياكل البيانات، وإدارة المشاريع.",
+      professionalDevelopmentTitle: "الشهادات التقنية",
+      professionalDevelopmentDate: "التعلم المستمر",
       professionalDevelopment:
-        "أتعلّم باستمرار مهارات وتقنيات جديدة عبر دورات عبر الإنترنت على منصات مختلفة. أحب أن أتعلّم كل يوم المزيد عن البرمجة وعلوم الحاسوب والتقنيات الحديثة."
+        "تخصصات في: تصميم قواعد البيانات (SQL/MySQL)، تطوير الواجهة الخلفية (Node.js/Express)، الواجهة الأمامية المتقدمة (React/TypeScript)، والتحكم في الإصدار."
     },
     footer: {
       copyright:
-        "© 2024 Miguelangel Abou. جميع الحقوق محفوظة."
+        "© 2026 Miguelangel Abou. مهندس برمجيات أول.",
+      builtWith: "تم التصميم والبناء بواسطة"
+    },
+    loader: {
+      text: "جاري تهيئة النظام..."
     }
   }
 };

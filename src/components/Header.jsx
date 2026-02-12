@@ -1,113 +1,118 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Code2, Menu, Sun, Moon, Languages, X } from 'lucide-react';
 
 const Header = ({ t, theme, toggleTheme, setLang }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
-  const headerRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { href: "#AboutMe", label: t.nav.AboutMe },
-    { href: "#Education", label: t.nav.Education },
     { href: "#Experience", label: t.nav.Experience },
     { href: "#Projects", label: t.nav.Project },
     { href: "#Skills", label: t.nav.Skills },
-    { href: "#Contact", label: t.nav.Contact },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => { if (isMobileMenuOpen) setIsMobileMenuOpen(false); };
-    const handleClickOutside = (event) => {
-      if (headerRef.current && !headerRef.current.contains(event.target)) {
-        setIsMobileMenuOpen(false);
-        setIsLangMenuOpen(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isMobileMenuOpen]);
-
   return (
-    <header ref={headerRef} className="bg-base-header sticky top-0 z-[5] shadow w-full" id="TOP">
-      <div className={`container mx-auto px-4 py-6 flex items-center relative justify-between`}>
-        
-        <a className={`text-text-color text-base md:text-lg lg:text-3xl font-bold animate-fade-in name items-center ${isMobileMenuOpen ? 'hidden' : 'flex'}`} href="#AboutMe">
-          <Code2 className="inline-block text-blue-400 me-2 hidden sm:block" size={28} />
-          {t.name}
-        </a>
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'py-3' : 'py-6'
+      }`}
+    >
+      <div className={`mx-auto max-w-6xl px-4 md:px-6`}>
+        <div className={`rounded-2xl transition-all duration-300 ${
+          isScrolled ? 'glass-panel shadow-lg px-6 py-3' : 'bg-transparent px-0 py-0 border-transparent'
+        } flex items-center justify-between`}>
+          
+          {/* Logo */}
+          <a href="#TOP" className="flex items-center gap-2 group">
+            <div className="p-2 bg-blue-600 rounded-lg text-white transform group-hover:rotate-12 transition-transform">
+              <Code2 size={20} />
+            </div>
+            <span className="font-bold text-lg tracking-tight hidden sm:block">
+              Miguelangel<span className="text-blue-500">{t.header.logoSuffix}</span>
+            </span>
+          </a>
 
-        <nav className="flex items-center gap-4">
-          <ul className="hidden md:flex gap-4 md:text-[13px] lg:text-base">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <a className="underline-animation text-black-500 hover:text-hover" href={link.href}>
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            <ul className="flex gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
+              {navLinks.map((link) => (
+                <li key={link.label}>
+                  <a className="hover:text-blue-500 transition-colors" href={link.href}>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
+            <div className="h-4 w-[1px] bg-gray-300 dark:bg-gray-700 mx-2"></div>
+
+            <div className="flex items-center gap-3">
+               {/* Language Toggle */}
+              <div className="relative">
+                <button 
+                  onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-full transition-colors"
+                >
+                  <Languages size={18} />
+                </button>
+                {isLangMenuOpen && (
+                  <div className="absolute right-0 mt-2 w-40 glass-panel rounded-xl shadow-xl overflow-hidden py-1 animate-fade-in">
+                    {['es', 'en', 'pt', 'zh', 'ar'].map(lang => (
+                      <button 
+                        key={lang}
+                        onClick={() => { setLang(lang); setIsLangMenuOpen(false); }}
+                        className="block w-full text-left px-4 py-2 text-sm hover:bg-blue-500 hover:text-white transition-colors uppercase"
+                      >
+                        {lang}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Theme Toggle */}
+              <button 
+                onClick={toggleTheme}
+                className="p-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-full transition-colors text-yellow-500 dark:text-blue-300"
+              >
+                {theme === 'dark' ? <Moon size={18} /> : <Sun size={18} />}
+              </button>
+            </div>
+          </nav>
+
+          {/* Mobile Toggle */}
           <button 
-            className="text-text-color bg-transparent md:hidden rounded-full px-4 py-2 z-[6]"
+            className="md:hidden p-2 text-gray-600 dark:text-gray-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            {isMobileMenuOpen ? <X /> : <Menu />}
           </button>
-
-          <button 
-            className={`p-1 text-text-color md:hover:bg-[rgba(219,219,219,0.25)] rounded-lg z-[6] ${isMobileMenuOpen ? 'hidden' : 'block'}`}
-            onClick={toggleTheme}
-          >
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-
-          <div className="relative z-[7]">
-            <button 
-              className={`text-text-color md:hover:bg-[rgba(219,219,219,0.25)] rounded-lg p-1 z-[6] ${isMobileMenuOpen ? 'hidden' : 'block'}`}
-              onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-            >
-              <Languages size={20} />              
-            </button>
-            
-            {isLangMenuOpen && (
-              <div className="absolute end-0 mt-2 w-48 bg-base border border-gray-200 rounded-lg shadow-lg">
-                {[
-                  { code: 'es', label: 'Español', flag: 'fi-es' },
-                  { code: 'en', label: 'English', flag: 'fi-us' },
-                  { code: 'pt', label: 'Portugués', flag: 'fi-br' },
-                  { code: 'zh', label: '中文', flag: 'fi-cn' },
-                  { code: 'ar', label: 'العربية', flag: 'fi-sa' }
-                ].map(lang => (
-                  <button 
-                    key={lang.code}
-                    onClick={() => { setLang(lang.code); setIsLangMenuOpen(false); }}
-                    className="flex items-center w-full px-4 py-2 text-text-color hover:text-[#3b82f6]"
-                  >
-                    <span className={`fi ${lang.flag} me-2`}></span> 
-                    <span className="flex-1 text-start">{lang.label}</span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </nav>
+        </div>
       </div>
 
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute bg-base-header w-full top-full start-0 z-[5] shadow-lg mobile-menu-animate">
-          <ul className="space-y-4 px-4 py-6">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <a className="block text-black-500 hover:text-hover" href={link.href} onClick={() => setIsMobileMenuOpen(false)}>
+        <div className="absolute top-full left-0 right-0 p-4 md:hidden">
+          <div className="glass-panel rounded-2xl p-4 shadow-2xl flex flex-col gap-4 animate-fade-in">
+             {navLinks.map((link) => (
+                <a 
+                  key={link.label}
+                  className="block px-4 py-3 rounded-xl hover:bg-blue-500/10 hover:text-blue-500 font-medium transition-colors" 
+                  href={link.href} 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   {link.label}
                 </a>
-              </li>
-            ))}
-          </ul>
+              ))}
+          </div>
         </div>
       )}
     </header>

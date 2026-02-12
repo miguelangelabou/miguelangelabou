@@ -1,4 +1,5 @@
 import React from 'react';
+import { GraduationCap, Calendar } from 'lucide-react';
 
 const Education = ({ t }) => {
   const items = [
@@ -20,37 +21,34 @@ const Education = ({ t }) => {
   ];
 
   return (
-    <section className="container mx-auto px-4 mb-12 animate-fade-in" id="Education">
-      <h2 className="text-2xl font-bold mb-8">{t.education.title}</h2>
-      
-      {/* Contenedor principal con la línea vertical continua */}
-      {/* ml-4 md:ml-8: Margen izquierdo para no pegar la línea al borde de la pantalla */}
-      {/* border-l-2: El grosor de la línea */}
-      {/* border-blue-400: El color de la línea (puedes cambiarlo a gray-300 si prefieres más sutil) */}
-      <div className="relative border-l-2 border-blue-400 ml-4 md:ml-8 space-y-12 my-8">
+    <section className="py-20 px-4" id="Education">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
+          <GraduationCap className="text-blue-500" size={32} />
+          {t.education.title}
+        </h2>
         
-        {items.map((item, index) => (
-          <div key={index} className="relative pl-8 md:pl-12 group">
-            {/* El Punto (Dot) */}
-            {/* absolute: Para posicionarlo libremente */}
-            {/* -left-[9px]: Calculado para centrar un punto de 16px (w-4) sobre una línea de 2px */}
-            {/* top-0: Alineado con la parte superior de la tarjeta */}
-            {/* bg-blue-400: Color del punto */}
-            {/* ring-4 ring-base-color: Crea un borde del color de fondo alrededor del punto para separarlo visualmente de la línea */}
-            <span 
-              className="absolute top-0 -left-[9px] w-4 h-4 rounded-full bg-blue-400 z-10 ring-4 ring-white dark:ring-[#121212] transition-transform duration-300 md:group-hover:scale-125"
-            ></span>
-            
-            {/* Tarjeta de Contenido */}
-            {/* Añadimos una flechita visual con 'before:' para que parezca que sale de la línea (opcional, estilo diagrama) */}
-            <div className="relative bg-card p-6 rounded-lg shadow-lg transform transition duration-300 md:hover:scale-105 md:hover:bg-[rgba(219,219,219,0.25)]">
-              <h3 className="text-xl font-bold mb-1 text-blue-500">{item.title}</h3>
-              <h6 className="opacity-70 font-medium text-xs mb-3 uppercase tracking-wider">{item.date}</h6>
-              <p className="text-sm md:text-base leading-relaxed">{item.description}</p>
+        <div className="space-y-6">
+          {items.map((item, index) => (
+            <div key={index} className="group relative pl-8 border-l-2 border-gray-200 dark:border-zinc-800 last:border-0 pb-8 last:pb-0">
+              {/* Timeline Dot */}
+              <div className="absolute top-0 -left-[9px] w-4 h-4 rounded-full bg-white dark:bg-zinc-900 border-2 border-blue-500 group-hover:bg-blue-500 transition-colors"></div>
+              
+              <div className="glass-panel p-6 rounded-2xl hover:border-blue-500/30 transition-all hover:translate-x-1">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3 gap-2">
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">{item.title}</h3>
+                  <div className="flex items-center gap-2 text-sm text-blue-500 font-mono bg-blue-50 dark:bg-blue-900/20 px-3 py-1 rounded-full w-fit">
+                    <Calendar size={14} />
+                    {item.date}
+                  </div>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
-        
+          ))}
+        </div>
       </div>
     </section>
   );

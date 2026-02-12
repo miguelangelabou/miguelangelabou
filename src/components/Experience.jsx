@@ -1,34 +1,45 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 
 const Experience = ({ t }) => {
   return (
-    <section className="container mx-auto px-4 lg:px-0 animate-fade-in mb-12" id="Experience">
-      <h2 className="text-2xl font-bold mb-2">{t.experience.title}</h2>
+    <section className="py-20 px-4" id="Experience">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
+            <Briefcase className="text-blue-500"/> 
+            {t.experience.title}
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
-        <div className="flex-col gap-[4%] items-start mt-6 bg-card p-6 rounded-lg shadow-lg transform transition duration-300">
-          <div className="text-left w-full inline-flex gap-[4%]">
-            <img 
-              alt="Skynoff Technology" 
-              className="rounded-full w-12 h-12 my-auto" 
-              src="/assets/SKYNOFF_TECHNOLOGY.webp"
-            />
-            <div className="flex-col">
-              <h1 className="text-xl font-bold">Skynoff Technology</h1>
-              <h6 className="opacity-70 leading-none text-xs mb-2">{t.experience.experience1.dateRole}</h6>
+        <div className="relative border-l-2 border-gray-200 dark:border-gray-800 ml-3 md:ml-6 space-y-12">
+          
+          {/* Item 1 */}
+          <div className="relative pl-8 md:pl-12 group">
+            <span className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-blue-500 ring-4 ring-white dark:ring-[#050505] transition-all group-hover:scale-125 shadow-lg shadow-blue-500/50"></span>
+            
+            <div className="glass-panel p-8 rounded-2xl hover:border-blue-500/30 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
+                <div className="flex items-center gap-4">
+                    <img src="/assets/SKYNOFF_TECHNOLOGY.webp" alt="Skynoff" className="w-10 h-10 rounded-lg shadow-sm" />
+                    <div>
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white">Skynoff Technology</h3>
+                        <p className="text-blue-500 font-medium">Full Stack Developer</p>
+                    </div>
+                </div>
+                <span className="font-mono text-xs text-gray-400 bg-gray-100 dark:bg-zinc-800 px-3 py-1 rounded-full w-fit">
+                    {t.experience.experience1.dateRole.split('|')[0]}
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                {t.experience.experience1.description}
+              </p>
+              <div className="mt-4 flex gap-2">
+                  <span className="text-xs border border-gray-200 dark:border-zinc-700 px-2 py-1 rounded text-gray-500">React</span>
+                  <span className="text-xs border border-gray-200 dark:border-zinc-700 px-2 py-1 rounded text-gray-500">Node.js</span>
+              </div>
             </div>
-            <a 
-              className="text-white bg-blue-400 md:hover:bg-transparent md:hover:text-blue-400 border-2 border-blue-400 transition-colors duration-300 ease-in-out p-1 rounded-lg ml-auto h-fit max-h-fit" 
-              href="https://www.linkedin.com/company/skynoff-technologies/" 
-              target="_blank" 
-              rel="noreferrer"
-            >
-              <ExternalLink size={18} />
-            </a>
           </div>
-          <p className="mt-4">{t.experience.experience1.description}</p>
-        </div>  
+
+        </div>
       </div>
     </section>
   );
