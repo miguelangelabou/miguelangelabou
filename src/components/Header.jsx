@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'; // 1. Importamos useRef
+import React, { useState, useEffect, useRef } from 'react';
 import { Code2, Menu, Sun, Moon, Languages, X } from 'lucide-react';
 
 const Header = ({ t, theme, toggleTheme, setLang }) => {
@@ -6,16 +6,13 @@ const Header = ({ t, theme, toggleTheme, setLang }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
-  // 2. Referencias para detectar clicks fuera
   const langMenuRef = useRef(null);
   const mobileMenuRef = useRef(null);
-  const mobileBtnRef = useRef(null); // Referencia para el botón de menú móvil
+  const mobileBtnRef = useRef(null);
 
-  // 3. Manejo del Scroll
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
-      // Cerramos los menús al hacer scroll
       setIsLangMenuOpen(false);
       setIsMobileMenuOpen(false);
     };
@@ -23,16 +20,11 @@ const Header = ({ t, theme, toggleTheme, setLang }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 4. Manejo de Clicks fuera de los componentes (Click Outside)
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Lógica para el menú de idiomas
       if (langMenuRef.current && !langMenuRef.current.contains(event.target)) {
         setIsLangMenuOpen(false);
       }
-
-      // Lógica para el menú móvil
-      // Si el click NO es en el menú Y TAMPOCO en el botón que lo abre
       if (
         isMobileMenuOpen &&
         mobileMenuRef.current &&
@@ -47,7 +39,7 @@ const Header = ({ t, theme, toggleTheme, setLang }) => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isMobileMenuOpen]); // Añadimos isMobileMenuOpen como dependencia
+  }, [isMobileMenuOpen]);
 
   const navLinks = [
     { href: "#AboutMe", label: t.nav.AboutMe },
@@ -77,7 +69,7 @@ const Header = ({ t, theme, toggleTheme, setLang }) => {
             </span>
           </a>
 
-          {/* Desktop Nav */}
+          {/* Desktop Nav Links (SOLO ENLACES - Oculto en móvil) */}
           <nav className="hidden md:flex items-center gap-8">
             <ul className="flex gap-6 text-sm font-medium text-dynamic">
               {navLinks.map((link) => (
@@ -88,51 +80,54 @@ const Header = ({ t, theme, toggleTheme, setLang }) => {
                 </li>
               ))}
             </ul>
-
-            <div className="h-4 w-[1px] bg-gray-300 dark:bg-gray-700 mx-2"></div>
-
-            <div className="flex items-center gap-3">
-               {/* Language Toggle - AQUI AGREGAMOS LA REF (langMenuRef) */}
-              <div className="relative" ref={langMenuRef}>
-                <button 
-                  onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-                  className="p-2 rounded-full transition-colors text-dynamic cursor-pointer"
-                >
-                  <Languages size={18} />
-                </button>
-                {isLangMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-40 glass-panel rounded-xl shadow-xl overflow-hidden py-1 animate-fade-in">
-                    <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('es'); setIsLangMenuOpen(false); }}><span className="fi fi-es mr-2"></span> Español</button>
-                    <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('en'); setIsLangMenuOpen(false); }}><span className="fi fi-us mr-2"></span> English</button>
-                    <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('pt'); setIsLangMenuOpen(false); }}><span className="fi fi-br mr-2"></span> Portugués</button>
-                    <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('zh'); setIsLangMenuOpen(false); }}><span className="fi fi-cn mr-2"></span> 中文</button>
-                    <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('ar'); setIsLangMenuOpen(false); }}><span className="fi fi-sa mr-2"></span> التواصل</button>
-                  </div>
-                )}
-              </div>
-
-              {/* Theme Toggle */}
-              <button 
-                onClick={toggleTheme}
-                className="p-2 cursor-pointer rounded-full transition-colors text-yellow-500 dark:text-blue-300"
-              >
-                {theme === 'dark' ? <Moon size={18} /> : <Sun size={18} />}
-              </button>
-            </div>
           </nav>
 
-          {/* Mobile Toggle Button - AQUI AGREGAMOS LA REF (mobileBtnRef) */}
-          <button 
-            ref={mobileBtnRef}
-            className="md:hidden p-2 text-gray-600 dark:text-gray-300"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X /> : <Menu />}
-          </button>
+          {/* Right Side Actions (Visible en todos los dispositivos) */}
+          <div className="flex items-center gap-3">
+            
+            {/* Separador (Solo visible en Desktop 'md:block' para separar links de iconos) */}
+            <div className="hidden md:block h-4 w-[1px] bg-gray-300 dark:bg-gray-700 mx-2"></div>
+
+            {/* Language Toggle - Ahora fuera del nav hidden */}
+            <div className="relative" ref={langMenuRef}>
+              <button 
+                onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+                className="p-2 rounded-full transition-colors text-dynamic cursor-pointer"
+              >
+                <Languages size={18} />
+              </button>
+              {isLangMenuOpen && (
+                <div className="absolute right-0 mt-2 w-40 glass-panel rounded-xl shadow-xl overflow-hidden py-1 animate-fade-in">
+                  <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('es'); setIsLangMenuOpen(false); }}><span className="fi fi-es mr-2"></span> Español</button>
+                  <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('en'); setIsLangMenuOpen(false); }}><span className="fi fi-us mr-2"></span> English</button>
+                  <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('pt'); setIsLangMenuOpen(false); }}><span className="fi fi-br mr-2"></span> Portugués</button>
+                  <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('zh'); setIsLangMenuOpen(false); }}><span className="fi fi-cn mr-2"></span> 中文</button>
+                  <button className="block w-full text-left px-4 py-2 text-dynamic cursor-pointer" onClick={() => { setLang('ar'); setIsLangMenuOpen(false); }}><span className="fi fi-sa mr-2"></span> التواصل</button>
+                </div>
+              )}
+            </div>
+
+            {/* Theme Toggle - Ahora fuera del nav hidden */}
+            <button 
+              onClick={toggleTheme}
+              className="p-2 cursor-pointer rounded-full transition-colors text-yellow-500 dark:text-blue-300"
+            >
+              {theme === 'dark' ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
+
+            {/* Mobile Toggle Button */}
+            <button 
+              ref={mobileBtnRef}
+              className="md:hidden p-2 text-gray-600 dark:text-gray-300"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X /> : <Menu />}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Menu - AQUI AGREGAMOS LA REF (mobileMenuRef) */}
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div 
           ref={mobileMenuRef}
