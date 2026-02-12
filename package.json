@@ -1,7 +1,7 @@
 {
   "name": "miguelangel_abou",
   "version": "1.0.0",
-  "description": "Portafolio como desarrollador de software",
+  "description": "Portafolio como Ingeniero de software",
   "type": "module",
   "main": "index.html",
   "scripts": {
@@ -27,6 +27,7 @@
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/vite": "^4.1.18",
     "express": "^4.21.2",
+    "lucide-react": "^0.563.0",
     "morgan": "^1.10.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"

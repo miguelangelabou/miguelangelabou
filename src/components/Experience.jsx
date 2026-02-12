@@ -1,4 +1,5 @@
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 const Experience = ({ t }) => {
   return (
@@ -18,12 +19,12 @@ const Experience = ({ t }) => {
               <h6 className="opacity-70 leading-none text-xs mb-2">{t.experience.experience1.dateRole}</h6>
             </div>
             <a 
-              className="text-white bg-blue-400 md:hover:bg-transparent md:hover:text-blue-400 border-2 border-blue-400 transition-colors duration-300 ease-in-out p-1 rounded-lg ml-auto h-fit" 
+              className="text-white bg-blue-400 md:hover:bg-transparent md:hover:text-blue-400 border-2 border-blue-400 transition-colors duration-300 ease-in-out p-1 rounded-lg ml-auto h-fit max-h-fit" 
               href="https://www.linkedin.com/company/skynoff-technologies/" 
               target="_blank" 
               rel="noreferrer"
             >
-              <i className="fas fa-link"></i>
+              <ExternalLink size={18} />
             </a>
           </div>
           <p className="mt-4">{t.experience.experience1.description}</p>

@@ -84,17 +84,17 @@ export const translations = {
       frameworks: "Frameworks",
       tools: "Herramientas",
       softSkillsTitle: "Habilidades Blandas",
-      communicationTitle: "<i class='fas fa-comments text-blue-500'></i> Comunicación",
+      communicationTitle: "Comunicación",
       communicationDescription: "Capacidad para expresar ideas y conceptos de manera clara y efectiva.",
-      teamworkTitle: "<i class='fas fa-users text-green-500'></i> Trabajo en Equipo",
+      teamworkTitle: "Trabajo en Equipo",
       teamworkDescription: "Colaboración efectiva con otros para alcanzar objetivos comunes.",
-      problemSolvingTitle: "<i class='fas fa-lightbulb text-yellow-500'></i> Resolución de Problemas",
+      problemSolvingTitle: "Resolución de Problemas",
       problemSolvingDescription: "Habilidad para identificar y resolver problemas de manera creativa.",
-      timeManagementTitle: "<i class='fas fa-clock text-purple-500'></i> Gestión del Tiempo",
+      timeManagementTitle: "Gestión del Tiempo",
       timeManagementDescription: "Capacidad para organizar y priorizar tareas eficientemente.",
-      proactivityTitle: "<i class='fas fa-rocket text-orange-500'></i> Proactividad",
+      proactivityTitle: "Proactividad",
       proactivityDescription: "Soy proactivo y siempre busco oportunidades para mejorar y contribuir.",
-      empathyTitle: "<i class='fas fa-thumbs-up text-gray-500'></i> Empatía",
+      empathyTitle: "Empatía",
       empathyDescription: "Comprensión de las necesidades y perspectivas de otros."      
     },
     education: {
@@ -209,25 +209,25 @@ export const translations = {
       tools: "Tools",
       softSkillsTitle: "Soft Skills",
       communicationTitle:
-        "<i class='fas fa-comments text-blue-500'></i> Communication",
+        "Communication",
       communicationDescription:
         "Ability to express ideas and concepts clearly and effectively.",
-      teamworkTitle: "<i class='fas fa-users text-green-500'></i> Teamwork",
+      teamworkTitle: "Teamwork",
       teamworkDescription:
         "Effective collaboration with others to achieve common goals.",
       problemSolvingTitle:
-        "<i class='fas fa-lightbulb text-yellow-500'></i> Problem Solving",
+        "Problem Solving",
       problemSolvingDescription:
         "Ability to identify and creatively solve problems.",
       timeManagementTitle:
-        "<i class='fas fa-clock text-purple-500'></i> Time Management",
+        "Time Management",
       timeManagementDescription:
         "Ability to organize and prioritize tasks efficiently.",
       proactivityTitle:
-        "<i class='fas fa-rocket text-orange-500'></i> Proactivity",
+        "Proactivity",
       proactivityDescription:
         "I am proactive and always look for opportunities to improve and contribute.",
-      empathyTitle: "<i class='fas fa-thumbs-up text-gray-500'></i> Empathy",
+      empathyTitle: "Empathy",
       empathyDescription:
         "Understanding the needs and perspectives of others."
     },
@@ -346,27 +346,27 @@ export const translations = {
       tools: "工具",
       softSkillsTitle: "软技能",
       communicationTitle:
-        "<i class='fas fa-comments text-blue-500'></i> 沟通",
+        "沟通",
       communicationDescription:
         "能清晰有效地表达想法与概念。",
       teamworkTitle:
-        "<i class='fas fa-users text-green-500'></i> 团队合作",
+        "团队合作",
       teamworkDescription:
         "与他人高效协作以达成共同目标。",
       problemSolvingTitle:
-        "<i class='fas fa-lightbulb text-yellow-500'></i> 问题解决",
+        "问题解决",
       problemSolvingDescription:
         "具备识别与创造性解决问题的能力。",
       timeManagementTitle:
-        "<i class='fas fa-clock text-purple-500'></i> 时间管理",
+        "时间管理",
       timeManagementDescription:
         "能够高效组织并合理安排优先级。",
       proactivityTitle:
-        "<i class='fas fa-rocket text-orange-500'></i> 主动性",
+        "主动性",
       proactivityDescription:
         "积极主动，持续寻求改进与贡献的机会。",
       empathyTitle:
-        "<i class='fas fa-thumbs-up text-gray-500'></i> 同理心",
+        "同理心",
       empathyDescription:
         "理解他人的需求与视角。"
     },
@@ -487,27 +487,27 @@ export const translations = {
       tools: "Ferramentas",
       softSkillsTitle: "Habilidades Interpessoais",
       communicationTitle:
-        "<i class='fas fa-comments text-blue-500'></i> Comunicação",
+        "Comunicação",
       communicationDescription:
         "Capacidade de expressar ideias e conceitos de forma clara e eficaz.",
       teamworkTitle:
-        "<i class='fas fa-users text-green-500'></i> Trabalho em Equipe",
+        "Trabalho em Equipe",
       teamworkDescription:
         "Colaboração eficaz com outras pessoas para alcançar objetivos comuns.",
       problemSolvingTitle:
-        "<i class='fas fa-lightbulb text-yellow-500'></i> Resolução de Problemas",
+        "Resolução de Problemas",
       problemSolvingDescription:
         "Habilidade de identificar e resolver problemas de forma criativa.",
       timeManagementTitle:
-        "<i class='fas fa-clock text-purple-500'></i> Gestão do Tempo",
+        "Gestão do Tempo",
       timeManagementDescription:
         "Capacidade de organizar e priorizar tarefas com eficiência.",
       proactivityTitle:
-        "<i class='fas fa-rocket text-orange-500'></i> Proatividade",
+        "Proatividade",
       proactivityDescription:
         "Sou proativo e busco sempre oportunidades para melhorar e contribuir.",
       empathyTitle:
-        "<i class='fas fa-thumbs-up text-gray-500'></i> Empatia",
+        "Empatia",
       empathyDescription:
         "Compreensão das necessidades e perspectivas dos outros."
     },
@@ -629,27 +629,27 @@ export const translations = {
       tools: "الأدوات",
       softSkillsTitle: "المهارات الشخصية",
       communicationTitle:
-        "<i class='fas fa-comments text-blue-500'></i> التواصل",
+        "التواصل",
       communicationDescription:
         "القدرة على التعبير عن الأفكار والمفاهيم بوضوح وفعالية.",
       teamworkTitle:
-        "<i class='fas fa-users text-green-500'></i> العمل الجماعي",
+        "العمل الجماعي",
       teamworkDescription:
         "تعاون فعّال مع الآخرين لتحقيق الأهداف المشتركة.",
       problemSolvingTitle:
-        "<i class='fas fa-lightbulb text-yellow-500'></i> حل المشكلات",
+        "حل المشكلات",
       problemSolvingDescription:
         "القدرة على تحديد المشكلات وحلّها بطريقة إبداعية.",
       timeManagementTitle:
-        "<i class='fas fa-clock text-purple-500'></i> إدارة الوقت",
+        "إدارة الوقت",
       timeManagementDescription:
         "القدرة على تنظيم المهام وتحديد أولوياتها بكفاءة.",
       proactivityTitle:
-        "<i class='fas fa-rocket text-orange-500'></i> المبادرة",
+        "المبادرة",
       proactivityDescription:
         "شخص مبادر يسعى دائمًا لفرص التحسين والمساهمة.",
       empathyTitle:
-        "<i class='fas fa-thumbs-up text-gray-500'></i> التعاطف",
+        "التعاطف",
       empathyDescription:
         "فهم احتياجات ووجهات نظر الآخرين."
     },

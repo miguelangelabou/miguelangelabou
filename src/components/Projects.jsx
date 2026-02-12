@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import { Globe, Code, Github } from 'lucide-react';
 
 const Projects = ({ t }) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projectsList = [
-    { ...t.projects.project1, img: "/assets/QueTantoSabes.webp", icon: "fas fa-code" },
-    { ...t.projects.project2, img: "/assets/GlobosAnabell.png", icon: "fas fa-globe" },
-    { ...t.projects.project3, img: "/assets/CookieControl.png", icon: "fas fa-globe" },
-    { ...t.projects.project4, img: "/assets/JMArquitectos.png", icon: "fas fa-globe" },
+    { ...t.projects.project1, img: "/assets/QueTantoSabes.webp", icon: <Code size={20} className="text-white h-5 w-5" /> },
+    { ...t.projects.project2, img: "/assets/GlobosAnabell.png", icon: <Globe size={20} className="text-white h-5 w-5" /> },
+    { ...t.projects.project3, img: "/assets/CookieControl.png", icon: <Globe size={20} className="text-white h-5 w-5" /> },
+    { ...t.projects.project4, img: "/assets/JMArquitectos.png", icon: <Globe size={20} className="text-white h-5 w-5" /> },
   ];
 
   return (
@@ -28,7 +29,7 @@ const Projects = ({ t }) => {
             <p>{project.preview}</p>
             <div className="flex items-center space-x-3 justify-end mt-auto">
               <button className="text-white bg-blue-400 hover:bg-blue-700 transition-colors duration-300 ease-in-out px-4 py-2 rounded-lg mb-2 mt-6">
-                 <i className={project.icon}></i>
+                 {project.icon}
               </button>
             </div>
           </div>

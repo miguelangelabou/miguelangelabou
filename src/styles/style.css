@@ -1,6 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* En Tailwind v4, @import "tailwindcss" reemplaza a:
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+*/
 
 :root {
   --base-color: #ffffff;  
@@ -258,10 +262,6 @@ body {
   }
 }
 
-
-
-
-
 ::-webkit-scrollbar {
     width: 15px; 
     height: 15px; 
@@ -285,4 +285,3 @@ body {
     scrollbar-width: thin; 
     scrollbar-color: #3b82f6 #f1f1f1; 
 }
-
