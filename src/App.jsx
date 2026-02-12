@@ -43,7 +43,7 @@ function App() {
   if (loading) return <Loader />;
 
   return (
-    <div className={`min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 transition-colors duration-300 ${langKey === 'ar' ? 'rtl' : ''}`}>
+    <div className={`min-h-screen max-w-full overflow-x-hidden flex flex-col font-sans text-gray-900 dark:text-gray-100 transition-colors duration-300 ${langKey === 'ar' ? 'rtl' : ''}`}>
       <Header t={t} theme={theme} toggleTheme={toggleTheme} setLang={changeLanguage} />
       
       <main className="flex-grow">

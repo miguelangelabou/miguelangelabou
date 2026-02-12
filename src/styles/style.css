@@ -31,92 +31,101 @@
 
   @keyframes scroll {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); } /* Mueve solo el 50% porque duplicamos el contenido */
+    to { transform: translateX(-50%); }
   }
 }
 
-/* --- Variables Globales --- */
-:root {
-  --base-color: #f8fafc;
-  --text-color: #0f172a;
-  --accent-color: #3b82f6;
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.5);
+/* --- Capa Base y Variables --- */
+@layer base {
+  :root {
+    /* Modo Claro */
+    --base-color: #f8fafc;
+    --text-color: #0f172a;
+    --text-muted: #64748b; /* Gray 500 */
+    --section-bg: #f9fafb; /* Gray 50 */
+    --accent-color: #3b82f6;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --dot-color: #cbd5e1;
+    --scrollbar-track: transparent;
+    --scrollbar-thumb: #cbd5e1;
+    --footer-bg: rgba(255, 255, 255, 0.5);
+    --footer-border: #e2e8f0;
+  }
+
+  /* Selector explícito para cuando la clase .dark está presente */
+  :root.dark {
+    /* Modo Oscuro - Colores Profundos */
+    --base-color: #050505;
+    --text-color: #f1f5f9;
+    --text-muted: #94a3b8; /* Gray 400 */
+    --section-bg: rgba(255, 255, 255, 0.03); /* Transparente sutil */
+    --accent-color: #60a5fa;
+    --glass-bg: rgba(20, 20, 20, 0.7); 
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --dot-color: #1e293b;
+    --scrollbar-thumb: #334155;
+    --footer-bg: rgba(0, 0, 0, 0.5);
+    --footer-border: #27272a;
+  }
+
+  body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    
+    background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-attachment: fixed;
+    
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Asegurar que los textos hereden el color correcto */
+  h1, h2, h3, h4, h5, h6, p, span, div {
+    color: inherit;
+  }
 }
 
-.dark {
-  --base-color: #050505;
-  --text-color: #f1f5f9;
-  --accent-color: #60a5fa;
-  --glass-bg: rgba(10, 10, 10, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-}
-
-/* --- Estilos Base --- */
-body {
-  background-color: var(--base-color);
-  color: var(--text-color);
-  font-family: var(--font-sans);
-  background-image: radial-gradient(var(--text-color) 0.5px, transparent 0.5px);
-  background-size: 24px 24px;
-  background-attachment: fixed;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  overflow-x: hidden; /* Importante para el carrusel */
-}
-
-body:not(.dark) {
-    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-}
-.dark body {
-    background-image: radial-gradient(#1e293b 1px, transparent 1px);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -0.02em;
-}
-
-/* --- Utilities --- */
-@layer utilities {
+/* --- Componentes --- */
+@layer components {
   .glass-panel {
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--glass-border);
   }
-  
-  .fade-enter {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
 
-  /* Máscara para el carrusel infinito (efecto desvanecido a los lados) */
+  /* Clases de utilidad vinculadas a variables CSS para consistencia */
+  .text-dynamic {
+    color: var(--text-color);
+  }
+  .text-muted-dynamic {
+    color: var(--text-muted);
+  }
+  .bg-section-dynamic {
+    background-color: var(--section-bg);
+  }
+  .bg-footer-dynamic {
+    background-color: var(--footer-bg);
+    border-top: 1px solid var(--footer-border);
+  }
+}
+
+@layer utilities {
   .mask-gradient {
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   }
   
-  /* Scrollbars */
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--accent-color);
-    border-radius: 4px;
-  }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+  ::-webkit-scrollbar-thumb { background: var(--accent-color); border-radius: 4px; }
   
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgba(156, 163, 175, 0.5);
-    border-radius: 20px;
-  }
+  .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background-color: var(--scrollbar-thumb); border-radius: 20px; }
   
   .animation-delay-2000 { animation-delay: 2s; }
-  .animation-delay-4000 { animation-delay: 4s; }
 }

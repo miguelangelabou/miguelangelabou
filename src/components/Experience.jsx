@@ -5,7 +5,7 @@ const Experience = ({ t }) => {
   return (
     <section className="py-20 px-4" id="Experience">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
+        <h2 className="text-3xl font-bold mb-12 flex items-center gap-3 text-dynamic">
             <Briefcase className="text-blue-500"/> 
             {t.experience.title}
         </h2>
@@ -21,7 +21,7 @@ const Experience = ({ t }) => {
                 <div className="flex items-center gap-4">
                     <img src="/assets/SKYNOFF_TECHNOLOGY.webp" alt="Skynoff" className="w-10 h-10 rounded-lg shadow-sm" />
                     <div>
-                        <h3 className="text-xl font-bold text-gray-900 dark:text-white">Skynoff Technology</h3>
+                        <h3 className="text-xl font-bold text-dynamic">Skynoff Technology</h3>
                         <p className="text-blue-500 font-medium">Full Stack Developer</p>
                     </div>
                 </div>

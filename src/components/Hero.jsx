@@ -29,7 +29,7 @@ const Hero = ({ t }) => {
           </div>
 
           <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
-            <span className="block text-gray-900 dark:text-white">{t.name}</span>
+            <span className="block text-dynamic">{t.name}</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mt-2">
               {t.aboutMe.career}
             </span>
@@ -44,7 +44,7 @@ const Hero = ({ t }) => {
               {t.aboutMe.downloadCV}
             </a>
             
-            <button onClick={handleCopyEmail} className="flex items-center gap-2 px-6 py-3.5 glass-panel text-gray-700 dark:text-gray-200 hover:text-blue-500 rounded-xl font-medium transition-all hover:scale-105">
+            <button onClick={handleCopyEmail} className="flex items-center gap-2 px-6 py-3.5 glass-panel text-dynamic hover:text-blue-500 rounded-xl font-medium transition-all hover:scale-105">
               {copySuccess ? <Check className="text-green-500" size={20} /> : <Mail size={20} />}
               {copySuccess ? t.aboutMe.copyEmail : t.aboutMe.copyEmail}
             </button>
@@ -91,7 +91,7 @@ const Hero = ({ t }) => {
                  </div>
                  <div>
                     <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">Experience</p>
-                    <p className="font-bold text-gray-900 dark:text-white text-lg">6+ Años</p>
+                    <p className="font-bold text-dynamic text-lg">6+ Años</p>
                  </div>
               </div>
             </div>

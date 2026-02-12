@@ -21,9 +21,10 @@ const SoftSkills = ({ t }) => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-50 dark:bg-black/20" id="SoftSkills">
+    // Usamos bg-section-dynamic para que cambie automáticamente con las variables CSS
+    <section className="py-20 px-4 bg-section-dynamic transition-colors duration-300" id="SoftSkills">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center">{t.skills.softSkillsTitle}</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center text-dynamic">{t.skills.softSkillsTitle}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill) => (
@@ -31,8 +32,9 @@ const SoftSkills = ({ t }) => {
               <div className="mb-6 p-4 bg-gray-50 dark:bg-white/5 rounded-2xl w-fit group-hover:scale-110 transition-transform">
                 {iconMap[skill.id]}
               </div>
-              <h3 className="text-xl font-bold mb-3">{skill.title}</h3>
-              <p className="text-gray-500 dark:text-gray-400 leading-relaxed">
+              {/* Forzamos el color del texto para que contraste bien */}
+              <h3 className="text-xl font-bold mb-3 text-dynamic">{skill.title}</h3>
+              <p className="text-muted-dynamic leading-relaxed">
                 {skill.desc}
               </p>
             </div>

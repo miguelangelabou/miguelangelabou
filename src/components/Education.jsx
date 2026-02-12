@@ -23,7 +23,7 @@ const Education = ({ t }) => {
   return (
     <section className="py-20 px-4" id="Education">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
+        <h2 className="text-3xl font-bold mb-12 flex items-center gap-3 text-dynamic">
           <GraduationCap className="text-blue-500" size={32} />
           {t.education.title}
         </h2>
@@ -36,7 +36,7 @@ const Education = ({ t }) => {
               
               <div className="glass-panel p-6 rounded-2xl hover:border-blue-500/30 transition-all hover:translate-x-1">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3 gap-2">
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-dynamic">{item.title}</h3>
                   <div className="flex items-center gap-2 text-sm text-blue-500 font-mono bg-blue-50 dark:bg-blue-900/20 px-3 py-1 rounded-full w-fit">
                     <Calendar size={14} />
                     {item.date}
